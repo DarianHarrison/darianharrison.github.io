@@ -1,0 +1,26 @@
+base_url = "https://darianharrison.github.io"
+compile_sass = true
+
+title = "Darian Harrison"
+description = "Documenting my journey."
+default_language = "en"
+theme = "DeepThought"
+
+[markdown]
+render_emoji = true
+
+[extra]
+social = []
+favicon = "images/darian-harrison.jpeg"
+
+[extra.author]
+name = "Darian Harrison"
+
+# Features
+katex_enable = true
+mermaid_enable = true
+
+[[extra.navbar_items]]
+name = "Home"
+url = "/"
+code = ""

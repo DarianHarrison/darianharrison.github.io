@@ -1,0 +1,12 @@
+# Zola: Ignore the actual built website
+# The GitHub Action builds this for us, so we don't want it in the repo.
+public/
+
+# OS generated files (Noise)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
