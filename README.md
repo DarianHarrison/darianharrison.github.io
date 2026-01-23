@@ -1,13 +1,19 @@
 # Personal Journal
 A bi-weekly log on technology and engineering.
 
+Live page can be viewed here
+```
+https://darianharrison.github.io/
+```
 
-0. test local environment
+---
+
+To test in a local environment
 ```bash
 zola serve
 ```
 
-1. commit. Page is set up to automatically update upon pish
+Page is set up to automatically update upon push
 ```bash
 git add -A ; git commit -m "2026-01-23" ; git push
 ```
