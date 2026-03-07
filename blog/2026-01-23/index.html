@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#ffffff" name="theme-color" />
+  <meta content="#da532c" name="msapplication-TileColor" />
+
+  <link rel="icon" type="image/jpeg" href="/images/psi.jpg?v=2">
+
+  <style>
+    .content img {
+        max-height: 500px;
+        width: auto;
+        display: block;
+        margin: 2rem auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    /* Small style for the navbar avatar */
+    .nav-avatar {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+  </style>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.1/css/academicons.min.css" integrity="sha384-FIue+PI4SsI9XfHCz8dBLg33b0c1fMJgNU3X//L26FYbGnlSEfWmNT7zgWc2N9b6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link href="https://darianharrison.github.io/deep-thought.css" rel="stylesheet" />
+  
+  
+
+  <title>
+    
+Darian Harrison | Planning the Network Layer
+
+  </title>
+
+  
+  
+  
+
+  
+</head>
+
+<body class="has-background-white">
+  <nav aria-label="section navigation" class="navbar is-light" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item is-size-5 has-text-weight-bold" href="https:&#x2F;&#x2F;darianharrison.github.io">
+            <img src="/images/darian-harrison.jpeg" alt="Avatar" class="nav-avatar">
+            Darian Harrison
+        </a>
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end has-text-centered">
+          
+            
+                <a class="navbar-item has-text-weight-semibold" href="&#x2F;">
+                Home
+                </a>
+            
+          
+          <a class="navbar-item" id="nav-search" title="Search" data-target="#search-modal">
+            <span class="icon">
+              <i class="fas fa-search"></i>
+            </span>
+          </a>
+          <a class="navbar-item" id="dark-mode" title="Switch to dark theme">
+            <span class="icon">
+              <i class="fas fa-adjust"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  
+
+  
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <article class="box">
+          <h1 class="title">
+            Planning the Network Layer
+          </h1>
+          <p class="subtitle">Architecting the communication layer for bioprocess automation</p>
+          <div class="columns is-multiline is-gapless">
+            <div class="column is-8">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="fas fa-user"></i>
+  </span>
+  <span>Darian Harrison published on</span>
+  <span class="icon">
+    <i class="far fa-calendar-alt"></i>
+  </span>
+  <span><time datetime="2026-01-23">January 23, 2026</time></span>
+</span>
+
+            </div>
+            <div class="column is-4 has-text-right-desktop">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span>5 min,</span>
+  <span class="icon">
+    <i class="fas fa-pencil-alt"></i>
+  </span>
+  <span>935 words</span>
+</span>
+
+            </div>
+            <div class="column">
+              
+            </div>
+            <div class="column has-text-right-desktop">
+              
+            </div>
+          </div>
+          <div class="content mt-2">
+            <p><img src="/images/2026-23-01.png" alt="Network Architecture Diagram" />
+<strong>Figure 1</strong>: <em>The Purdue Model (ISA-95) hierarchy, illustrating the segmentation between Enterprise (IT) and Industrial (OT) zones. Modern lab automation builds on this structure while increasingly integrating Level 5 cloud connectivity. [Source: Fortinet Cyber Glossary]</em></p>
+<p>In this blog post, we will cover how to plan the networking and communication layer to enable automated workflows.</p>
+<p>In any process automation, numerous components must coordinate to execute units of work. Simultaneously, we need visibility into the state of the overall system.</p>
+<p>To give a specific example, you might have various motors powering different types of work, such as pumping, draining, lifting, pressurizing, pushing, or grabbing. On the other hand, you need visibility into the health of each specific motor or system, alongside areas that require specific environmental conditions—like temperature, humidity, or light—which must be captured via sensor devices.</p>
+<p>Whenever we plan a new process automation design, we must consider how each system, subsystem, module, and component will communicate throughout the entire processing plant.</p>
+<p>Ideally, we want to operate our plant remotely. This means we must be able to modify control parameters for specific motors or receive telemetry data from different sensors from a distance. To navigate this complexity, it is best to group each device, system, and unit into specific categories.</p>
+<p>Below is a reference guide for organizing these layers.</p>
+<h2 id="network-protocol-stack-reference">Network &amp; Protocol Stack Reference</h2>
+<h3 id="wired-infrastructure">Wired Infrastructure</h3>
+<p><em>Standard physical cabling for industrial process automation.</em></p>
+<table><thead><tr><th style="text-align: left">Layer</th><th style="text-align: left">Role &amp; Description</th><th style="text-align: left">Primary Protocols</th><th style="text-align: left">Operating Range<br><em>(Rule of Thumb)</em></th><th style="text-align: left">Hardware Examples</th></tr></thead><tbody>
+<tr><td style="text-align: left"><strong>L5</strong></td><td style="text-align: left"><strong>Cloud &amp; Enterprise</strong><br>Long-term data archiving, global analytics, and machine learning training loops.</td><td style="text-align: left">• <strong>HTTPS</strong><br>• <strong>MQTT</strong> (Over TCP/IP)</td><td style="text-align: left"><strong>Global</strong><br><em>(Internet/Fiber)</em></td><td style="text-align: left">• AWS/Azure IoT<br>• Data Lakes (S3)<br>• ERP Systems</td></tr>
+<tr><td style="text-align: left"><strong>L4</strong></td><td style="text-align: left"><strong>Business Planning (ERP)</strong><br>Batch release, inventory management, and regulatory compliance (e.g., 21 CFR Part 11).</td><td style="text-align: left">• <strong>HTTPS (REST)</strong><br>• <strong>SQL</strong></td><td style="text-align: left"><strong>Site-Wide</strong><br><em>(Intranet)</em></td><td style="text-align: left">• LIMS / ELN<br>• ERP Servers</td></tr>
+<tr><td style="text-align: left"><strong>L3</strong></td><td style="text-align: left"><strong>Supervisory (SCADA/MOM)</strong><br>Recipe management, orchestration, and the &quot;Unified Namespace&quot; (central message broker).</td><td style="text-align: left">• <strong>SiLA 2</strong><br>• <strong>OPC UA</strong><br>• <strong>MQTT Sparkplug B</strong></td><td style="text-align: left"><strong>&gt; 100 m – 2 km</strong><br><em>(Fiber Backbones)</em></td><td style="text-align: left">• SCADA Server<br>• MQTT Broker<br>• Workflow Scheduler</td></tr>
+<tr><td style="text-align: left"><strong>L2</strong></td><td style="text-align: left"><strong>Cell Control (Edge)</strong><br>Real-time logic bridging the supervisory network to physical hardware (often via WebAssembly).</td><td style="text-align: left">• <strong>EtherCAT</strong> (Master)<br>• <strong>gRPC</strong> / <strong>SiLA 2</strong><br>• <strong>OPC UA</strong></td><td style="text-align: left"><strong>&lt; 100 m</strong><br><em>(Copper Ethernet)</em></td><td style="text-align: left">• IPC / Edge Controller<br>• Liquid Handlers<br>• Bioreactor Controllers</td></tr>
+<tr><td style="text-align: left"><strong>L1</strong></td><td style="text-align: left"><strong>Field Level (Device)</strong><br>Deterministic execution, sensor data gathering, and safety logic.</td><td style="text-align: left">• <strong>EtherCAT</strong> (Slave) / <strong>FSoE</strong><br>• <strong>CAN FD</strong><br>• <strong>IO-Link</strong><br>• <strong>USB</strong> (TMC/CDC)</td><td style="text-align: left"><strong>&lt; 100 m</strong> (Ethernet)<br><strong>&lt; 40 m</strong> (CAN FD)<br><strong>&lt; 20 m</strong> (IO-Link)<br><strong>&lt; 5 m</strong> (USB)</td><td style="text-align: left">• Servo Drives<br>• Safety PLCs<br>• Lab Scales / Cameras (USB)</td></tr>
+<tr><td style="text-align: left"><strong>L0</strong></td><td style="text-align: left"><strong>Physical Process</strong><br>Chip-to-chip communication within a single PCB or embedded device.</td><td style="text-align: left">• <strong>I2C</strong><br>• <strong>SPI</strong><br>• <strong>UART</strong></td><td style="text-align: left"><strong>&lt; 0.3 m</strong><br><em>(PCB Enclosure)</em></td><td style="text-align: left">• Microcontrollers<br>• ADC/DAC Chips<br>• Motor Drivers</td></tr>
+</tbody></table>
+<hr />
+<h3 id="wireless-infrastructure">Wireless Infrastructure</h3>
+<p><em>Spectrum, frequency, and range for mobility and remote monitoring.</em></p>
+<table><thead><tr><th style="text-align: left">Layer</th><th style="text-align: left">Role</th><th style="text-align: left">Protocols</th><th style="text-align: left">Frequency &amp; Type</th><th style="text-align: left">Wavelength ($\lambda$)</th><th style="text-align: left">Operating Range</th></tr></thead><tbody>
+<tr><td style="text-align: left"><strong>L4/L5</strong></td><td style="text-align: left"><strong>WAN / Cloud</strong></td><td style="text-align: left">• <strong>4G LTE / 5G</strong><br>• <strong>LoRaWAN</strong><br>• <strong>NB-IoT</strong></td><td style="text-align: left"><strong>600 MHz – 2.6 GHz</strong><br><em>(UHF Radio / Microwave)</em><br><br><strong>915 MHz</strong><br><em>(UHF Radio Wave)</em></td><td style="text-align: left"><strong>12 – 50 cm</strong><br><em>(Penetrates walls)</em><br><br><strong>~33 cm</strong><br><em>(Long range)</em></td><td style="text-align: left"><strong>Global</strong><br><em>(Cellular)</em><br><br><strong>10 km+</strong><br><em>(LoRa)</em></td></tr>
+<tr><td style="text-align: left"><strong>L3</strong></td><td style="text-align: left"><strong>Plant Floor</strong></td><td style="text-align: left">• <strong>Wi-Fi 6 / 6E</strong><br>• <strong>Private 5G</strong> (Sub-6)</td><td style="text-align: left"><strong>2.4 / 5 / 6 GHz</strong><br><em>(SHF Microwave)</em><br><br><strong>3.5 – 4.2 GHz</strong><br><em>(SHF Microwave)</em></td><td style="text-align: left"><strong>5 – 12.5 cm</strong><br><em>(Reflects off metal)</em><br><br><strong>7 – 8.5 cm</strong><br><em>(Balanced)</em></td><td style="text-align: left"><strong>50 – 150 m</strong><br><em>(Per Access Point)</em></td></tr>
+<tr><td style="text-align: left"><strong>L2</strong></td><td style="text-align: left"><strong>Machine Cell</strong></td><td style="text-align: left">• <strong>5G mmWave</strong><br>• <strong>Wi-Fi 6</strong> (Low Latency)</td><td style="text-align: left"><strong>24 – 60 GHz</strong><br><em>(EHF Microwave)</em></td><td style="text-align: left"><strong>5 – 12 mm</strong><br><em>(Easily blocked)</em></td><td style="text-align: left"><strong>30 – 100 m</strong><br><em>(Line of Sight)</em></td></tr>
+<tr><td style="text-align: left"><strong>L1</strong></td><td style="text-align: left"><strong>Field Device</strong></td><td style="text-align: left">• <strong>WirelessHART</strong><br>• <strong>IO-Link Wireless</strong></td><td style="text-align: left"><strong>2.4 GHz (ISM)</strong><br><em>(UHF Microwave)</em></td><td style="text-align: left"><strong>~12.5 cm</strong><br><em>(Hopping/Mesh)</em></td><td style="text-align: left"><strong>10 – 200 m</strong><br><em>(Mesh Network)</em></td></tr>
+<tr><td style="text-align: left"><strong>L0</strong></td><td style="text-align: left"><strong>Config/Tagging</strong></td><td style="text-align: left">• <strong>NFC</strong><br>• <strong>RFID</strong> (Passive)</td><td style="text-align: left"><strong>13.56 MHz</strong><br><em>(HF Radio Wave)</em><br><br><strong>860 – 960 MHz</strong><br><em>(UHF Radio Wave)</em></td><td style="text-align: left"><strong>~22 m</strong><br><em>(Magnetic Induction)</em><br><br><strong>~33 cm</strong></td><td style="text-align: left"><strong>&lt; 4 cm</strong><br><em>(Touch)</em><br><br><strong>0.5 – 6 m</strong><br><em>(Proximity)</em></td></tr>
+</tbody></table>
+<h3 id="conclusion">Conclusion</h3>
+<p>This approach prioritizes the network and communication strategy. I'd argue that this is the first and most important level of a truly automated system.</p>
+<p>There may be some components that don't fit into a specific group, or span multiple groups (like a USB microscope connected directly to an Edge Controller), however this is just a high level to begin to think how to achieve a fully automated industrial plant. Furthermore, each use case or specific application will require its own specifications, and this is just a ballpark to give an idea.</p>
+<p><strong>A Note on Security:</strong> Although we will not cover it in depth here, security is non-negotiable. Modern best practices demand a Zero Trust Architecture (ZTA), where every connection is authenticated (e.g., via Mutual TLS) and no device is implicitly trusted, regardless of where it sits in the hierarchy.</p>
+<p>That's it for this post. Hopefully, organizing all the components into these blocks provides a clearer view of how to organize and fully control and monitor every component of your automated process.</p>
+<h3 id="references">References</h3>
+<ol>
+<li><strong>NIST SP 800-82r3:</strong> National Institute of Standards and Technology. (2023). <em>Guide to Operational Technology (OT) Security</em>. https://doi.org/10.6028/NIST.SP.800-82r3</li>
+<li><strong>SiLA 2 Standard:</strong> SiLA Consortium. (2018). <em>SiLA 2: Architecture and Design Principles</em>. https://sila-standard.com</li>
+<li><strong>Fortinet:</strong> Fortinet. (n.d.). <em>What is the Purdue Model? ICS/OT Security.</em> Fortinet Cyber Glossary. https://www.fortinet.com/resources/cyberglossary/purdue-model</li>
+</ol>
+
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  
+  <section class="modal" id="search-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Search</p>
+      </header>
+      <section class="modal-card-body">
+        <div class="field mb-2">
+          <div class="control">
+            <input class="input" id="search" placeholder="Search this website." type="search" />
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="search-results__items"></div>
+        </div>
+      </section>
+    </div>
+    <button aria-label="close" class="modal-close is-large"></button>
+  </section>
+  
+
+
+  
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <nav class="level">
+              
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;darianharrison.github.io&#x2F;blog&#x2F;2026-01-12&#x2F;">
+              <span class="icon mr-2">
+                <i class="fas fa-arrow-circle-left"></i>
+              </span>
+              Initialization
+            </a>
+          </div>
+           
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;darianharrison.github.io&#x2F;blog&#x2F;2026-02-06&#x2F;">
+              The Day 2 Mindset: Site Selection for Bioprocess Resilience<span class="icon ml-2">
+                <i class="fas fa-arrow-circle-right"></i>
+              </span>
+            </a>
+          </div>
+          
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+
+
+  
+  <footer class="footer py-4">
+    <div class="content has-text-centered">
+      <p>
+        © 2026 Darian Harrison
+      </p>
+    </div>
+  </footer>
+  
+
+  
+  
+  
+  
+  <script src="https://darianharrison.github.io/elasticlunr.min.js"></script>
+  <script src="https://darianharrison.github.io/search_index.en.js"></script><script src="https://darianharrison.github.io/js/site.js"></script>
+
+  
+
+
+
+
+
+  
+  
+</body>
+
+</html>
