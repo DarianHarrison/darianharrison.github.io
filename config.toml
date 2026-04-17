@@ -17,8 +17,9 @@ favicon = "images/darian-harrison.jpeg"
 name = "Darian Harrison"
 
 # Features
-katex_enable = true
-mermaid_enable = true
+[extra.katex]
+enabled = true
+auto_render = true
 
 [[extra.navbar_items]]
 name = "Home"
