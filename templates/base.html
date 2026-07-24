@@ -20,6 +20,7 @@
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
+    
     /* Small style for the navbar avatar */
     .nav-avatar {
         border-radius: 50%;
@@ -27,6 +28,14 @@
         height: 32px;
         margin-right: 10px;
         vertical-align: middle;
+    }
+
+    /* Fix for overflowing Markdown tables */
+    .content table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
     }
   </style>
 
