@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#ffffff" name="theme-color" />
+  <meta content="#da532c" name="msapplication-TileColor" />
+
+  <link rel="icon" type="image/jpeg" href="/images/psi.jpg?v=2">
+
+  <style>
+    .content img {
+        max-height: 500px;
+        width: auto;
+        display: block;
+        margin: 2rem auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    /* Small style for the navbar avatar */
+    .nav-avatar {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    /* Fix for overflowing Markdown tables */
+    .content table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+    }
+  </style>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.1/css/academicons.min.css" integrity="sha384-FIue+PI4SsI9XfHCz8dBLg33b0c1fMJgNU3X//L26FYbGnlSEfWmNT7zgWc2N9b6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link href="https://darianharrison.github.io/deep-thought.css" rel="stylesheet" />
+  
+  
+
+  <title>
+    
+Darian Harrison | CNC Manufacturing as a Controlled Chain of Transformations
+
+  </title>
+
+  
+  
+  
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mathtex-script-type.min.js" integrity="sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT" crossorigin="anonymous"></script>
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+  
+  
+</head>
+
+<body class="has-background-white">
+  <nav aria-label="section navigation" class="navbar is-light" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item is-size-5 has-text-weight-bold" href="https:&#x2F;&#x2F;darianharrison.github.io">
+            <img src="/images/darian-harrison.jpeg" alt="Avatar" class="nav-avatar">
+            Darian Harrison
+        </a>
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end has-text-centered">
+          
+            
+                <a class="navbar-item has-text-weight-semibold" href="&#x2F;">
+                Home
+                </a>
+            
+          
+          <a class="navbar-item" id="nav-search" title="Search" data-target="#search-modal">
+            <span class="icon">
+              <i class="fas fa-search"></i>
+            </span>
+          </a>
+          <a class="navbar-item" id="dark-mode" title="Switch to dark theme">
+            <span class="icon">
+              <i class="fas fa-adjust"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  
+
+  
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <article class="box">
+          <h1 class="title">
+            CNC Manufacturing as a Controlled Chain of Transformations
+          </h1>
+          <p class="subtitle">A systems architecture for preserving engineering intent from CAD through CNC execution and feedback.</p>
+          <div class="columns is-multiline is-gapless">
+            <div class="column is-8">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="fas fa-user"></i>
+  </span>
+  <span>Darian Harrison published on</span>
+  <span class="icon">
+    <i class="far fa-calendar-alt"></i>
+  </span>
+  <span><time datetime="2026-10-02">October 02, 2026</time></span>
+</span>
+
+            </div>
+            <div class="column is-4 has-text-right-desktop">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span>47 min,</span>
+  <span class="icon">
+    <i class="fas fa-pencil-alt"></i>
+  </span>
+  <span>9325 words</span>
+</span>
+
+            </div>
+            <div class="column">
+              
+            </div>
+            <div class="column has-text-right-desktop">
+              
+            </div>
+          </div>
+          <div class="content mt-2">
+            <p><img src="/images/2026-02-10.png" alt="Figure 1: Engineering Intent, Executable Motion, and Measured Reality" /></p>
+<p><strong>Figure 1: Engineering Intent, Executable Motion, and Measured Reality.</strong> <em>A closed-loop CNC manufacturing pipeline carries engineering intent from product definition to verified execution and measurement, with provenance, validation, and controlled feedback throughout.</em></p>
+<p>A CNC program is the executable result of many decisions that its coordinates no longer explain. A finished bore may depend on a datum relationship, a sequence of roughing and finishing operations, a particular holder, a calibrated rotary pivot, and a measured tool offset. The final program can command the required motion while retaining little explicit information about why those choices were made.</p>
+<p>That creates the central architectural problem in computational manufacturing: each transformation must make the job more executable without breaking its relationship to engineering intent. Geometry becomes manufacturing features; features become operations; operations become tool motion; tool motion becomes machine-specific commands. Execution then introduces physical conditions that were only estimated during planning.</p>
+<p>The resulting system needs several distinct kinds of truth. Engineering defines the required product. Planning defines a selected method. Resource models describe the intended production configuration. Runtime records describe what happened, and metrology supplies evidence about the result. Reliable automation depends on preserving the relationships among those states while recognizing the limits of each one.</p>
+<h2 id="1-engineering-definition-cad-pmi-ingestion-and-geometric-fidelity">1. Engineering Definition, CAD/PMI Ingestion, and Geometric Fidelity</h2>
+<h3 id="1-1-authoritative-engineering-product-definition-and-source-of-truth-rules">1.1 Authoritative engineering/product definition and source-of-truth rules</h3>
+<p>The starting point is an approved product definition with exact geometry, material information, revision identity, datum relationships, tolerances, and surface requirements. Model-Based Definition, or MBD, associates these requirements with the three-dimensional model. Downstream manufacturing models may introduce allowances or temporary geometry, but those changes must remain derived decisions with traceable origins.</p>
+<p>Exchange, authority, and preservation are separate responsibilities. STEP AP242 provides a carrier for geometry, assembly structure, and semantic Product and Manufacturing Information, or PMI. A successful export does not establish that the receiving system preserved every requirement, and an exchanged file alone does not establish a durable archival record.</p>
+<h3 id="1-2-b-rep-topology-nurbs-geometry-and-geometric-kernels">1.2 B-Rep topology, NURBS geometry, and geometric kernels</h3>
+<p>Boundary Representation, or B-Rep, separates topology from geometry. Vertices, edges, loops, faces, shells, and solids describe connectivity; curves and surfaces describe shape. NURBS provide a common mathematical representation for analytic and freeform geometry, while trimming boundaries identify the portions used by individual faces.</p>
+<p>CAM needs this structure to evaluate surface normals, curvature, offsets, and intersections. A visually convincing model can still contain gaps or inconsistent adjacency that prevent reliable Boolean operations. Tessellated representations remain useful for computation and display, but their approximation error must be controlled relative to the exact source.</p>
+<h3 id="1-3-translation-shape-healing-persistent-identity-and-geometry-fidelity">1.3 Translation, shape healing, persistent identity, and geometry fidelity</h3>
+<p>Transfers between geometric kernels can introduce sliver faces, gaps, overlaps, or non-manifold connections. Sewing and healing may repair those defects, but repair must preserve the intended shape within declared tolerances. Increasing a local tolerance until the model becomes technically valid can degrade the precision available downstream.</p>
+<p>Identity must survive translation and revision as well. An engineering edit can split or merge faces, making a reference such as “Face 42” unstable. Persistent identifiers and geometric or graph-based remapping allow the system to determine which features, operations, and inspection requirements depend on a changed entity.</p>
+<h3 id="1-4-semantic-pmi-mbd-ap242-and-engineering-metadata">1.4 Semantic PMI/MBD, AP242, and engineering metadata</h3>
+<p>Graphical PMI shows a person a requirement. Semantic PMI identifies the requirement in machine-readable form and binds it to the relevant geometry. Automation needs the tolerance value, datum references, modifiers, and governed entities; a rendered feature-control frame does not necessarily provide those relationships.</p>
+<p>An AP242 ingestion gate must therefore examine semantic coverage and binding, as well as geometric validity. Missing PMI, an annotation attached to the wrong face, or an unsupported tolerance interpretation can corrupt planning even when the solid imports cleanly. Conformance testing belongs at this boundary because a carrier standard cannot guarantee every exporter–importer combination.</p>
+<h3 id="1-5-tolerance-propagation-and-manufacturing-allowances">1.5 Tolerance propagation and manufacturing allowances</h3>
+<p>Requirements retain their governing semantics throughout the pipeline. Similar-looking ASME and ISO tolerance annotations cannot be normalized solely by appearance. A radial-versus-diametrical interpretation error changes the permissible geometry before any toolpath exists.</p>
+<p>Manufacturing allowances create a different transformation. Coatings, heat treatment, finishing stock, or other process effects may require a production target that differs from the final engineering surface. The allowance must retain its process assumptions and source requirement. Chordal approximation, smoothing, kinematic error, and predicted deflection then consume portions of the available tolerance budget; each stage cannot independently claim the entire allowance.</p>
+<h2 id="2-manufacturing-models-stock-ipw-and-feature-semantics">2. Manufacturing Models, Stock/IPW, and Feature Semantics</h2>
+<h3 id="2-1-manufacturing-and-machining-models">2.1 Manufacturing and machining models</h3>
+<p>The manufacturing model is the production-adjusted target derived from engineering. A machining model may add tabs, temporary supports, or other sacrificial geometry required to produce that target. These models answer different questions: what production intends to realize, and what geometry must exist temporarily to make the process feasible.</p>
+<p>Keeping those roles explicit prevents temporary holding features from being mistaken for final product requirements. It also allows manufacturing decisions to change without silently revising engineering authority.</p>
+<h3 id="2-2-raw-stock-near-net-stock-previous-operation-stock-and-the-ipw">2.2 Raw stock, near-net stock, previous-operation stock, and the IPW</h3>
+<p>Stock is the material present at the start of a modeled stage. Billet and plate have different alignment and allowance problems from castings or forgings, while previous-operation stock carries the result of earlier manufacturing steps.</p>
+<p>The in-process workpiece, or IPW, records how that material changes as operations proceed. Rest machining, engagement estimation, and verification need the current IPW rather than the original billet. In a consistently represented, purely subtractive sequence, its volume should be non-increasing; an unexplained increase indicates a bookkeeping or representation problem.</p>
+<h3 id="2-3-drive-check-avoid-and-other-machining-geometry-semantics">2.3 Drive/check/avoid and other machining-geometry semantics</h3>
+<p>Geometry also needs operational roles:</p>
+<table><thead><tr><th>Role</th><th>Meaning</th><th>Computational consequence</th></tr></thead><tbody>
+<tr><td>Design and manufacturing target</td><td>Required product and derived production surfaces</td><td>Establish what must remain.</td></tr>
+<tr><td>Drive geometry</td><td>Surfaces or boundaries that guide machining</td><td>Establish contact and path construction.</td></tr>
+<tr><td>Check/avoid geometry</td><td>Protected part regions, fixtures, and obstacles</td><td>Restrict admissible motion.</td></tr>
+<tr><td>Stock/IPW</td><td>Material present at the modeled stage</td><td>Determine engagement and remaining work.</td></tr>
+<tr><td>Inspection geometry</td><td>Features and locations selected for measurement</td><td>Connect measurement to requirements.</td></tr>
+</tbody></table>
+<p>The target and stock need not share one representation. Exact B-Rep supports surface reasoning; dexels store material intervals along rays; voxels and octrees support volumetric updates; distance fields support sampled boundary queries. A height field is economical for top-down geometry but cannot represent arbitrary undercuts. Representation choice must follow the query and required resolution.</p>
+<h3 id="2-4-feature-recognition-via-rules-graphs-and-learned-models">2.4 Feature recognition via rules, graphs, and learned models</h3>
+<p>A solid does not inherently label a collection of faces as a pocket, slot, or hole. Feature recognition adds that interpretation. In an Attributed Adjacency Graph, faces become nodes and shared boundaries become edges carrying geometric attributes such as concavity or convexity.</p>
+<p>Rules can identify recognizable subgraphs; volumetric decomposition can recover interacting removal regions; accessibility analysis can identify feasible machining directions. Learned graph models extend classification to more varied geometry. These methods can complement one another because each exposes different evidence about the same part.</p>
+<h3 id="2-5-feature-recognition-limits-intersecting-features-and-validation">2.5 Feature-recognition limits, intersecting features, and validation</h3>
+<p>Intersecting features can destroy the topology expected by a recognition rule. Learned recognition has a related boundary: performance on a defined benchmark does not establish reliability on unseen industrial topology.</p>
+<p>A recognized feature is therefore a derived hypothesis to validate against geometry, stock, access, and requirements. Ambiguous classifications should remain visible to planning rather than being converted into an apparently certain operation. Persistent identity, geometric continuity, and a controlled approximation budget provide checks across these derived models.</p>
+<h2 id="3-process-planning-precedence-setup-strategy-and-operation-sequencing">3. Process Planning, Precedence, Setup Strategy, and Operation Sequencing</h2>
+<h3 id="3-1-manufacturing-knowledge-representation-rules-cases-ontologies-and-graphs">3.1 Manufacturing knowledge representation: rules, cases, ontologies, and graphs</h3>
+<p>Process planning determines what work will be done, in what legal order, and with which candidate resources. Rules encode explicit operation choices; cases preserve adaptable manufacturing precedent; ontologies and knowledge graphs connect features, requirements, processes, and capabilities.</p>
+<p>Search and optimization operate over those relationships. A dependency graph distinguishes mandatory precedence from preferences such as reducing tool changes. Learned systems may propose plans, but their proposals require physical and temporal checks before becoming executable decisions.</p>
+<h3 id="3-2-process-selection-and-material-removal-staging">3.2 Process selection and material-removal staging</h3>
+<p>Feature geometry alone does not select a process. Material, tolerance, finish, access, and available equipment can turn a nominal hole into a sequence involving drilling, boring, and reaming. Wire EDM may require a starter hole; grinding may require an earlier operation to leave a controlled allowance.</p>
+<p>Roughing removes bulk material, semi-finishing regularizes the remaining stock, and finishing establishes final geometry and surface condition. Probing, deburring, and tool measurement belong in the same plan when later operations depend on their results. Each operation consumes an expected state and creates the prerequisites for its successors.</p>
+<h3 id="3-3-precedence-datum-tolerance-and-resource-constraints">3.3 Precedence, datum, tolerance, and resource constraints</h3>
+<p>A datum must exist in the required condition before another operation can reference it. Closely related features may need to remain in one setup because reclamping introduces additional uncertainty into their mutual position. Tool-change savings cannot override that tolerance relationship.</p>
+<p>Material removal changes physical feasibility as well. Removing support from a thin wall changes stiffness; heavy roughing changes thermal and residual-stress conditions. A legal sequence must account for those state changes alongside machine, fixture, and tool availability. Geometric accessibility at the beginning of a job does not establish accessibility or stability at every later stage.</p>
+<h3 id="3-4-setup-planning-accessibility-and-orientation-optimization">3.4 Setup planning, accessibility, and orientation optimization</h3>
+<p>A setup groups operations within a clamped orientation and configuration. A visibility map provides an initial set of directions from which a surface can be approached, but a finite cutter and holder require more clearance than a mathematical ray. Fixture geometry and machine reach narrow that set further.</p>
+<p>Operations with compatible access regions are candidates for a shared setup. The planner must then balance setup count, tolerance risk, tooling changes, and fixture complexity. Fewer setups are useful only when the resulting workholding, access, and dimensional strategy remain feasible.</p>
+<h3 id="3-5-operation-sequencing-multimodal-planning-and-escalation-boundaries">3.5 Operation sequencing, multimodal planning, and escalation boundaries</h3>
+<p>Machine modality changes the dependency graph. Indexed machining fixes an orientation for a local cut; simultaneous five-axis work needs a continuously feasible orientation path. Mill-turn adds spindle transfer and channel synchronization. Swiss machining adds support conditions tied to bar position, while grinding introduces dressing and wheel-state dependencies.</p>
+<p>The handoff should preserve setups, workingsteps, precedence, candidate resources, quality requirements, and uncertainty in a Process Plan intermediate representation. If stiffness, tolerance, synchronization, or access cannot be established, the plan needs further verification or engineering review. An optimizer can choose among admissible alternatives; it cannot create feasibility by lowering a penalty weight.</p>
+<h2 id="4-resource-digital-twins-tooling-fixturing-and-machine-capability">4. Resource Digital Twins, Tooling, Fixturing, and Machine Capability</h2>
+<h3 id="4-1-manufacturing-resource-hierarchy-and-digital-twin-scope">4.1 Manufacturing-resource hierarchy and digital-twin scope</h3>
+<p>A resource model must describe the production configuration that will perform the work. Its hierarchy extends from workcell and machine to axes, spindles, heads, tables, fixtures, stock, and complete tool assemblies. Tailstocks, steady rests, probes, and part catchers also matter when their state changes support or clearance.</p>
+<p>Here, the resource twin is the representation of the asset and its relevant state. Its usefulness depends on correspondence with the physical setup, including movable equipment and installed options, rather than on visual detail alone.</p>
+<h3 id="4-2-machine-architectures-axes-envelopes-and-capability-limits">4.2 Machine architectures, axes, envelopes, and capability limits</h3>
+<p>Axis count is an incomplete capability description. Table-table machines rotate the workpiece, head-head machines articulate the tool, and head-table machines distribute rotary motion between both branches. Their reachable poses, moving masses, and interference envelopes differ.</p>
+<p>The physical machine and its controller also require separate definitions. The machine supplies travel, pivot geometry, spindle capability, and dynamic limits. The controller supplies supported functions, interpolation modes, memory constraints, and enabled options. Machine-builder integration adds the behavior of auxiliary hardware. Allocation must match all three.</p>
+<h3 id="4-3-tool-assemblies-holders-inserts-and-standardized-tool-data">4.3 Tool assemblies, holders, inserts, and standardized tool data</h3>
+<p>Tool selection concerns the complete assembly: cutting element, inserts, holder, adapters, extensions, and machine interface. ISO 13399 provides a vocabulary for machine-readable tool properties, while catalog classifications help normalize vendor data.</p>
+<p>Diameter and flute length establish only part of feasibility. Gauge length, stickout, holder envelope, interfaces, and measured offsets determine whether the assembly can reach a feature, clear obstacles, and resist load. Additional reach can solve an access problem while creating a deflection or chatter problem; the shortest assembly that provides the required clearance is therefore a meaningful selection objective.</p>
+<h3 id="4-4-fixtures-workholding-setup-coordinate-systems-and-stock-mounting">4.4 Fixtures, workholding, setup coordinate systems, and stock mounting</h3>
+<h4 id="coordinate-anchoring-and-work-offsets">Coordinate anchoring and work offsets</h4>
+<p>The setup model binds engineering datums, stock, and fixture geometry to machine coordinates. Work offsets carry the physical part-zero relationship into execution. A flip or reclamp creates a new transform while preserving the identity and condition of the transferred IPW.</p>
+<h4 id="collision-boundaries-and-full-assembly-clearance">Collision boundaries and full-assembly clearance</h4>
+<p>Fixture solids need semantic roles and deployment states. A clamp, locating face, removable support, and pallet interface impose different constraints. Clearance analysis must include the shank, holder, and relevant spindle or machine geometry as well as the cutting edges.</p>
+<h4 id="clamping-mechanics-deformation-and-soft-jaws">Clamping mechanics, deformation, and soft jaws</h4>
+<p>Workholding must restrain the part without unacceptable distortion. Soft jaws can distribute contact over a larger area, but their machined geometry becomes another controlled setup artifact. For compliant parts, clamp placement and force may require deformation analysis; insufficient restraint and excessive distortion are different failure modes.</p>
+<h4 id="modular-and-zero-point-fixturing">Modular and zero-point fixturing</h4>
+<p>Repeatable fixture interfaces can reduce re-indication and support reusable coordinate relationships. Their repeatability remains a property of a particular interface and operating condition. It does not establish the accuracy of the complete machining process.</p>
+<h3 id="4-5-resource-allocation-reachability-and-physical-state-configuration">4.5 Resource allocation, reachability, and physical-state configuration</h3>
+<p>A usable resource binding combines machine, controller configuration, tooling, workholding, coordinate frames, stock, and active auxiliary state. Torque and power must be available at the intended operating point, and reach must remain feasible with the selected holder and fixture.</p>
+<p>This combination should be versioned. Changing stickout, installing a different head, moving a support, or altering a fixture can invalidate a previous feasibility result even when the part and nominal toolpath are unchanged.</p>
+<h2 id="5-cutting-physics-tool-parameter-selection-and-process-optimization">5. Cutting Physics, Tool/Parameter Selection, and Process Optimization</h2>
+<h3 id="5-1-cutting-parameter-mathematics-speed-feed-chip-load-and-mrr">5.1 Cutting-parameter mathematics: speed, feed, chip load, and MRR</h3>
+<p>Cutting parameters are coupled. For milling with cutter diameter $D$ in millimeters, cutting speed $V_c$ in meters per minute, and spindle speed $N$ in revolutions per minute:</p>
+<p>$$
+V_c=\frac{\pi DN}{1000},\qquad N=\frac{1000V_c}{\pi D}.
+$$</p>
+<p>With feed per tooth $f_z$ in millimeters and effective cutting-edge count $Z$, the linear feed $V_f$ is</p>
+<p>$$
+V_f=Nf_zZ.
+$$</p>
+<p>For axial depth $a_p$ and radial engagement $a_e$, both in millimeters:</p>
+<p>$$
+MRR=a_pa_eV_f.
+$$</p>
+<p>The resulting removal rate is in cubic millimeters per minute. Increasing speed while holding chip load constant also increases linear feed. Increasing engagement raises removal rate while changing force, heat, and stability requirements.</p>
+<h4 id="chip-thickness-and-geometric-compensation">Chip thickness and geometric compensation</h4>
+<p>At radial engagement below half the cutter diameter, nominal feed per tooth exceeds the idealized maximum chip thickness in the peripheral-milling model used here:</p>
+<p>$$
+h_{ex}=f_z\sqrt{1-\left(1-\frac{2a_e}{D}\right)^2},\qquad 0&lt;a_e/D&lt;0.5.
+$$</p>
+<p>At $a_e/D=0.10$, this model gives $h_{ex}=0.60f_z$. Recovering a target chip thickness would therefore require a geometric feed multiplier of about $1.67$. That multiplier is a geometric relationship, not permission to exceed force, machine, tool, or thermal limits. Lead-angle effects and ball-nose effective-diameter effects require their own geometric treatment.</p>
+<h3 id="5-2-force-chip-thickness-deflection-and-material-constitutive-models">5.2 Force, chip-thickness, deflection, and material constitutive models</h3>
+<p>Constitutive models describe material response to strain, strain rate, and temperature. Mechanistic cutting models translate chip geometry and calibrated coefficients into forces. Detailed finite-element simulations can help investigate chip formation or calibrate faster models, while repeated optimization benefits from less expensive load estimates.</p>
+<p>The source material includes inconsistent Kienzle exponent conventions, so no single normalized equation is imposed here. The supported mechanism is the size effect: reducing chip thickness can increase specific cutting energy as edge and ploughing effects become more significant.</p>
+<h4 id="minimum-chip-thickness-runout-and-elastic-deflection">Minimum chip thickness, runout, and elastic deflection</h4>
+<p>An extremely light chip is not automatically a gentler cut. Below a material- and edge-dependent minimum thickness, rubbing, ploughing, and springback can replace effective shearing. Runout further distributes chip load unevenly between flutes.</p>
+<p>Forces then act on a compliant tool–holder–workpiece system. Overhang, tool section, clamping, and changing workpiece stiffness determine the resulting displacement. A precise geometric path has limited value if the mechanical system cannot reproduce it under load.</p>
+<h3 id="5-3-regenerative-chatter-and-stability-lobe-reasoning">5.3 Regenerative chatter and stability-lobe reasoning</h3>
+<p>Regenerative chatter couples the current cut to waviness left by an earlier tooth passage. Relative displacement changes chip thickness, which changes force and can reinforce vibration. Stability therefore depends on engagement, cutting coefficients, tooth-passing delay, and the frequency response of the assembled system.</p>
+<p>Stability lobes identify combinations of spindle speed and axial depth predicted to remain stable under those assumptions. A problematic cut may be improved by changing speed, reducing depth, or shortening and stiffening the assembly. Variable pitch, variable helix, and process damping can alter the boundary, but none establishes unconditional stability.</p>
+<h3 id="5-4-wear-thermal-management-coolant-and-surface-integrity">5.4 Wear, thermal management, coolant, and surface integrity</h3>
+<p>Wear changes cutting geometry and friction as the process runs. Empirical tool-life models therefore require calibration for the tool–workpiece combination and operating regime; their coefficients are not universal material properties.</p>
+<p>Coolant selection is similarly conditional. An intermittent cut vulnerable to thermal cycling presents a different problem from a difficult alloy requiring intensive heat removal and chip evacuation. Surface integrity also depends on wear, vibration, plastic deformation, and thermal history. Theoretical scallop geometry alone cannot establish the resulting surface condition.</p>
+<h3 id="5-5-physics-aware-optimization-uncertainty-and-adaptive-boundaries">5.5 Physics-aware optimization, uncertainty, and adaptive boundaries</h3>
+<p>A practical optimizer first rejects geometrically and physically infeasible tools, then evaluates parameters against chip thickness, power, force, deflection, stability, wear, and quality constraints. Once a path exists, its changing engagement can support local feed scheduling.</p>
+<p>Material variation, fixture compliance, measured dynamics, and tool condition create uncertainty around that schedule. Runtime adaptation can respond within an approved envelope, but it cannot undo an excessive cut. The operating limits and authority to change parameters must therefore be established before feedback is allowed to act.</p>
+<h2 id="6-toolpath-geometry-and-machining-strategies">6. Toolpath Geometry and Machining Strategies</h2>
+<h3 id="6-1-computational-geometry-foundations-for-path-generation">6.1 Computational-geometry foundations for path generation</h3>
+<p>Toolpath generation connects a target surface, a cutter envelope, and evolving stock. Exact surfaces support contact and curvature calculations; discrete stock models support repeated removal updates. Offsetting also changes topology: pocket offsets can merge, collapse, or self-intersect, making medial-axis and Voronoi reasoning useful for managing the transitions.</p>
+<p>Cutter-contact and cutter-location points must remain distinct. For a spherical tool, the sphere center lies one radius from the contact point along the appropriate surface normal. Other reference-point conventions require corresponding offsets, and toroidal cutters require more involved contact geometry. The resulting ideal tool motion still awaits machine-specific realization.</p>
+<h3 id="6-2-2d-2-5d-machining-and-planar-strategies">6.2 2D/2.5D machining and planar strategies</h3>
+<p>Planar strategies arrange lines, arcs, and depth levels according to the operation. Facing covers an area; contour-parallel pocketing follows successive offsets; zig-zag pocketing intersects the removal region with parallel passes. An internal corner smaller than the available cutter radius remains inaccessible regardless of path density.</p>
+<p>Entry and linking motions shape both cycle time and loading. Ramps, helices, tangential entries, stay-down links, and local clearance regions can reduce abrupt engagement or unnecessary travel when tool and geometry permit. Slotting, chamfering, engraving, and thread milling introduce distinct contact and synchronization requirements despite sharing basic motion primitives.</p>
+<h3 id="6-3-constant-engagement-and-high-efficiency-roughing">6.3 Constant-engagement and high-efficiency roughing</h3>
+<p>Constant stepover does not imply constant engagement. At an internal corner, the cutter can encounter substantially more material than it does along a straight wall. Constant-engagement strategies adapt the path to limit that increase, using morphing offsets, spirals, or local trochoidal loops as appropriate.</p>
+<p>The algorithm needs current stock: generate a candidate motion, estimate engagement against the IPW, modify the motion where necessary, then update the stock. “Trochoidal” describes a particular motion family and should not be used as a synonym for every adaptive strategy.</p>
+<p>High-efficiency roughing commonly combines low radial engagement with substantial axial flute use, subject to rigidity, flute length, and machine limits. High-feed milling uses different cutter geometry and engagement conditions to support high feed. Both can improve a suitable process, but the source reports do not establish a universal engagement angle or productivity multiplier.</p>
+<h3 id="6-4-3d-finishing-scallop-control-and-rest-machining">6.4 3D finishing, scallop control, and rest machining</h3>
+<p>For a ball-end mill on a locally planar surface, ideal scallop height $h$, ball radius $R$, and pass spacing $s$ are related by</p>
+<p>$$
+h=R-\sqrt{R^2-(s/2)^2},\qquad s=2\sqrt{2Rh-h^2}.
+$$</p>
+<p>For small scallops, the relationship gives $h\approx s^2/(8R)$. Halving spacing therefore quarters the theoretical scallop while roughly doubling the number of passes over a comparable area. Surface curvature and actual contact geometry require a more local calculation.</p>
+<p>Strategy choice follows surface shape. Raster paths suit many shallow regions; waterline paths suit steep walls; steep/shallow strategies combine them. Constant-scallop methods vary spacing over the surface, while pencil and rest finishing target material left in fillets or regions inaccessible to previous tools.</p>
+<p>Ball-nose contact near the apex has low local surface speed. Tilting the tool can move contact onto the flank, provided clearance and kinematics permit it. Circle-segment tools offer larger effective profile radii, but maintaining their intended contact creates tighter demands on orientation and gouge checking. In every case, runout, deflection, chatter, and wear separate theoretical cusp height from achieved surface texture.</p>
+<h3 id="6-5-turning-mill-turn-edm-grinding-and-other-process-specific-paths">6.5 Turning, mill-turn, EDM, grinding, and other process-specific paths</h3>
+<p>The controlled geometric entity changes with the process:</p>
+<table><thead><tr><th>Process</th><th>Path reference</th><th>Additional constraint</th></tr></thead><tbody>
+<tr><td>Turning</td><td>Insert geometry along an axial/radial profile</td><td>Tool-nose compensation, support, and chip evacuation</td></tr>
+<tr><td>Mill-turn</td><td>Tool motion combined with spindle positioning</td><td>Channel coordination and transfer state</td></tr>
+<tr><td>Grinding</td><td>Active wheel surface</td><td>Wheel wear, dressing, and contact conditions</td></tr>
+<tr><td>Wire EDM</td><td>Wire centerline plus offset</td><td>Wire radius, spark gap, guides, and flushing</td></tr>
+<tr><td>Sinker EDM</td><td>Electrode position and orbit</td><td>Electrode wear, gap control, and flushing</td></tr>
+</tbody></table>
+<p>A common lifecycle can govern these processes, but ordinary milling chip-load rules cannot serve as their universal physical model.</p>
+<h3 id="6-6-from-geometric-path-to-time-parameterized-trajectory-handoff-boundary">6.6 From geometric path to time-parameterized trajectory: handoff boundary</h3>
+<p>A path specifies spatial position and orientation. A trajectory adds time. At local curvature radius $\rho$, normal acceleration is</p>
+<p>$$
+a_n=\frac{v^2}{\rho}.
+$$</p>
+<p>Tighter curvature can therefore require lower speed even when the path is geometrically valid. Velocity, acceleration, jerk, and controller processing limits constrain time parameterization.</p>
+<p>Multi-axis paths also carry an orientation field. That field must change smoothly while retaining contact and clearance. The handoff is an annotated geometric motion with explicit tolerances and process intent; the controller still determines important aspects of the executed trajectory.</p>
+<h2 id="7-multi-axis-kinematics-tool-vector-control-and-compensation">7. Multi-Axis Kinematics, Tool-Vector Control, and Compensation</h2>
+<h3 id="7-1-machine-topology-homogeneous-transforms-and-inverse-kinematics">7.1 Machine topology, homogeneous transforms, and inverse kinematics</h3>
+<p>Forward kinematics maps machine joint positions to tool pose relative to the workpiece. Inverse kinematics solves the reverse problem. Homogeneous transforms combine rotations and translations through the machine, setup, and tool frames.</p>
+<p>The inverse can have multiple solutions. Selecting one requires travel limits, collision clearance, continuity, and future posture to be considered together. A pose can be mathematically valid but unavailable to the selected machine or configuration.</p>
+<h3 id="7-2-indexed-3-2-machining-and-tilted-working-planes">7.2 Indexed 3+2 machining and tilted working planes</h3>
+<p>Indexed machining uses rotary axes to establish an orientation, then holds that orientation during a local three-axis cut. A tilted working plane expresses the feature in a convenient coordinate frame; the machine and controller must realize the corresponding physical orientation.</p>
+<p>This differs from simultaneous five-axis motion, where orientation changes during cutting. The appropriate mode follows access, surface geometry, dynamics, and the tolerance strategy. The source's illustrative cycle-time comparisons do not establish a general speed advantage for either mode.</p>
+<h3 id="7-3-simultaneous-5-axis-tool-vector-control-and-orientation-conventions">7.3 Simultaneous 5-axis tool-vector control and orientation conventions</h3>
+<p>Simultaneous motion commonly describes position as XYZ and tool direction as a normalized IJK vector. This article uses <em>lead/lag</em> for forward/backward inclination in the feed-direction plane and <em>side tilt</em> for lateral inclination; source-specific angle labels require their coordinate definitions to be reconciled before reuse.</p>
+<p>Orientation is both a cutting variable and a clearance variable. A desired inclination can improve contact yet place the holder in an obstacle. Interpolation must also preserve meaningful intermediate directions: spherical interpolation follows the unit sphere, whereas component-wise linear interpolation generally changes vector magnitude unless corrected.</p>
+<h3 id="7-4-singularities-reachability-admissible-orientation-domains-and-avoidance">7.4 Singularities, reachability, admissible orientation domains, and avoidance</h3>
+<p>Near a kinematic singularity, a small requested orientation change can demand a large rotary movement. Abrupt branch changes can produce flips or reversals even when adjacent tool vectors appear close together. Rotary travel limits create a separate need for controlled unwinding.</p>
+<p>The admissible orientation domain must therefore account for local gouging, whole-assembly clearance, axis limits, singularities, and dynamic feasibility. Avoidance can modify the tool-vector field, choose another inverse-kinematic branch, reduce feed, or introduce a verified retract and reconfiguration. Isolated pose checks cannot establish continuity of the complete path.</p>
+<h3 id="7-5-tcp-rtcp-tcpc-and-controller-side-kinematic-compensation">7.5 TCP/RTCP/TCPC and controller-side kinematic compensation</h3>
+<p>Tool-center-point functions move part of kinematic computation into the controller. The program describes the intended tool point and orientation, while the controller applies tool length, pivots, and its machine model to command the axes.</p>
+<p>Alternatively, a postprocessor can resolve more of that motion offline. The distinction is ownership of the transform. Controller-side compensation can accommodate supported tool-length changes, but it still depends on calibration, active modes, and target capability. Similar TCP-related names across vendors do not establish interchangeable activation or programming semantics.</p>
+<h3 id="7-6-mixed-axis-feed-synchronization-and-inverse-time-semantics">7.6 Mixed-axis feed synchronization and inverse-time semantics</h3>
+<p>Linear travel and rotary travel use different units, and rotary motion produces radius-dependent physical displacement. In the inverse-time convention described by the source reports, block feed is</p>
+<p>$$
+F=\frac{1}{t},
+$$</p>
+<p>where $t$ is the intended block duration in minutes. This makes the timing intent explicit for coordinated axes.</p>
+<p>Inverse-time feed is not required by every five-axis control mode. Some controller/TCP combinations interpret a tool-tip feed directly. In either case, the achieved feed can be reduced or reshaped by look-ahead, acceleration, jerk, and servo limits; a commanded block time does not guarantee constant instantaneous chip load.</p>
+<h3 id="7-7-3d-cutter-volumetric-and-nonlinear-kinematic-compensation">7.7 3D cutter, volumetric, and nonlinear kinematic compensation</h3>
+<p>Three-dimensional cutter compensation needs contact-direction information beyond ordinary planar radius compensation. A small wear correction may be applied along an appropriate surface or contact direction, but multiple simultaneous contacts can make that direction ambiguous. Such compensation cannot replace full gouge and collision analysis.</p>
+<p>Volumetric compensation addresses calibrated machine-geometry errors. Dynamic tracking and nonlinear interpolation introduce additional deviations, especially when translation and rotation occur together. The architecture must distinguish ideal pose, feasible joint motion, compensated commands, and achieved motion; agreement at one layer does not establish agreement at all four.</p>
+<h2 id="8-manufacturing-intermediate-representations-and-semantic-lowering">8. Manufacturing Intermediate Representations and Semantic Lowering</h2>
+<h3 id="8-1-semantic-source-irs-and-process-operation-representations">8.1 Semantic source IRs and process/operation representations</h3>
+<p>An intermediate representation, or IR, is a contract about meaning at a particular stage. Product IR retains geometry, PMI, identity, and revision authority. Manufacturing and feature IRs add process-aware interpretations. Process Plan IR records operations and dependencies before detailed motion is committed.</p>
+<p>Setup and Operation IRs bind those decisions more tightly to production. An operation associates a feature or task with a tool, setup, strategy, resource, and parameter envelope. Preserving that structure makes a change explainable: replacing a tool is a resource decision with downstream consequences, not merely a different number in an NC file.</p>
+<h3 id="8-2-apt-cldata-nci-and-machine-agnostic-motion-representations">8.2 APT, CLDATA/NCI, and machine-agnostic motion representations</h3>
+<p>APT and cutter-location formats illustrate the transition toward geometric motion. A neutral motion representation can carry workpiece-relative positions, tool-axis vectors, and technological state while leaving machine joints and controller dialect unresolved. Proprietary formats such as NCI can occupy a similar architectural layer.</p>
+<p>Neutrality has limits. A tool pose does not establish which rotary solution a trunnion or swivel head should use, whether that solution is within travel, or how a controller interprets transformations. Those questions belong to later machine binding and compilation.</p>
+<h3 id="8-3-layered-manufacturing-ir-architecture-provenance-and-source-maps">8.3 Layered manufacturing IR architecture, provenance, and source maps</h3>
+<p>The exact number of IRs is an implementation choice. The useful distinction is what each layer knows:</p>
+<table><thead><tr><th>Layer</th><th>Primary question</th><th>Information retained</th></tr></thead><tbody>
+<tr><td>Semantic source</td><td>What must be made?</td><td>Geometry, PMI, requirements, identity, revision</td></tr>
+<tr><td>Process and operation</td><td>What work will realize it?</td><td>Features, workingsteps, precedence, setups, tools</td></tr>
+<tr><td>Tool motion</td><td>How should the ideal tool move?</td><td>Positions, curves, orientations, process state</td></tr>
+<tr><td>Machine kinematics</td><td>How must this machine move?</td><td>Joint solutions, limits, synchronization</td></tr>
+<tr><td>Target NC</td><td>What must this controller execute?</td><td>Blocks, modes, cycles, macros, auxiliary actions</td></tr>
+</tbody></table>
+<p>Lowering intentionally narrows information. Source maps preserve the connection from an NC block to its trajectory segment, operation, feature, and engineering requirement. This makes system-level traceability possible even when the executable itself has lost feature semantics.</p>
+<p>Untracked NC edits break that relationship. A controlled edit must become a revision with reconciled provenance; reconstructing the complete original intent from arbitrary edited code is not a dependable recovery strategy.</p>
+<h3 id="8-4-step-nc-roles-workingsteps-arm-aim-distinctions-and-use-profiles">8.4 STEP-NC roles, Workingsteps, ARM/AIM distinctions, and use profiles</h3>
+<p>STEP-NC provides a richer model for features, operations, tools, and workingsteps than a coordinate program alone. A workingstep associates a manufacturing feature with an operation and its technology context; workplans organize those steps.</p>
+<p>The source distinguishes ISO 14649's machining-oriented Application Reference Model from AP238's integration into the STEP information model. It also describes several use profiles: internal process planning, exchange of manufacturing intent, and more capable downstream execution.</p>
+<p>Those representational capabilities do not establish universal controller support. An architecture can retain STEP-NC-like semantics internally and lower them to the conventional NC required by its installed machines. Payload semantics, controller adoption, and transport remain separate concerns.</p>
+<h3 id="8-5-serialization-determinism-schema-evolution-and-semantic-loss-boundaries">8.5 Serialization, determinism, schema evolution, and semantic-loss boundaries</h3>
+<p>Every IR needs explicit units, frames, identifiers, schema versions, references, validation rules, and lifecycle state. Rich semantic structures and high-frequency numerical streams need not use the same serialization.</p>
+<p>Reproducibility also requires the decision inputs: algorithm versions, solver configuration, model weights, seeds where relevant, and resource state. Deterministic emission does not imply that process planning has only one valid answer. The durable source remains the engineering and manufacturing state together with its provenance, while NC remains a derived release artifact.</p>
+<h2 id="9-post-processing-and-target-specific-nc-compilation">9. Post-Processing and Target-Specific NC Compilation</h2>
+<h3 id="9-1-postprocessor-input-ir-and-target-nc-ast">9.1 Postprocessor input IR and target NC AST</h3>
+<p>A postprocessor is a compiler backend with physical consequences. Its input includes motion, orientation, process state, tolerances where available, and source identity. It resolves target requirements before serializing controller code.</p>
+<p>A target NC abstract syntax tree, or AST, can represent blocks, modal changes, cycles, variables, subprograms, and control flow. This allows structural validation and transformation before text emission, including checking that a required mode is active before a motion uses it.</p>
+<h3 id="9-2-machine-controller-configuration-hierarchy-and-dialect-boundaries">9.2 Machine/controller/configuration hierarchy and dialect boundaries</h3>
+<p>The target must separate machine geometry, controller capability, dialect semantics, machine-builder integration, and shop configuration. Two similar machines can require different output because their controls, options, or auxiliary functions differ. A shared word-address syntax does not settle those differences.</p>
+<p>The post must also establish which layer owns each transform. It can resolve kinematics offline or delegate supported functions to the controller, but it cannot assume a runtime capability that is absent from the installed configuration.</p>
+<h4 id="unresolved-haas-g268-g254-mapping-in-the-corpus">Unresolved Haas G268/G254 mapping in the corpus</h4>
+<p>The source reports describe G268 and G254 with differing terminology and workflow boundaries. They also contain an inconsistent association for G68.2 elsewhere in the controller discussion. These discrepancies do not support a normalized programming recipe. The architectural requirement is target-specific semantic validation against the actual controller configuration.</p>
+<h3 id="9-3-event-driven-state-machines-callbacks-mom-and-buffering">9.3 Event-driven state machines, callbacks, MOM, and buffering</h3>
+<p>Many posts consume events such as program start, operation change, tool change, and linear motion. A Manufacturing Output Manager or equivalent state engine tracks the active coordinate, tool, spindle, and modal context across callbacks.</p>
+<p>Prepasses can collect global information before emission, while buffers allow blocks to be revised before output. Callback systems and structured compiler passes can coexist. The maintainability requirement is that consequential state remain explicit, rather than becoming scattered assumptions in unrelated text handlers.</p>
+<h3 id="9-4-coordinate-tool-cycle-macro-and-auxiliary-function-lowering">9.4 Coordinate, tool, cycle, macro, and auxiliary-function lowering</h3>
+<p>Lowering binds abstract operations to concrete controller behavior. A setup becomes a work-offset convention; a tool becomes a tool-change and compensation sequence; a drilling operation becomes a supported cycle or equivalent explicit moves. Coolant, clamps, and transfer devices require machine-builder-specific actions.</p>
+<p>Macros and probing cycles also need structured treatment because they read variables, branch, and modify runtime state. Selecting a native cycle is valid only when its parameters, modal effects, and cancellation behavior preserve the operation's intended semantics.</p>
+<h3 id="9-5-kinematic-resolution-rotary-management-and-multi-channel-synchronization">9.5 Kinematic resolution, rotary management, and multi-channel synchronization</h3>
+<p>Machine binding selects rotary solutions and handles overtravel, continuity, and verified reconfiguration. Delegating these functions to a controller changes responsibility without removing it from the system's assurance requirements.</p>
+<p>Multi-channel machines additionally require a concurrency protocol. Wait marks, spindle transfer, clamp state, and coordinate changes must agree across streams. Two individually valid programs can collide or deadlock when executed together, so synchronization belongs in the compiled model.</p>
+<h3 id="9-6-optimization-passes-source-mapping-testing-and-postprocessor-assurance">9.6 Optimization passes, source mapping, testing, and postprocessor assurance</h3>
+<p>Point reduction, arc fitting, and supported spline output can reduce controller burden, provided they respect geometry and target capability. Source maps should survive these passes so a problem can still be traced to its originating operation.</p>
+<p>Post changes require controlled versions and meaningful regression cases for transformations, modal sequencing, cycles, and synchronization. The final generated NC must then be verified: upstream CAM checks cannot see behavior introduced by compilation.</p>
+<h2 id="10-verification-simulation-collision-safety-and-digital-twins">10. Verification, Simulation, Collision Safety, and Digital Twins</h2>
+<h3 id="10-1-verification-taxonomy-intent-level-through-controller-physical-levels">10.1 Verification taxonomy: intent-level through controller/physical levels</h3>
+<p>Verification claims depend on what was modeled:</p>
+<table><thead><tr><th>Verification level</th><th>What it can examine</th><th>What remains outside its claim</th></tr></thead><tbody>
+<tr><td>Neutral tool motion</td><td>Path geometry and orientation consistency</td><td>Final target semantics and machine state</td></tr>
+<tr><td>Material removal</td><td>Gouges, residual stock, modeled shape</td><td>Complete machine behavior and cutting physics</td></tr>
+<tr><td>Machine and kinematics</td><td>Components, limits, branches, synchronization</td><td>Unmodeled controller or physical effects</td></tr>
+<tr><td>Postprocessed NC/controller</td><td>Generated program and supported runtime semantics</td><td>Unrepresented behavior and actual setup mismatch</td></tr>
+<tr><td>Physical process</td><td>Predicted force, deflection, chatter, thermal effects</td><td>Variation beyond model calibration and scope</td></tr>
+</tbody></table>
+<p>These checks accumulate evidence. Passing one does not absorb the responsibilities of the others.</p>
+<h3 id="10-2-stock-ipw-and-swept-volume-simulation-representations">10.2 Stock/IPW and swept-volume simulation representations</h3>
+<p>Material-removal simulation subtracts the cutter's swept volume from stock. Changing orientation makes that envelope more complex than a simple extrusion. Sampling, topology, and numerical tolerances influence what the resulting IPW can resolve.</p>
+<p>Exact solids, dexels, voxels, octrees, and distance fields offer different fidelity and update costs. A hybrid can use a fast global representation and localized refinement where finishing tolerances demand it. Acceleration improves throughput; it does not remove discretization error or recover geometry omitted from the scene.</p>
+<h3 id="10-3-gouge-collision-axis-limit-and-inverse-kinematic-checks">10.3 Gouge, collision, axis-limit, and inverse-kinematic checks</h3>
+<p>Gouge checking asks whether removal violates the intended part. Collision checking asks whether bodies that should remain separated intersect. Axis and inverse-kinematic checks ask whether the requested pose can be realized through an admissible joint path.</p>
+<p>Broad-phase bounding structures can reject clearly separated body pairs before narrower geometric tests. Continuous checks can address motion missed between discrete samples. Multi-channel verification must include timing, and every retract or unwind must be checked as part of the machine trajectory.</p>
+<p>An exact intersection calculation still gives the wrong assurance if the modeled clamp position, holder, or stock is wrong. Model completeness is a separate condition from algorithmic precision.</p>
+<h3 id="10-4-postprocessed-nc-verification-and-controller-emulation">10.4 Postprocessed NC verification and controller emulation</h3>
+<p>The machine executes the compiled program with active offsets, modes, variables, and controller functions. Verification must therefore inspect that program under the intended execution configuration, including macros, cycles, rotary choices, and transformation state.</p>
+<p>Controller emulation has its own coverage boundary. Unmodeled proprietary functions or different interpolation behavior can produce divergence. The verification record should identify the controller model and supported behavior rather than allowing a generic “passed simulation” label to imply complete runtime equivalence.</p>
+<h3 id="10-5-physical-process-simulation-force-chatter-deflection-and-thermal-effects">10.5 Physical-process simulation: force, chatter, deflection, and thermal effects</h3>
+<p>A collision-free trajectory can still produce an unacceptable part. Engagement drives cutting force; force drives tool and workpiece displacement; vibration modifies chip thickness; heat changes dimensions and surface condition.</p>
+<p>Physical simulation predicts those effects using calibrated properties and assumed state. Its result should retain coefficient, stiffness, damping, wear, and thermal assumptions. Measurement can challenge and refine those assumptions, but successful prediction in one configuration does not establish validity after an unmodeled resource or process change.</p>
+<h3 id="10-6-digital-twins-release-gates-and-model-completeness-limits">10.6 Digital twins, release gates, and model-completeness limits</h3>
+<p>In the stronger sense used here, a digital twin connects modeled and observed manufacturing state. Offline simulation remains valuable, while measurement-linked state adds a basis for detecting divergence and updating the model.</p>
+<p>A release record should identify the exact artifact, configuration, verification coverage, tolerances, and unresolved conditions. Fixed force margins or clearance values in a reference architecture remain application-specific proposals until justified for the actual process. “Verified” is a statement bounded by that evidence.</p>
+<h2 id="11-deployment-job-packaging-data-transfer-and-cybersecurity">11. Deployment, Job Packaging, Data Transfer, and Cybersecurity</h2>
+<h3 id="11-1-manufacturing-job-package-and-deployment-ir">11.1 Manufacturing job package and deployment IR</h3>
+<p>Deployment binds the executable to the conditions under which it was approved. A job package includes programs and subprograms, setup instructions, tooling and preset data, fixture and stock definitions, offset requirements, inspection plans, verification evidence, eligibility, and revision provenance.</p>
+<p>Late binding can retain neutral planning or motion data until scheduling selects a machine. The selected target must still be compiled and verified before its machine-bound executable is released. A signed neutral artifact does not bypass target-specific assurance.</p>
+<h3 id="11-2-release-state-machine-revision-control-and-machine-eligibility">11.2 Release state machine, revision control, and machine eligibility</h3>
+<p>Approval, physical readiness, and permission to execute are separate states. A representative progression moves from editable draft through simulation, verification, approval, release, transfer, staging, loading, and execution authorization. Completion links runtime and inspection records to the released revision.</p>
+<p>Staging must confirm that fixture, stock, tools, offsets, and machine configuration match the package. Released content should change through a new controlled revision. A familiar filename or approved main program cannot protect against a stale shared subprogram or an incorrect tool table.</p>
+<h3 id="11-3-dnc-rs-232-ethernet-file-deposition-and-streaming">11.3 DNC, RS-232, Ethernet, file deposition, and streaming</h3>
+<p>Complete file deposition and execution-time streaming have different failure modes. When a program fits local storage, transferring it before execution separates network timing from interpolation. Drip feeding makes throughput and buffering part of motion continuity.</p>
+<p>Dense short-block output can consume data faster than a constrained link or controller interface supplies it. Starvation can cause hesitation and alter the feed assumed by the cutting model. Nominal network bandwidth alone does not establish usable CNC throughput; framing, storage, parsing, and buffer behavior also matter.</p>
+<h3 id="11-4-telemetry-data-protocols-and-read-write-role-separation">11.4 Telemetry/data protocols and read/write role separation</h3>
+<p>Machine observation and machine control need distinct authority. The source treats MTConnect as a read-oriented model for normalized machine-state data. OPC UA provides a structured information model with read, write, and method capabilities where implemented and authorized.</p>
+<p>Neither a semantic manufacturing payload nor a monitoring vocabulary is automatically a program-transfer mechanism. Likewise, supervisory telemetry is distinct from the deterministic networks carrying drive set-points. Protocol selection must follow the required role, timing, and permitted state changes.</p>
+<h3 id="11-5-cybersecurity-segmentation-cryptographic-integrity-and-roots-of-trust">11.5 Cybersecurity, segmentation, cryptographic integrity, and roots of trust</h3>
+<p>Manufacturing instructions are a cyber-physical control surface. Integrity controls should bind the approved package to the bytes and configuration staged at the machine. Signatures and hashes can expose unauthorized changes, while identity and authorization govern who may release or modify executable state.</p>
+<p>Segmented OT networks and controlled IT/OT transfer boundaries reduce direct exposure of controllers. Removable media, backups, and legacy devices require compatible controls because they can bypass or constrain network protection. Hardware roots of trust can strengthen suitable edge platforms, but a valid signature still does not prove that a package describes the correct fixture or engineering revision.</p>
+<h3 id="11-6-reference-deployment-architectures-and-operational-governance">11.6 Reference deployment architectures and operational governance</h3>
+<p>A small shop may use explicit approved-revision controls and basic DNC; a networked factory may use centralized release and machine orchestration; an automated cell needs stronger unattended staging and recovery. Auditable production adds durable links between the released process and physical conformance evidence.</p>
+<p>Across these arrangements, the governing questions remain stable: which revision was approved, which configuration was eligible, what was transferred and loaded, and what execution and inspection records returned? Deployment is complete when a known package reaches an authorized physical context, with those relationships intact.</p>
+<h2 id="12-cnc-runtime-interpretation-interpolation-and-servo-dynamics">12. CNC Runtime Interpretation, Interpolation, and Servo Dynamics</h2>
+<h3 id="12-1-nc-parser-modal-state-macros-subprograms-and-canned-cycles">12.1 NC parser, modal state, macros, subprograms, and canned cycles</h3>
+<p>The controller interprets a stateful program. Coordinates inherit positioning mode, active frame, interpolation mode, feed semantics, and compensation. Macros and subprograms add variable state and control flow; canned cycles expand compact instructions into controller-managed sequences.</p>
+<p>A mid-program restart must reconstruct the prerequisite state. Selecting a line of text does not by itself restore the conditions under which that line was generated or previously executed.</p>
+<h3 id="12-2-runtime-transforms-work-tool-offsets-and-execution-state">12.2 Runtime transforms, work/tool offsets, and execution state</h3>
+<p>Work offsets register the part, tool-length and wear values describe effective tooling, and active transforms map the programmed path into machine motion. With TCP functionality, changing measured tool length or pivot state can change joint trajectories while preserving the nominal tool-point request.</p>
+<p>Activation and cancellation of those transforms are consequential events. The same nominal coordinate can produce different motion under a different frame or compensation state. Runtime configuration therefore belongs with the execution record, rather than being treated as incidental controller setup.</p>
+<h3 id="12-3-look-ahead-path-blending-exact-stop-continuous-path-modes">12.3 Look-ahead, path blending, exact-stop/continuous-path modes</h3>
+<p>Short geometric blocks create a processing and timing burden. If the controller cannot prepare them at the rate motion requires, feed can fall below the planned value. In a chip-load-sensitive process, that changes cutting conditions as well as cycle time.</p>
+<p>Exact-stop behavior prioritizes reaching a point under specified conditions; continuous-path behavior permits controlled blending to maintain motion. Look-ahead examines future geometry and limits so deceleration can begin before a restrictive region. Smoothing must therefore consume an explicit tolerance allowance, with settings appropriate to the operation.</p>
+<h3 id="12-4-spline-nurbs-interpolation-micro-block-management-and-jerk-limited-trajectories">12.4 Spline/NURBS interpolation, micro-block management, and jerk-limited trajectories</h3>
+<p>Supported spline or NURBS interpolation can express a smooth path with fewer explicit boundaries than a dense line sequence. The controller still needs to parameterize the curve over time and respect joint limits. Compact geometry does not make constant physical feed automatic.</p>
+<p>Position and orientation also require compatible interpolation. Parametric continuity and geometric continuity describe different properties; labels such as $C^3$ and $G^3$ should not be treated as interchangeable promises about machine jerk. Bounded-jerk trajectory planning constrains the time derivative of acceleration while remaining subject to the machine's dynamics.</p>
+<h3 id="12-5-cascaded-servo-loops-feed-forward-following-error-and-timing">12.5 Cascaded servo loops, feed-forward, following error, and timing</h3>
+<p>The interpolator supplies timed set-points to nested control loops. The position loop corrects position error, the velocity loop regulates speed, and the current or torque loop drives motor effort. Feed-forward anticipates known trajectory changes rather than relying entirely on delayed feedback.</p>
+<p>Following error is the difference between commanded and measured axis position. Contour error concerns deviation from the desired path and can arise when coordinated axes lag differently. Increasing feedback gain is constrained by mechanical resonance, which makes trajectory shaping and appropriate feed-forward relevant to accuracy.</p>
+<p>Planner and servo stages operate at different rates. The source's varied timing examples cannot be collapsed into one universal “CNC update rate.”</p>
+<h3 id="12-6-mechanical-volumetric-backlash-and-thermal-error-at-runtime">12.6 Mechanical, volumetric, backlash, and thermal error at runtime</h3>
+<p>Backlash, geometric error, thermal drift, and load-dependent displacement separate physical motion from the nominal model. Calibration and compensation reduce modeled components, while warm-up, homing, tool setting, and work-offset establishment define the starting physical state.</p>
+<p>Operator feed overrides, optional stops, block skip, and other interventions can change the run without changing the stored program. Recording these events is necessary to explain why the successful physical process differed from its nominal schedule.</p>
+<h2 id="13-probing-metrology-adaptive-control-and-closed-loop-feedback">13. Probing, Metrology, Adaptive Control, and Closed-Loop Feedback</h2>
+<h3 id="13-1-probe-sensor-architectures-calibration-and-error-sources">13.1 Probe sensor architectures, calibration, and error sources</h3>
+<p>A probe measurement depends on trigger behavior, stylus geometry, approach direction, calibration, and the machine carrying it. Mechanical touch-trigger probes can exhibit directional pre-travel variation; strain sensing can reduce aspects of that variation, but neither mechanism makes the entire measurement chain error-free.</p>
+<p>Repeatability and accuracy are distinct. A repeatable trigger can remain biased by calibration, thermal state, machine geometry, contamination, or an inappropriate approach direction. Probe configuration and measurement geometry therefore belong in the inspection definition.</p>
+<h3 id="13-2-skip-signal-macro-execution-and-probing-path-geometry">13.2 Skip-signal/macro execution and probing path geometry</h3>
+<p>A probing move monitors a trigger and captures contact position for subsequent calculation. Protected positioning adds a controlled response to unexpected contact. Target-specific cycles package these behaviors into surface, bore, pocket, tool, or vector measurements.</p>
+<p>Look-ahead creates a sequencing hazard: arithmetic must use the result of the physical touch, not a stale variable evaluated before it. Measurement capture, variable update, offset calculation, and corrective motion require an explicit execution boundary appropriate to the controller.</p>
+<h3 id="13-3-wcs-establishment-rotated-setup-alignment-and-datum-correction">13.3 WCS establishment, rotated setup alignment, and datum correction</h3>
+<p>Setup probing measures the part's actual position and, where supported, orientation. The resulting correction updates the work-coordinate transform while retaining the nominal product geometry.</p>
+<p>The permitted correction has limits. A measured shift can expose insufficient stock, fixture interference, or axis overtravel. Such a result requires setup recovery or replanning; increasing the coordinate correction cannot establish that the original path remains valid.</p>
+<h3 id="13-4-tool-measurement-wear-offsets-and-compensation-loops">13.4 Tool measurement, wear offsets, and compensation loops</h3>
+<p>Tool measurement corrects a different state. Presetting can establish nominal geometry, while on-machine measurement can detect the tool's effective length or radius in the current environment. Geometry and incremental wear values should remain distinguishable.</p>
+<p>A bounded wear correction can support continued production. A broken tool, excessive wear, or gross setup discrepancy requires replacement or investigation. A wear register is not a general mechanism for absorbing unexplained error.</p>
+<h3 id="13-5-in-process-inspection-conditional-remachining-and-adaptive-control">13.5 In-process inspection, conditional remachining, and adaptive control</h3>
+<p>A cut–measure–cut loop compares a feature measurement with its requirement, then accepts, corrects, remachines, or escalates. Recoverability depends on the remaining material and the cause of deviation. Removed material cannot be restored through another subtractive pass.</p>
+<p>Different feedback loops measure and change different states:</p>
+<table><thead><tr><th>Loop</th><th>Measured state</th><th>Permitted response</th></tr></thead><tbody>
+<tr><td>Setup alignment</td><td>Datum position or orientation</td><td>Bounded work-frame correction</td></tr>
+<tr><td>Tool control</td><td>Effective length, radius, or wear</td><td>Wear correction, replacement, or stop</td></tr>
+<tr><td>Feature correction</td><td>Intermediate geometry</td><td>Validated recut or disposition</td></tr>
+<tr><td>Process adaptation</td><td>Load, vibration, or related signals</td><td>Bounded feed or spindle adjustment</td></tr>
+<tr><td>Planning feedback</td><td>Accumulated quality and process evidence</td><td>Reviewed parameter or plan revision</td></tr>
+</tbody></table>
+<p>Magnitude limits, validity checks, and failure ownership belong in each loop. The response rate must suit the event and available control interface; the source's timing examples do not establish interchangeable capabilities across these layers.</p>
+<h3 id="13-6-qif-digital-twin-feedback-semantics-and-traceability">13.6 QIF/digital-twin feedback semantics and traceability</h3>
+<p>A measurement requires semantic identity to become useful engineering evidence. QIF links inspection planning and results to the characteristics being evaluated. Persistent identifiers can connect the requirement, feature, operation, NC segment, execution state, and measured result.</p>
+<p>That relationship lets feedback revise the appropriate model or parameter while preserving the prior release record. A corrected offset should retain the measurement that justified it, the authorization under which it changed, and the operation affected. Raw controller variables alone do not provide that context.</p>
+<h3 id="13-7-common-mode-limits-independent-metrology-and-escalation">13.7 Common-mode limits, independent metrology, and escalation</h3>
+<p>On-machine probing can share systematic errors with the machine that cut the feature. Low-speed measurement removes cutting-force effects from the immediate measurement event, but it does not make the machine geometry independent of itself.</p>
+<p>Closed-loop machining is therefore measurement-responsive rather than automatically self-certifying. Independent metrology remains necessary when the acceptance requirement or unresolved uncertainty demands it. Small recoverable errors can be compensated within approved limits; other cases require tool replacement, regenerated paths, re-fixturing, quality disposition, or engineering review.</p>
+<h2 id="14-autonomous-platform-architecture-safety-testing-and-systems-engineering">14. Autonomous Platform Architecture, Safety, Testing, and Systems Engineering</h2>
+<h3 id="14-1-platform-modules-service-boundaries-and-ownership-of-state">14.1 Platform modules, service boundaries, and ownership of state</h3>
+<p>The platform composes the preceding layers into a controlled compiler-and-runtime system. Its modules need bounded inputs, owned outputs, explicit validation, and traceable dependencies. The reason to separate services is clarity of responsibility, not a prescribed number of processes or deployment units.</p>
+<table><thead><tr><th>Domain</th><th>Owned state</th><th>Principal responsibility</th></tr></thead><tbody>
+<tr><td>Engineering ingestion</td><td>Product geometry, PMI, revision</td><td>Establish authoritative intent and import fidelity.</td></tr>
+<tr><td>Manufacturing planning</td><td>Features, operations, setups</td><td>Select a feasible production method.</td></tr>
+<tr><td>Resources and motion</td><td>Tools, fixtures, capabilities, IPW, paths</td><td>Bind the method to physical constraints.</td></tr>
+<tr><td>Compilation and verification</td><td>Kinematics, target program, evidence</td><td>Establish target-specific executability.</td></tr>
+<tr><td>Execution and quality</td><td>Runtime events, measurements, corrections</td><td>Record outcomes and govern feedback.</td></tr>
+</tbody></table>
+<p>Engineering authority does not absorb every physical fact. Tool and machine records can be authoritative for their own measured domains without rewriting product requirements. Their relationships must remain explicit when a change propagates.</p>
+<h3 id="14-2-end-to-end-artifact-state-pipeline-and-orchestration">14.2 End-to-end artifact/state pipeline and orchestration</h3>
+<p>Orchestration advances typed artifacts through validation gates. An operation depends on feature, tool, setup, and resource state; a toolpath depends on that operation; machine motion adds the kinematic configuration; target NC adds controller and postprocessor configuration. Execution and inspection then attach evidence to the released result.</p>
+<p>The standards occupy distinct roles:</p>
+<table><thead><tr><th>Standard or family</th><th>Architectural role</th><th>Boundary to preserve</th></tr></thead><tbody>
+<tr><td>STEP AP242</td><td>Product geometry and semantic PMI</td><td>Exchange capability does not prove semantic preservation.</td></tr>
+<tr><td>ISO 14649 / AP238</td><td>Manufacturing features, processes, workingsteps</td><td>Expressive capability does not prove installed execution support.</td></tr>
+<tr><td>ISO 6983 / target NC</td><td>Controller execution artifact</td><td>Lowered code does not retain all product meaning.</td></tr>
+<tr><td>MTConnect</td><td>Read-oriented machine observation</td><td>Monitoring does not confer write authority.</td></tr>
+<tr><td>OPC UA</td><td>Structured information and supported control interfaces</td><td>Available methods and permissions depend on implementation.</td></tr>
+<tr><td>QIF / ISO 23952</td><td>Inspection and measurement relationships</td><td>Results still need valid transforms and uncertainty treatment.</td></tr>
+</tbody></table>
+<p>Failure routes should be explicit. A rejected digital artifact can be regenerated; an executed cut requires decisions based on the material and machine state that now exist.</p>
+<h3 id="14-3-safety-architecture-validation-gates-fail-safe-behavior-and-human-escalation">14.3 Safety architecture, validation gates, fail-safe behavior, and human escalation</h3>
+<p>Autonomy needs blocking conditions at the boundaries where assumptions become consequential. Geometry and PMI failures block ingestion. Infeasible resources or sequences block planning. Gouges, collisions, kinematic violations, and unsupported target semantics block release. Package mismatch or incorrect setup blocks execution authorization.</p>
+<p>Runtime faults require controller-appropriate responses, followed by inspection and disposition. A bounded adaptive correction may be permitted for a known condition; an unexplained anomaly must not authorize progressively larger changes merely to keep production moving.</p>
+<p>Human escalation needs context: the failed requirement, implicated artifact, modeled configuration, observed state, and available recovery choices. This makes review an accountable decision within the architecture rather than an informal exception outside it.</p>
+<h3 id="14-4-data-storage-provenance-security-architecture-across-modules">14.4 Data/storage/provenance/security architecture across modules</h3>
+<p>Versioned artifacts, content identities, and event histories can preserve what each transformation consumed and produced. Dependency graphs support impact analysis, while execution time series retain the physical chronology. Their links make a changed tool, offset, post, or engineering requirement traceable across the job.</p>
+<p>Security and release integrity must share that context. Authentication governs who may act; signatures establish artifact integrity; eligibility checks establish where the artifact may run. None substitutes for the others. Edge behavior must also be defined for lost connectivity so a network failure does not create an undefined control state.</p>
+<h3 id="14-5-testing-strategy-datasets-benchmarks-and-acceptance-criteria">14.5 Testing strategy, datasets, benchmarks, and acceptance criteria</h3>
+<p>Testing needs coverage across semantics and physical realization. Geometry and transform tests address mathematical functions. Integration tests exercise complete artifact chains. Postprocessor regression checks target behavior and state transitions. Controller or hardware-in-the-loop testing examines execution assumptions that software-only models may miss.</p>
+<p>A large dataset is useful only if its composition covers the relevant risks: topology, PMI, materials, process families, setups, tooling, machine structures, controller dialects, and known failure modes. Recognition accuracy must be evaluated against unseen and interacting features, not only familiar examples.</p>
+<p>Acceptance should separately establish reproducible artifacts, preserved semantics, geometric and kinematic compliance, target-code behavior, deployment identity, runtime bounds, and measured quality. Failure cases must include malformed PMI, stale offsets, tool mismatch, rotary unwinds, channel deadlock, unsupported macros, telemetry loss, and incomplete models. Byte-identical output alone cannot establish a conforming part.</p>
+<h3 id="14-6-build-versus-buy-choices-implementation-roadmap-and-operational-maturity">14.6 Build-versus-buy choices, implementation roadmap, and operational maturity</h3>
+<p>The source architecture treats semantic planning, IR contracts, and provenance as core platform concerns, while mature geometry, toolpath, and machine-interface components are integration candidates. The decision should follow validation burden and required control over behavior, rather than a universal preference for internal development.</p>
+<p>A bounded implementation can progress from prismatic three-axis work to indexed setups, then simultaneous five-axis and mill-turn, and finally more demanding synchronization and feedback. That sequence is a development pattern, not a required maturity ladder. Quoting, high-mix production, high-volume production, and unattended operation require different assurance depth and recovery coverage.</p>
+<h3 id="14-7-hidden-assumptions-architectural-risks-and-open-research-gaps">14.7 Hidden assumptions, architectural risks, and open research gaps</h3>
+<p>The most consequential risks are often assumptions that became invisible: the imported PMI is complete, the installed holder matches the model, clamp force is adequate, stock is nominal, calibration remains valid, telemetry arrives in time, and the simulator reproduces every controller behavior. Each needs evidence, monitoring, or an explicit operating boundary.</p>
+<p>The source identifies unresolved work in recognition of complex interacting topology, rapid prediction of process-induced material changes, synchronization with real machine dynamics, feedback control of deforming parts, and reconstruction of rich intent from arbitrary controller code. These gaps limit where automation can establish its own result.</p>
+<p>Software reproducibility and physical repeatability remain different achievements. A platform can regenerate identical instructions while material, wear, temperature, and setup vary. Its governing contract is to preserve intent, bind decisions to explicit assumptions, test the transitions, and let measured reality challenge the model. When that evidence no longer supports the next action, the correct system behavior is to stop authorizing it.</p>
+<h3 id="references-further-reading">References &amp; Further Reading</h3>
+<p>The following standards and technical resources provide representative background for the architecture and concepts discussed in this article.</p>
+<ul>
+<li><strong>International Organization for Standardization. (2025).</strong> <em>ISO 10303-242:2025 — Industrial automation systems and integration — Product data representation and exchange — Part 242: Application protocol: Managed model-based 3D engineering</em>. (Covers STEP-based product definition, geometry, PMI, configuration, and model-based exchange.)</li>
+<li><strong>International Organization for Standardization. (2004).</strong> <em>ISO 14649-10:2004 — Industrial automation systems and integration — Physical device control — Data model for computerized numerical controllers — Part 10: General process data</em>. (Defines STEP-NC workplans, workingsteps, machining features, and general process semantics.)</li>
+<li><strong>International Organization for Standardization. (2022).</strong> <em>ISO 10303-238:2022 — Industrial automation systems and integration — Product data representation and exchange — Part 238: Application protocol: Model based integrated manufacturing</em>. (Integrates product geometry, tolerancing, and machining process information for model-based manufacturing.)</li>
+<li><strong>International Organization for Standardization. (2006).</strong> <em>ISO 13399-1:2006 — Cutting tool data representation and exchange — Part 1: Overview, fundamental principles and general information model</em>. (Defines machine-readable cutting-tool data and exchange semantics for tooling systems.)</li>
+<li><strong>Altintas, Y. (2012).</strong> <em>Manufacturing Automation: Metal Cutting Mechanics, Machine Tool Vibrations, and CNC Design</em> (2nd ed.). Cambridge University Press. (Foundational treatment of cutting mechanics, chatter, CNC control, and sensor-assisted machining.)</li>
+<li><strong>International Organization for Standardization. (2021).</strong> <em>ISO 23247-1:2021 — Automation systems and integration — Digital twin framework for manufacturing — Part 1: Overview and general principles</em>. (Defines the general principles and requirements for manufacturing digital twins.)</li>
+<li><strong>MTConnect Institute. (2025).</strong> <em>MTConnect Standard, Version 2.5</em>. (Defines a semantic model and interface for read-oriented manufacturing-equipment data.)</li>
+<li><strong>OPC Foundation. (2025).</strong> <em>OPC Unified Architecture Specification, Part 1: Overview and Concepts</em> (Version 1.05.06). (Defines the core information, service, security, and client/server concepts behind OPC UA.)</li>
+<li><strong>International Organization for Standardization. (2020).</strong> <em>ISO 23952:2020 — Automation systems and integration — Quality information framework (QIF) — An integrated model for manufacturing quality information</em>. (Defines interoperable quality, inspection, and metrology information across manufacturing workflows.)</li>
+<li><strong>Stouffer, K., Pease, M., Tang, C., Zimmerman, T., Pillitteri, V., Lightman, S., Hahn, A., Saravia, S., Sherule, A., &amp; Thompson, M. (2023).</strong> <em>NIST SP 800-82 Rev. 3: Guide to Operational Technology (OT) Security</em>. National Institute of Standards and Technology. (Provides OT security guidance for segmented, reliable, cyber-physical manufacturing environments.)</li>
+</ul>
+
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  
+  <section class="modal" id="search-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Search</p>
+      </header>
+      <section class="modal-card-body">
+        <div class="field mb-2">
+          <div class="control">
+            <input class="input" id="search" placeholder="Search this website." type="search" />
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="search-results__items"></div>
+        </div>
+      </section>
+    </div>
+    <button aria-label="close" class="modal-close is-large"></button>
+  </section>
+  
+
+
+  
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <nav class="level">
+              
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;darianharrison.github.io&#x2F;blog&#x2F;2026-09-18&#x2F;">
+              <span class="icon mr-2">
+                <i class="fas fa-arrow-circle-left"></i>
+              </span>
+              Computational Geometry Frameworks
+            </a>
+          </div>
+           
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+
+
+  
+  <footer class="footer py-4">
+    <div class="content has-text-centered">
+      <p>
+        © 2026 Darian Harrison
+      </p>
+    </div>
+  </footer>
+  
+
+  
+  
+  
+  
+  <script src="https://darianharrison.github.io/elasticlunr.min.js"></script>
+  <script src="https://darianharrison.github.io/search_index.en.js"></script><script src="https://darianharrison.github.io/js/site.js"></script>
+
+  
+
+
+
+
+
+  
+  
+</body>
+
+</html>
