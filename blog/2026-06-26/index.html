@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#ffffff" name="theme-color" />
+  <meta content="#da532c" name="msapplication-TileColor" />
+
+  <link rel="icon" type="image/jpeg" href="/images/psi.jpg?v=2">
+
+  <style>
+    .content img {
+        max-height: 500px;
+        width: auto;
+        display: block;
+        margin: 2rem auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    /* Small style for the navbar avatar */
+    .nav-avatar {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    /* Fix for overflowing Markdown tables */
+    .content table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+    }
+  </style>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.1/css/academicons.min.css" integrity="sha384-FIue+PI4SsI9XfHCz8dBLg33b0c1fMJgNU3X//L26FYbGnlSEfWmNT7zgWc2N9b6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link href="https://darianharrison.github.io/deep-thought.css" rel="stylesheet" />
+  
+  
+
+  <title>
+    
+Darian Harrison | Design and Architecture of a Value Proposition
+
+  </title>
+
+  
+  
+  
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mathtex-script-type.min.js" integrity="sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT" crossorigin="anonymous"></script>
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+  
+  
+</head>
+
+<body class="has-background-white">
+  <nav aria-label="section navigation" class="navbar is-light" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item is-size-5 has-text-weight-bold" href="https:&#x2F;&#x2F;darianharrison.github.io">
+            <img src="/images/darian-harrison.jpeg" alt="Avatar" class="nav-avatar">
+            Darian Harrison
+        </a>
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end has-text-centered">
+          
+            
+                <a class="navbar-item has-text-weight-semibold" href="&#x2F;">
+                Home
+                </a>
+            
+          
+          <a class="navbar-item" id="nav-search" title="Search" data-target="#search-modal">
+            <span class="icon">
+              <i class="fas fa-search"></i>
+            </span>
+          </a>
+          <a class="navbar-item" id="dark-mode" title="Switch to dark theme">
+            <span class="icon">
+              <i class="fas fa-adjust"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  
+
+  
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <article class="box">
+          <h1 class="title">
+            Design and Architecture of a Value Proposition
+          </h1>
+          <p class="subtitle">A structural synthesis of value proposition design.</p>
+          <div class="columns is-multiline is-gapless">
+            <div class="column is-8">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="fas fa-user"></i>
+  </span>
+  <span>Darian Harrison published on</span>
+  <span class="icon">
+    <i class="far fa-calendar-alt"></i>
+  </span>
+  <span><time datetime="2026-06-26">June 26, 2026</time></span>
+</span>
+
+            </div>
+            <div class="column is-4 has-text-right-desktop">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span>8 min,</span>
+  <span class="icon">
+    <i class="fas fa-pencil-alt"></i>
+  </span>
+  <span>1545 words</span>
+</span>
+
+            </div>
+            <div class="column">
+              
+            </div>
+            <div class="column has-text-right-desktop">
+              
+            </div>
+          </div>
+          <div class="content mt-2">
+            <p><img src="/images/2026-26-06.png" alt="Figure 1: The Systemic Architecture of Value Creation" />
+<strong>Figure 1: The Systemic Architecture of Value Creation</strong>
+<em>An operational matrix illustrating the progression of value proposition design, tracing the flow from environmental diagnosis and cognitive modeling, through empirical pretotyping, culminating in the autonomous delivery of Minimum Productive Outcomes.</em></p>
+<h2 id="background-context">Background &amp; Context</h2>
+<p>The foundational challenge of modern corporate strategy and venture building is the systemic failure to accurately diagnose and resolve environmental uncertainty. Under the prevailing causal logic of traditional business planning, practitioners incorrectly assume a predictable universe where historical data extrapolates linearly into future performance. However, this paradigm collapses under rapid technological disruption, resulting in a severe operational friction: up to eighty-five percent of new products fail because they are engineered to solve problems that markets do not actually possess or prioritize. </p>
+<p>This article provides a structural roadmap of this evolution. We will sequentially deconstruct the ontological constraints of value, the psychological heuristics that subvert decision-making, the rigid architectures required for market testing, and the 2026 paradigm shift from human-operated interfaces to autonomous algorithmic execution.</p>
+<h2 id="1-the-microeconomic-and-cognitive-boundaries-of-value">1. The Microeconomic and Cognitive Boundaries of Value</h2>
+<p>The theoretical bedrock of how value is formulated has shifted profoundly from static assumptions to phenomenological models. Historically, traditional economic exchange relied on Goods-Dominant (G-D) Logic, which assumed value was embedded into tangible goods during manufacturing and exchanged statically at the point of sale. Modern strategy operates entirely on Service-Dominant (S-D) Logic, which argues that the fundamental basis of exchange is the application of specialized competencies. Under S-D Logic, value cannot be unilaterally delivered; it is phenomenologically co-created dynamically within complex ecosystems when the customer utilizes the offering.</p>
+<blockquote>
+<p><strong>Manufacturing Ecosystem Translation:</strong> <em>An industrial sensor company cannot merely sell hardware; its value proposition must be re-architected to include continuous data learning loops and post-sale diagnostic support, effectively charging for the operational capability of 'zero-downtime' rather than the physical silicon.</em></p>
+</blockquote>
+<p>To quantify this dynamic exchange at the microeconomic level, pricing constraints are established via the Economic Value to the Customer (EVC) model, which calculates the maximum purchase price a supplier can extract:</p>
+<p>$$EVC = \text{Purchase Price of Reference Product} + \text{Improvements in Functionality} + \text{Cost Savings}$$</p>
+<p>However, the transmission of this mathematical value is bound by severe psychological constraints. Decision-makers rely heavily on heuristics that introduce systemic errors into the evaluation process. Kahneman and Tversky’s Prospect Theory mathematically mapped this friction via the asymmetrical, S-shaped value function of loss aversion.</p>
+<blockquote>
+<p><strong>Positioning Architecture Implication:</strong> <em>Because the emotional pain of losing a current workflow is experienced roughly twice as intensely as acquiring an equivalent gain, a software vendor must frame their messaging entirely around the dire financial consequences of maintaining legacy systems, weaponizing loss aversion to overcome profound institutional friction.</em></p>
+</blockquote>
+<h2 id="2-architecting-market-fit-and-structural-positioning">2. Architecting Market Fit and Structural Positioning</h2>
+<p>Before validation, a value proposition requires rigorous deconstruction to separate market assumptions from product realities. Attempting to target broad demographics yields uninterpretable data. Organizations must rely on strict structural canvases to navigate competitive positioning and architect the delivery of value.</p>
+<table><thead><tr><th style="text-align: left">Framework</th><th style="text-align: left">Scope &amp; Range</th><th style="text-align: left">Critical Risk</th></tr></thead><tbody>
+<tr><td style="text-align: left"><strong>Jobs-to-be-Done (JTBD)</strong></td><td style="text-align: left">Targets functional, social, and emotional &quot;jobs&quot; customers are attempting to complete.</td><td style="text-align: left">Functional Over-Indexing: Ignoring social/emotional jobs that drive the actual purchase.</td></tr>
+<tr><td style="text-align: left"><strong>Value Proposition Canvas</strong></td><td style="text-align: left">Maps observable customer reality (pains/gains) against the strategic design space (relievers/creators).</td><td style="text-align: left">Reverse-Engineering: Conflating the map by fabricating the customer profile to justify the current product.</td></tr>
+<tr><td style="text-align: left"><strong>The Kano Model</strong></td><td style="text-align: left">Prioritizes features based on nonlinear impact across Must-Be, One-Dimensional, and Attractive categories.</td><td style="text-align: left">Market Entropy: Assuming features remain attractive over time, ignoring their inevitable degradation to basic requirements.</td></tr>
+</tbody></table>
+<h2 id="3-validating-the-ambiguity-void">3. Validating the Ambiguity Void</h2>
+<p>To effectively navigate ambiguity, the strategic problem space must be categorized using diagnostic filters like the Cynefin Framework, which properly identifies new value proposition design as operating within a &quot;Complex&quot; domain requiring a <em>Probe $\rightarrow$ Sense $\rightarrow$ Respond</em> mechanism. Organizations must substitute causal logic with Effectuation Theory, relying on non-predictive control where innovators shape the future by leveraging immediate resources and mitigating downside risk.</p>
+<p>To survive this complex environment, the proposition must clear Cagan’s Four Big Risks:</p>
+<ul>
+<li><strong>Value Risk:</strong> Validating if the market will actually purchase or engage with the solution.</li>
+<li><strong>Usability Risk:</strong> Determining if the interface and workflow can be easily navigated by the end-user.</li>
+<li><strong>Feasibility Risk:</strong> Assessing whether the engineering team possesses the capability to build the architecture within structural constraints.</li>
+<li><strong>Business Viability Risk:</strong> Ensuring the solution conforms to overarching legal, ethical, and financial enterprise limits.</li>
+</ul>
+<blockquote>
+<p><strong>Resource Allocation Implication:</strong> <em>Engineering teams frequently over-index on mitigating Feasibility Risk because coding feels productive, completely ignoring Value Risk. Organizations must actively halt technical development until Value Risk is explicitly retired via behavioral data.</em></p>
+</blockquote>
+<p>Alberto Savoia’s pretotyping methodology forces organizations to extract &quot;Your Own Data&quot; (YODA) by requiring the market to demonstrate &quot;Skin in the Game&quot; before capital is deployed.</p>
+<ul>
+<li><strong>The Fake Door Test:</strong> Deploying a landing page for a non-existent product to measure empirical conversion intent against a friction-inducing call to action.</li>
+<li><strong>The Concierge MVP:</strong> Delivering the complex value proposition manually via a human-to-human interface to map the ultimate operational requirements before writing backend code.</li>
+<li><strong>The Imposter (Relabel):</strong> Repackaging an existing technological artifact to test an entirely new brand positioning, securing financial deposits with minimal overhead.</li>
+</ul>
+<h2 id="4-the-2026-ai-paradigm-shift-and-syntactic-conversion">4. The 2026 AI Paradigm Shift and Syntactic Conversion</h2>
+<p>By 2026, the proliferation of generative artificial intelligence and autonomous agents has fundamentally shattered the historical heuristics of value validation. The commoditization of code via &quot;vibe coding&quot; tools means the traditional Minimum Viable Product (MVP) is no longer a defensible moat or a proxy for team competency. </p>
+<p>Value proposition validation has shifted from finding Product/Market Fit to achieving Agent/Customer Outcome Fit. We are optimizing for the Minimum Productive Outcome (MPO): the smallest, most autonomous unit of work an AI agent can execute that delivers undeniable, finalized economic value without human intervention.</p>
+<blockquote>
+<p><strong>Economic Modeling Translation:</strong> <em>SaaS vendors can no longer charge a flat rate for access to a dashboard. Value capture must pivot entirely to outcome-based pricing models, billing customers exclusively per successfully resolved support ticket or qualified lead generated by the autonomous agent.</em></p>
+</blockquote>
+<p>To translate this complex, outcome-based value to the market, organizations deploy the MECLABS Conversion Heuristic, establishing a mathematical boundary for communication efficiency:</p>
+<p>$$C = 4m + 3v + 2(i - f) - 2a$$</p>
+<p>This heuristic operates as a diagnostic thought tool rather than a strict algebraic equation. The variables are defined as follows:</p>
+<ul>
+<li><strong>$C$ (Probability of Conversion):</strong> The likelihood of a user taking the desired macro- or micro-action.</li>
+<li><strong>$m$ (Motivation):</strong> The intrinsic desire of the user based on their existing pain points, weighted most heavily (4x) as the single most critical element.</li>
+<li><strong>$v$ (Force of the Value Proposition):</strong> The core differentiation weighted at 3x, relying on Appeal, Exclusivity, Credibility, and Clarity.</li>
+<li><strong>$i$ (Incentive):</strong> Positive elements introduced specifically to offset necessary friction that cannot be eliminated.</li>
+<li><strong>$f$ (Friction):</strong> The psychological and physical resistance encountered in the user experience, such as confusing interfaces.</li>
+<li><strong>$a$ (Anxiety):</strong> The psychological concern regarding risk, privacy, or delivery, weighted negatively (-2a) and mitigated with trust signals.</li>
+</ul>
+<p>When empirical metrics plateau, organizations deploy structured strategic pivots to course-correct while preserving acquired technical assets:</p>
+<ul>
+<li><strong>Zoom-in Pivot:</strong> Isolating a single, highly adopted feature of a larger application to serve as the entirety of the newly constrained value proposition.</li>
+<li><strong>Customer Need Pivot:</strong> Utilizing deep customer intimacy to abandon an initial, low-priority problem and target a highly critical, monetizable pain point for the exact same demographic.</li>
+<li><strong>Value Capture Pivot:</strong> Fundamentally altering the financial architecture, shifting from high-friction, one-time enterprise contracts to low-friction, usage-based recurring revenue.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>The architecture of the value proposition has evolved from static feature assertions into a rigorous, phenomenological mechanism governed by cognitive realities, statistical validation, and structural alignment. By recognizing that value is co-created dynamically rather than embedded during production, organizations can bypass the cognitive biases that frequently sabotage product development. The 2026 paradigm shift further accelerates this reality, definitively ending the era of interface-based software capabilities. In an ecosystem dominated by autonomous AI agents, survival depends entirely on achieving Agent/Customer Outcome Fit. The ultimate defensibility of a venture no longer rests in its ability to build, but in its capacity to precisely diagnose profound market friction and mathematically optimize the delivery of a finalized, autonomous outcome. </p>
+<h2 id="references-further-reading">References &amp; Further Reading</h2>
+<ul>
+<li><strong>Bain &amp; Company. (2016).</strong> <em>The Elements of Value</em>. Categorizes B2B and B2C product benefits into distinct hierarchies, proving that achieving multi-tiered subjective value drives exponential revenue growth and market defense.</li>
+<li><strong>CEB / Gartner. (2011).</strong> <em>The Challenger Sale</em>. Empirically dismantles relationship-based sales, proving complex value delivery requires commercial teaching, reframing, and rational drowning to bypass cognitive resistance.</li>
+<li><strong>Kahneman, D., &amp; Tversky, A. (1979).</strong> <em>Prospect Theory: An Analysis of Decision under Risk</em>. The foundational behavioral economics text proving human decision-making is asymmetrical and driven disproportionately by loss aversion.</li>
+<li><strong>Lanning, M. J., &amp; Michaels, E. G. (1988).</strong> <em>A Business is a Value Delivery System</em>. The foundational McKinsey staff paper that formally established the modern concept of the value proposition.</li>
+<li><strong>Savoia, A. (2011).</strong> <em>Pretotyping It</em>. Provides the operational architectures necessary to extract empirical behavioral data from markets before heavy capital is deployed, effectively bypassing the Law of Market Failure.</li>
+</ul>
+
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  
+  <section class="modal" id="search-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Search</p>
+      </header>
+      <section class="modal-card-body">
+        <div class="field mb-2">
+          <div class="control">
+            <input class="input" id="search" placeholder="Search this website." type="search" />
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="search-results__items"></div>
+        </div>
+      </section>
+    </div>
+    <button aria-label="close" class="modal-close is-large"></button>
+  </section>
+  
+
+
+  
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <nav class="level">
+              
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;darianharrison.github.io&#x2F;blog&#x2F;2026-06-12&#x2F;">
+              <span class="icon mr-2">
+                <i class="fas fa-arrow-circle-left"></i>
+              </span>
+              The Architecture of Identity: From Biological Boundaries to Consumer Behavior
+            </a>
+          </div>
+           
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;darianharrison.github.io&#x2F;blog&#x2F;2026-07-10&#x2F;">
+              An Introduction to CNC Milling<span class="icon ml-2">
+                <i class="fas fa-arrow-circle-right"></i>
+              </span>
+            </a>
+          </div>
+          
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+
+
+  
+  <footer class="footer py-4">
+    <div class="content has-text-centered">
+      <p>
+        © 2026 Darian Harrison
+      </p>
+    </div>
+  </footer>
+  
+
+  
+  
+  
+  
+  <script src="https://darianharrison.github.io/elasticlunr.min.js"></script>
+  <script src="https://darianharrison.github.io/search_index.en.js"></script><script src="https://darianharrison.github.io/js/site.js"></script>
+
+  
+
+
+
+
+
+  
+  
+</body>
+
+</html>
