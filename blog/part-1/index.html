@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#ffffff" name="theme-color" />
+  <meta content="#da532c" name="msapplication-TileColor" />
+
+  <link rel="icon" type="image/jpeg" href="/images/psi.jpg?v=2">
+
+  <style>
+    .content img {
+        max-height: 500px;
+        width: auto;
+        display: block;
+        margin: 2rem auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    /* Small style for the navbar avatar */
+    .nav-avatar {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    /* Fix for overflowing Markdown tables */
+    .content table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+    }
+  </style>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.1/css/academicons.min.css" integrity="sha384-FIue+PI4SsI9XfHCz8dBLg33b0c1fMJgNU3X//L26FYbGnlSEfWmNT7zgWc2N9b6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link href="https://darianharrison.github.io/deep-thought.css" rel="stylesheet" />
+  
+  
+
+  <title>
+    
+Darian Harrison | Choosing High-Content Screening Methods: From Question to Measurement
+
+  </title>
+
+  
+  
+  
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mathtex-script-type.min.js" integrity="sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT" crossorigin="anonymous"></script>
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+  
+  
+</head>
+
+<body class="has-background-white">
+  <nav aria-label="section navigation" class="navbar is-light" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item is-size-5 has-text-weight-bold" href="https:&#x2F;&#x2F;darianharrison.github.io">
+            <img src="/images/darian-harrison.jpeg" alt="Avatar" class="nav-avatar">
+            Darian Harrison
+        </a>
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end has-text-centered">
+          
+            
+                <a class="navbar-item has-text-weight-semibold" href="&#x2F;">
+                Home
+                </a>
+            
+          
+          <a class="navbar-item" id="nav-search" title="Search" data-target="#search-modal">
+            <span class="icon">
+              <i class="fas fa-search"></i>
+            </span>
+          </a>
+          <a class="navbar-item" id="dark-mode" title="Switch to dark theme">
+            <span class="icon">
+              <i class="fas fa-adjust"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  
+
+  
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <article class="box">
+          <h1 class="title">
+            Choosing High-Content Screening Methods: From Question to Measurement
+          </h1>
+          <p class="subtitle">Part 1: Design an image-based screen around the decision, the measurement, and the controls needed to connect them.</p>
+          <div class="columns is-multiline is-gapless">
+            <div class="column is-8">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="fas fa-user"></i>
+  </span>
+  <span>Darian Harrison published on</span>
+  <span class="icon">
+    <i class="far fa-calendar-alt"></i>
+  </span>
+  <span><time datetime="2026-10-30T09:00:00">October 30, 2026</time></span>
+</span>
+
+            </div>
+            <div class="column is-4 has-text-right-desktop">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span>21 min,</span>
+  <span class="icon">
+    <i class="fas fa-pencil-alt"></i>
+  </span>
+  <span>4064 words</span>
+</span>
+
+            </div>
+            <div class="column">
+              
+            </div>
+            <div class="column has-text-right-desktop">
+              
+            </div>
+          </div>
+          <div class="content mt-2">
+            <h1 id="choosing-high-content-screening-methods-from-question-to-measurement">Choosing High-Content Screening Methods: From Question to Measurement</h1>
+<p><em>Part 1 of 2</em></p>
+<p>What must an image-based screen show before its result changes your next experiment? That question determines whether you need a targeted localization assay, a broad morphological profile, a live-cell history, or a volumetric measurement. It also determines which handling errors, optical compromises, and analysis choices matter most.</p>
+<p>High-content screening (HCS) connects perturbations to automated microscopy and quantitative image analysis. A <strong>feature</strong> describes a measured property, such as nuclear area. A <strong>profile</strong> combines measurements or learned descriptors at a stated level, such as a cell or well. Image-based profiling compares these representations across conditions. Its value depends on preserving the differences relevant to a decision through the entire measurement process. (1)</p>
+<p>This first part follows that process from assay selection to an interpretable result. <a href="/blog/part-2">Part 2</a> asks what additional evidence supports mechanism, functional recovery, and transfer to another setting. The selection tables and worked examples are decision aids, rather than universal rankings or acceptance criteria.</p>
+<p><img src="/images/2026-30-10-part-1.png" alt="Four linked design stages—model and endpoint, handling and exposure, acquisition and sampling, and analysis and comparison—each have a corresponding validation question. Analysis compares representations on independent batches and test contexts. Unresolved checks lead back to the relevant design choice." /></p>
+<p><strong>Figure 1. Build the measurement around the decision.</strong> Start with the comparison that would change the next experiment. Check whether the model, handling, acquisition, and analysis preserve the evidence that comparison requires. Benchmark the representation on independent data relevant to its intended use, and retain the scope of reference datasets. An unresolved check calls for a design revision or a narrower conclusion. Passing these checks supports a measured response; mechanism, function, and transfer require the additional evidence discussed in Part 2.</p>
+<h2 id="define-the-decision-before-choosing-the-platform">Define the decision before choosing the platform</h2>
+<p>A useful assay specification fits into one sentence: <em>In this model and exposure context, we will measure this endpoint against these controls to decide whether this intervention merits this next test.</em> “Find active compounds” leaves most of that specification unresolved. Activity might mean altered localization, reproducible morphological similarity, functional rescue, or evidence about a molecular mechanism.</p>
+<table><thead><tr><th>Decision</th><th>Candidate measurement</th><th>Evidence to preserve</th></tr></thead><tbody>
+<tr><td>Detect a predefined response</td><td>Targeted fluorescence: localization, puncta, intensity, or a reporter ratio</td><td>Signal definition, denominator, population count, and interference controls</td></tr>
+<tr><td>Find similar cellular states</td><td>Cell Painting or another broad profile</td><td>Channels, representation, dose, time, reference collection, and replicate behavior</td></tr>
+<tr><td>Identify a desired phenotypic change</td><td>Disease/reference comparison</td><td>Desired direction, disease and reference baselines, survival, and collateral changes</td></tr>
+<tr><td>Resolve timing or prior state</td><td>Live imaging and tracking</td><td>Actual times, reporter kinetics, object identities, and reasons trajectories end</td></tr>
+<tr><td>Measure tissue organization or depth</td><td>Spatially resolved volumetric imaging</td><td>Coordinates, depth-dependent signal quality, object identity, and tissue geometry</td></tr>
+<tr><td>Link a genetic intervention to an image</td><td>Arrayed identity or optical pooled decoding</td><td>Perturbation assignment and its uncertainty</td></tr>
+<tr><td>Measure a population total</td><td>A bulk endpoint, alone or alongside imaging</td><td>The spatial, temporal, and subpopulation information that the total omits</td></tr>
+</tbody></table>
+<p>Targeted assays and broad profiling serve different purposes and can complement one another. Cell Painting is a specific profiling assay: its established protocol uses six dyes imaged in five channels. The roughly 1,500 features described in the original implementation are not a defining count for every pipeline or 1,500 independent biological tests. (2) The version 3 optimization evaluated phenotype detection and grouping of related perturbations, rather than selecting conditions solely for attractive images. (3)</p>
+<p>Broad profiling still samples a selected part of biology: the model, stains, observation window, and representation determine which changes are visible. It is less constrained by a single predefined endpoint, but it is not an unbiased measurement of every cellular process.</p>
+<p>Choose a targeted assay when a defined observable property drives the decision. Choose broader profiling when unexpected changes, reference matching, or multiparametric responses matter. Add a channel, time point, or modality when the information it supplies could change the interpretation.</p>
+<h3 id="define-what-produces-the-signal">Define what produces the signal</h3>
+<p>A readout is a constructed measurement. Detected puncta depend on contrast, resolution, and object definitions. A nuclear-to-cytoplasmic intensity ratio depends on both intensities and both masks. A larger ratio can result from a rising numerator, a falling denominator, or a change in compartment assignment. Retain the component measurements when those alternatives matter.</p>
+<p>The same reasoning applies to compound channels. In the established Cell Painting panel, actin, Golgi, and plasma-membrane signals share a channel. A change in its total intensity cannot identify the contributing structure by itself. (2) Likewise, accumulated objects do not by themselves measure a rate of formation or clearance. Define the observation first, then select a comparison capable of testing its proposed biological meaning.</p>
+<h2 id="select-the-biological-capability-the-question-requires">Select the biological capability the question requires</h2>
+<p>Choose a model for the process it must support. A tractable monolayer may be sufficient for a localization question. Donor-derived or differentiated cells may be needed when genetic background or lineage state defines the contrast. Three-dimensional models, cocultures, and tissue preparations become useful when architecture, interactions, or gradients are part of the hypothesis.</p>
+<table><thead><tr><th>Model family</th><th>Reason to consider it</th><th>Question to resolve locally</th></tr></thead><tbody>
+<tr><td>Immortalized monolayer</td><td>Accessible imaging and repeatable assay development</td><td>Does it express the relevant machinery and state?</td></tr>
+<tr><td>Primary cells</td><td>A donor-associated biological context</td><td>Which donor and culture differences must the conclusion cover?</td></tr>
+<tr><td>Stem-cell-derived cells</td><td>Relevant lineages and controlled genetic comparisons</td><td>Is differentiation sufficiently consistent, and is the required maturity present?</td></tr>
+<tr><td>Spheroid or organoid</td><td>Spatial organization and internal gradients</td><td>Can the assay measure the relevant structures throughout the required depth?</td></tr>
+<tr><td>Coculture or assembled tissue</td><td>Interactions among populations</td><td>Can changes within a population be separated from changes in its abundance?</td></tr>
+<tr><td>Perfused chip or tissue slice</td><td>A required interface, environment, or native organization</td><td>Does preparation and observation preserve the capability being tested?</td></tr>
+</tbody></table>
+<p>These are questions for model qualification, not claims of predictive superiority. Record the actual sample: donor or lineage, genotype, passage or expansion history, differentiation batch, density, matrix, and preparation. “Patient-derived organoid” identifies a model family; it does not identify the material or execution that produced an image.</p>
+<p>Preparation belongs in the same evaluation. Test whether fixation, permeabilization, dissociation, or clearing preserves the endpoint of interest. A method that improves access can still change what is measurable. Compare the relevant measurement before and after the proposed preparation when that comparison is feasible, rather than assuming that preparation is neutral.</p>
+<h2 id="treat-handling-and-exposure-as-part-of-the-assay">Treat handling and exposure as part of the assay</h2>
+<p>A robot can reproduce its program while altering the population or exposure the experiment was intended to measure. During transfer to automation, assess the biological endpoint and retained population alongside delivered volume. Include the queues, pauses, and addition order expected in the campaign.</p>
+<p>Cell Painting optimization supplies a concrete example: Cimini and colleagues removed medium aspiration before mitochondrial staining to reduce cell loss and combined permeabilization with staining to simplify execution. These were protocol-specific improvements, not universal instructions for every model. (3)</p>
+<p>Separate bulk reagent distribution from small-volume compound addition. Compare delivery methods using the actual liquids, plate geometry, and specimens:</p>
+<table><thead><tr><th>Delivery approach</th><th>What to establish</th></tr></thead><tbody>
+<tr><td>Pipetting or other contact transfer</td><td>Volume performance, mixing, carryover, and specimen disturbance</td></tr>
+<tr><td>Pin transfer</td><td>Transfer reproducibility, solvent contribution, and cleaning performance</td></tr>
+<tr><td>Acoustic droplet ejection</td><td>Source compatibility, transfer performance, and recovery in the destination</td></tr>
+<tr><td>Intermediate dilution</td><td>Solubility, mixing, time in the intermediate state, and loss to surfaces</td></tr>
+<tr><td>Preplated compounds</td><td>Availability after the intended storage interval and reagent addition</td></tr>
+</tbody></table>
+<p>Nominal concentration describes an intended addition. It does not establish the concentration available to cells or to an intracellular target. Retain stock identity, formulation, solvent fraction, storage history, and actual addition times. If a result changes with delivery history, compare an independently prepared material or an alternative delivery route before assigning the difference to biology.</p>
+<p>Miniaturization also needs local validation. Examine plate-position effects, cell distributions, focus success, and endpoint stability in the proposed format. Count <strong>usable throughput</strong> as measurements that complete the workflow and meet its quality requirements per stated time. Controls, failed wells, repeats, and analysis backlog all affect that output. Estimate cost per useful comparison, rather than relying on reagent consumption or instrument scan rate alone.</p>
+<h2 id="choose-imaging-by-the-evidence-it-must-preserve">Choose imaging by the evidence it must preserve</h2>
+<p>Specify what must remain distinguishable: adjacent cells, puncta, nuclear and cytoplasmic compartments, depth layers, or successive events. Magnification alone does not answer that question. Numerical aperture, physical pixel size, contrast, exposure, detector behavior, and coverage belong in the specification.</p>
+<table><thead><tr><th>Acquisition family</th><th>Decision that can justify it</th><th>Qualification question</th></tr></thead><tbody>
+<tr><td>Widefield fluorescence</td><td>Resolve relevant structures in a relatively thin sample</td><td>Does out-of-focus signal compromise the endpoint?</td></tr>
+<tr><td>Confocal imaging</td><td>Separate structures along depth</td><td>Does the sectioning, photon budget, and acquisition time preserve the required measurement?</td></tr>
+<tr><td>Light-sheet imaging</td><td>Follow volumes through time</td><td>Are mounting, optical access, and throughput compatible with the experiment?</td></tr>
+<tr><td>Brightfield, phase, or quantitative phase</td><td>Measure morphology or optical properties without a fluorescent label</td><td>Does the contrast answer the question without assuming molecular identity?</td></tr>
+<tr><td>FLIM or Raman-based imaging</td><td>Measure fluorescence decay or vibrational contrast</td><td>Is the signal interpretation validated for this specimen and instrument?</td></tr>
+<tr><td>Imaging flow or image-guided sorting</td><td>Characterize suspended cells or recover selected objects</td><td>What context is lost by removing cells from their original arrangement?</td></tr>
+</tbody></table>
+<p>The useful comparison is performance on the intended task. Tromans-Coia and colleagues assessed Cell Painting across imaging systems using replicate and mechanism-annotation matching. Their results illustrate why acquisition choices should be tested against profiling performance, rather than converted into a general ranking of microscope brands. (4)</p>
+<h3 id="separate-resolution-coverage-and-dimensionality">Separate resolution, coverage, and dimensionality</h3>
+<p>Higher resolution cannot compensate for sampling too few cells to capture a rare state. More fields cannot recover a structure the optics fail to resolve. Report physical pixel size and examine whether feature definitions remain comparable when acquisition settings change.</p>
+<p>A maximum-intensity projection retains the brightest value along depth at each image position; it does not retain the depth coordinate of every contributing object. A projection may answer a projected-area question. An infiltration-depth question requires spatial information that resolves the relevant coordinate.</p>
+<p>Sampling guidance is similarly conditional. The imaging-system study found that profile strength began to level off at approximately 2,500 cells per well in its setting. That is a useful pilot comparison, not a universal sample-size requirement. The same paper distinguished deleting RNA features computationally from acquiring four-channel data: those interventions did not have interchangeable results, and conclusions varied with the performance metric. (4)</p>
+<h3 id="live-imaging-measures-an-observed-system">Live imaging measures an observed system</h3>
+<p>For live imaging, evaluate whether the observation schedule changes the response. Compare a less intensively observed condition when possible, and retain illumination settings and actual acquisition intervals. Reporter kinetics and frame spacing define which events can be resolved.</p>
+<p>Tracking introduces a further requirement: continuity of object identity. Repeated snapshots of different cells are not the history of one cell. Inspect identity links as well as segmentation, and distinguish observed death, field exit, tracking failure, and the end of observation. An unexplained disappearance should remain unresolved until evidence supports a biological event label.</p>
+<h2 id="design-controls-around-alternative-explanations">Design controls around alternative explanations</h2>
+<p>Start with the explanations that would change the decision. A matched vehicle control defines a baseline. A positive control tests whether a particular response is detectable. Neither establishes the specificity of every new hit.</p>
+<table><thead><tr><th>Comparison</th><th>Question it addresses</th></tr></thead><tbody>
+<tr><td>Matched vehicle or intervention background</td><td>What baseline does the treatment procedure produce?</td></tr>
+<tr><td>Positive and intermediate-response controls</td><td>Can the assay distinguish relevant responses, including less extreme ones?</td></tr>
+<tr><td>Biological reference</td><td>What direction represents the desired phenotype?</td></tr>
+<tr><td>References distributed across position and time</td><td>Does execution drift with plate location or run order?</td></tr>
+<tr><td>Appropriate optical and reagent controls</td><td>Could signal generation or detection explain the change?</td></tr>
+<tr><td>Independent executions and biological sources</td><td>Does the response recur across the units covered by the claim?</td></tr>
+<tr><td>Counter-screen or orthogonal endpoint</td><td>Does a deliberately different measurement reject a specific competing explanation?</td></tr>
+</tbody></table>
+<p>This structure makes control choice a question of interpretation rather than a checklist of familiar reagents. The Assay Guidance Manual emphasizes realistic controls, spatial effects, and inspection of the measured signal when validating an HCS assay. (5)</p>
+<h3 id="count-independent-units-not-just-cells">Count independent units, not just cells</h3>
+<p>If treatment is independently assigned to wells, cells within a well are subsamples for that contrast. Many cells can describe a well precisely without providing more independent treatment assignments. A claim across donors requires information about donor variation. Specify the relationships among donors, culture batches, plates, wells, fields, cells, and times before choosing an aggregation rule or statistical model. (6)</p>
+<p>Balance treatment identity against plate position and execution time, using randomization or blocking as appropriate. Retain the actual assignment map. If all treated samples are measured on one day and all controls on another, treatment and day are confounded: correction cannot uniquely recover their separate contributions from that contrast alone.</p>
+<h3 id="match-the-performance-metric-to-the-decision">Match the performance metric to the decision</h3>
+<p>For a scalar endpoint, Z-prime summarizes the separation of positive and negative controls:</p>
+<p>$Z_{1} = \frac{3}{\sigma_p \sigma_n \mu_p \mu_n}$</p>
+<p>Here, the means and standard deviations describe the two control distributions; the statistic is undefined when their means are equal. The familiar 0.5 convention is a screening-window guideline, not proof of biological relevance or a universal requirement for every multivariate or heterogeneous assay. (5, 7)</p>
+<p>Validate the quantity the decision uses. A targeted assay needs suitable endpoint precision and discrimination. A profiling assay needs reproducibility and performance on a defined comparison task. A rare-state assay needs sensitivity to that state. None of these metrics estimates the probability that a proposed molecular mechanism is correct.</p>
+<p>For confirmatory comparisons, report effect sizes and uncertainty at the appropriate experimental level. If many hypotheses are tested, specify the family of tests and the error-control procedure. Define hit criteria and confirmation rules before examining the full campaign, and preserve any later changes as changes. A visually separated embedding is useful exploration; it is not, by itself, a statistical validation.</p>
+<h2 id="preserve-the-intended-contrast-through-analysis">Preserve the intended contrast through analysis</h2>
+<p>Separate image correction, object definition, representation, aggregation, and inference. Each changes what the final result means.</p>
+<p><strong>Check pixels and masks.</strong> Inspect focus, saturation, background, and segmentation in both controls and strongly responding samples. Check the errors that affect the endpoint: missed cells, merged objects, split objects, or incorrect compartment boundaries. A mask that looks adequate in an untreated cell may fail where treatment changes shape or intensity.</p>
+<p><strong>Keep measurement and prediction distinguishable.</strong> A whole-field representation changes the unit of representation and may retain density or background information. Virtual staining predicts an output from another input; the predicted signal is not an independently acquired molecular measurement. Preserve raw, corrected, and generated data separately.</p>
+<p><strong>Retain relevant heterogeneity.</strong> A mean or median compresses a population. Two wells can have the same average signal while one contains a uniform modest response and the other a small strongly responding subset. When that difference matters, retain responder fractions, quantiles, state composition, or a validated distributional representation alongside the central summary.</p>
+<p><strong>Make missingness explicit.</strong> Distinguish technical failure, segmentation failure, biological depletion, and a measured population with no detectable response. An empty field does not have a zero-effect morphology profile. If only surviving or attached cells are measured, retain their count and state that the profile describes that selected population. Removing unusual observations can also remove the phenotype the screen was intended to discover.</p>
+<h3 id="benchmark-the-analysis-that-makes-the-decision">Benchmark the analysis that makes the decision</h3>
+<p>Segmentation, representation learning, and biological prediction are different tasks. A segmentation model can improve object boundaries without improving a downstream mechanism classifier. Conversely, a useful whole-field embedding may not identify individual cells at all. Compare candidate methods on the quantity the screen will use, including strongly responding samples and the failures most likely to change that quantity.</p>
+<p>For a profiling pilot, compare an engineered-feature baseline with a learned representation using the same wells, controls, preprocessing information, and evaluation splits. For segmentation, combine annotated examples with checks for bias in counts and the actual endpoint. For retrieval, state what counts as a relevant match and how that annotation was obtained. Report performance across independent batches alongside runtime, memory, and the cost of reviewing failures. These comparisons are a proposed local evaluation plan, not a claim that either approach always wins.</p>
+<p>Record the exact model, weights, preprocessing, and training or adaptation data. A software family name is insufficient: the Cellpose documentation, for example, distinguishes SAM- and DINO-based models and their versions. Its model catalog is not evidence that one choice is best for every assay. (8)</p>
+<h3 id="test-correction-and-generalization-separately">Test correction and generalization separately</h3>
+<p>Standardization rescales features. Spatial correction models location effects. Batch alignment attempts to reduce differences among executions. Record what each transformation was fitted to and inspect whether the decision-relevant contrast survives it.</p>
+<p>Arevalo and colleagues benchmarked ten batch-correction approaches across five JUMP Cell Painting scenarios. Performance depended on the evaluation setting, with Harmony and Seurat RPCA among the leading methods across those tested scenarios. In the hardest settings, involving many compounds and multiple microscope types, none adequately removed the batch effects. That limitation concerned the tested methods and population-averaged profiles; it does not establish that every possible alignment is ineffective. (9)</p>
+<p>For prediction, choose holdouts that match intended use. Additional images from a familiar well test something different from a new donor, batch, laboratory, perturbation, or chemical scaffold. Keep evaluation data out of supervised feature selection and model tuning. If a method uses the test batch for unsupervised adaptation, disclose that setting; do not describe it as performance on a wholly untouched batch.</p>
+<h3 id="use-public-profiles-as-references-with-a-defined-scope">Use public profiles as references with a defined scope</h3>
+<p>Public data can supply comparison perturbations, pilot material, and benchmarking tasks. Identify the collection and release before choosing a subset. The Cell Painting Gallery is a collection of datasets and analyses; it is not one uniform experiment. JUMP documentation distinguishes its principal chemical and genetic perturbation dataset from pilots addressing perturbation conditions, staining, and imaging systems. Those resources answer different design questions. (10, 11)</p>
+<p>For a new screen, consider a shared reference panel spanning relevant responses and exposure conditions. Retain model, dose, time, staining, microscope, and processing differences between the reference and local experiment. Shared compounds provide a bridge for evaluating alignment; their presence does not guarantee that all biological contrasts are comparable. Start with a manageable, relevant subset and inspect metadata, images, and profiles together before scaling up.</p>
+<h2 id="plan-data-capacity-before-the-campaign">Plan data capacity before the campaign</h2>
+<p>Estimate uncompressed image storage from the acquisition design:</p>
+<p><strong>Bytes = wells × fields per well × channels × z planes × time points × pixels per image × bytes per pixel.</strong></p>
+<p>As a hypothetical example, 384 wells, nine fields per well, five channels, one z plane, one time point, and 2,048 × 2,048 pixels at two bytes per pixel produce about <strong>145 GB (135 GiB) per plate</strong> before compression. This is an arithmetic example, not a recommended plate format or sampling plan. Additional planes and time points multiply that amount.</p>
+<p>Budget separately for metadata, masks, derived measurements, working copies, backups, and retained model outputs. Measure the complete pilot workflow: acquisition, transfer, quality review, processing, and retrieval. Use those measurements to choose local or cloud resources and to check whether the analysis queue can keep pace with imaging. Verify that the proposed system exports images and the metadata needed to reconstruct their meaning before committing the campaign to it.</p>
+<h2 id="keep-a-record-that-supports-reinterpretation">Keep a record that supports reinterpretation</h2>
+<p>Preserve the chain from material to execution to image to result. Record sample and perturbation identities, assignment maps, actual times, acquisition settings, channel meanings, spatial units, software versions, parameters, and exclusion reasons. Retain acquired images when future resegmentation or remeasurement matters.</p>
+<p>Use a suitable image format and specify its version. A storage format and a biological metadata framework solve different problems. REMBI provides a structure for recording study, sample, specimen, acquisition, and related image context; the BioImage Archive adopts it as its metadata model. Neither format compliance nor complete metadata establishes the biological interpretation. (12)</p>
+<h2 id="three-decisions-that-change-the-design">Three decisions that change the design</h2>
+<p>These examples are hypothetical applications of the framework.</p>
+<p><strong>A localization screen.</strong> If the decision concerns movement into the nucleus, retain nuclear and cytoplasmic intensities, the ratio, masks, and cell counts. A ratio change caused entirely by loss of cytoplasmic signal would motivate a different follow-up from one accompanied by increased nuclear signal.</p>
+<p><strong>A rare neuronal response.</strong> If a small subset extends neurites, a well-average profile can understate the response. Preserve process measurements and responder fractions, inspect assignment in dense fields, and replicate at the independent treatment level. A growth result still leaves physiological recovery for a separate test.</p>
+<p><strong>An infiltration-depth question.</strong> If the endpoint is position within an organoid, projected area and bulk viability do not supply the required coordinate. Evaluate volumetric measurement, cell assignment, organoid geometry, and depth-dependent visibility. Report the observable depth range so a missing central signal is not mistaken for absence of cells.</p>
+<h2 id="a-worksheet-for-the-next-method-decision">A worksheet for the next method decision</h2>
+<table><thead><tr><th>Decision element</th><th>Complete this statement</th></tr></thead><tbody>
+<tr><td>Intended action</td><td>“This result would change …”</td></tr>
+<tr><td>Required capability</td><td>“The model must preserve …”</td></tr>
+<tr><td>Endpoint</td><td>“We measure … in these units, with this denominator.”</td></tr>
+<tr><td>Alternative explanation</td><td>“The same signal could arise from …”</td></tr>
+<tr><td>Discriminating comparison</td><td>“We distinguish those explanations by …”</td></tr>
+<tr><td>Independent unit</td><td>“Treatment is assigned at …; the claim should transfer across …”</td></tr>
+<tr><td>Sampling and execution</td><td>“The relevant cells, depths, times, and handling history are …”</td></tr>
+<tr><td>Analysis</td><td>“This representation preserves the distinction because …”</td></tr>
+<tr><td>Reference data</td><td>“The comparison collection, release, and relevant context differences are …”</td></tr>
+<tr><td>Data capacity</td><td>“The pilot requires this storage, processing time, and review effort …”</td></tr>
+<tr><td>Validation</td><td>“Performance is evaluated using … on independent …”</td></tr>
+<tr><td>Missingness</td><td>“Failed measurement, depletion, and undetected response are recorded as …”</td></tr>
+<tr><td>Interpretation boundary</td><td>“The result establishes …; the next claim requires …”</td></tr>
+</tbody></table>
+<p>The endpoint of this workflow is a comparison whose construction and limitations are visible. Part 2 takes that measured response and asks which biological conclusions it can support.</p>
+<h2 id="references">References</h2>
+<ol>
+<li>Caicedo JC, Cooper S, Heigwer F, Warchal S, Qiu P, Molnar C, et al. Data-analysis strategies for image-based cell profiling. Nat Methods. 2017;14(9):849–863. doi: <a href="https://doi.org/10.1038/nmeth.4397">10.1038/nmeth.4397</a>.</li>
+<li>Bray MA, Singh S, Han H, Davis CT, Borgeson B, Hartland C, et al. Cell Painting, a high-content image-based assay for morphological profiling using multiplexed fluorescent dyes. Nat Protoc. 2016;11:1757–1774. doi: <a href="https://doi.org/10.1038/nprot.2016.105">10.1038/nprot.2016.105</a>.</li>
+<li>Cimini BA, Chandrasekaran SN, Kost-Alimova M, Miller L, Goodale A, Fritchman B, et al. Optimizing the Cell Painting assay for image-based profiling. Nat Protoc. 2023;18:1981–2013. doi: <a href="https://doi.org/10.1038/s41596-023-00840-9">10.1038/s41596-023-00840-9</a>.</li>
+<li>Tromans-Coia C, Jamali N, Abbasi HS, Giuliano KA, Hagimoto M, Jan K, et al. Assessing the performance of the Cell Painting assay across different imaging systems. Cytometry A. 2023;103:915–926. doi: <a href="https://doi.org/10.1002/cyto.a.24786">10.1002/cyto.a.24786</a>.</li>
+<li>Buchser W, Collins M, Garyantes T, et al. Assay Development Guidelines for Image-Based High Content Screening, High Content Analysis and High Content Imaging. 2012 Oct 1 [updated 2014 Sep 22]. In: Assay Guidance Manual [Internet]. Bethesda (MD): Eli Lilly &amp; Company and the National Center for Advancing Translational Sciences; 2004–. Available from: <a href="https://www.ncbi.nlm.nih.gov/books/NBK100913/">NCBI Bookshelf</a>.</li>
+<li>Lazic SE, Clarke-Williams CJ, Munafò MR. What exactly is N in cell culture and animal experiments? PLoS Biol. 2018;16(4):e2005282. <a href="https://doi.org/10.1371/journal.pbio.2005282">doi:10.1371/journal.pbio.2005282</a>.</li>
+<li>Zhang JH, Chung TDY, Oldenburg KR. A simple statistical parameter for use in evaluation and validation of high throughput screening assays. J Biomol Screen. 1999;4(2):67–73. doi: <a href="https://doi.org/10.1177/108705719900400206">10.1177/108705719900400206</a>.</li>
+<li>Cellpose developers. Models [Internet]. Accessed October 2026. <a href="https://cellpose.readthedocs.io/en/latest/models.html">Official model documentation</a>.</li>
+<li>Arevalo J, Su E, Ewald JD, van Dijk R, Carpenter AE, Singh S. Evaluating batch correction methods for image-based cell profiling. Nat Commun. 2024;15:6516. doi: <a href="https://doi.org/10.1038/s41467-024-50613-5">10.1038/s41467-024-50613-5</a>.</li>
+<li>Weisbart E, Kumar A, Arevalo J, Carpenter AE, Cimini BA, Singh S. Cell Painting Gallery: an open resource for image-based profiling. Nat Methods. 2024;21:1775–1777. <a href="https://doi.org/10.1038/s41592-024-02399-z">doi:10.1038/s41592-024-02399-z</a>. See also the <a href="https://broadinstitute.github.io/cellpainting-gallery/overview.html">collection overview</a>.</li>
+<li>JUMP Cell Painting Consortium. Dataset overview [Internet]. Accessed October 2026. <a href="https://broadinstitute.github.io/jump_hub/explanations/data_description.html">Official dataset documentation</a>.</li>
+<li>EMBL-EBI BioImage Archive. REMBI overview [Internet]. Accessed 2026 Oct 24. <a href="https://www.ebi.ac.uk/bioimage-archive/rembi-help-overview/">Official overview</a>.</li>
+</ol>
+
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  
+  <section class="modal" id="search-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Search</p>
+      </header>
+      <section class="modal-card-body">
+        <div class="field mb-2">
+          <div class="control">
+            <input class="input" id="search" placeholder="Search this website." type="search" />
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="search-results__items"></div>
+        </div>
+      </section>
+    </div>
+    <button aria-label="close" class="modal-close is-large"></button>
+  </section>
+  
+
+
+  
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <nav class="level">
+              
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;darianharrison.github.io&#x2F;blog&#x2F;part-2&#x2F;">
+              <span class="icon mr-2">
+                <i class="fas fa-arrow-circle-left"></i>
+              </span>
+              Interpreting High-Content Screening: From Phenotype to Biological Claim
+            </a>
+          </div>
+           
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+
+
+  
+  <footer class="footer py-4">
+    <div class="content has-text-centered">
+      <p>
+        © 2026 Darian Harrison
+      </p>
+    </div>
+  </footer>
+  
+
+  
+  
+  
+  
+  <script src="https://darianharrison.github.io/elasticlunr.min.js"></script>
+  <script src="https://darianharrison.github.io/search_index.en.js"></script><script src="https://darianharrison.github.io/js/site.js"></script>
+
+  
+
+
+
+
+
+  
+  
+</body>
+
+</html>

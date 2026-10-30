@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#ffffff" name="theme-color" />
+  <meta content="#da532c" name="msapplication-TileColor" />
+
+  <link rel="icon" type="image/jpeg" href="/images/psi.jpg?v=2">
+
+  <style>
+    .content img {
+        max-height: 500px;
+        width: auto;
+        display: block;
+        margin: 2rem auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    /* Small style for the navbar avatar */
+    .nav-avatar {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    /* Fix for overflowing Markdown tables */
+    .content table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+    }
+  </style>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.1/css/academicons.min.css" integrity="sha384-FIue+PI4SsI9XfHCz8dBLg33b0c1fMJgNU3X//L26FYbGnlSEfWmNT7zgWc2N9b6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link href="https://darianharrison.github.io/deep-thought.css" rel="stylesheet" />
+  
+  
+
+  <title>
+    
+Darian Harrison | Interpreting High-Content Screening: From Phenotype to Biological Claim
+
+  </title>
+
+  
+  
+  
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mathtex-script-type.min.js" integrity="sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT" crossorigin="anonymous"></script>
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+  
+  
+</head>
+
+<body class="has-background-white">
+  <nav aria-label="section navigation" class="navbar is-light" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item is-size-5 has-text-weight-bold" href="https:&#x2F;&#x2F;darianharrison.github.io">
+            <img src="/images/darian-harrison.jpeg" alt="Avatar" class="nav-avatar">
+            Darian Harrison
+        </a>
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end has-text-centered">
+          
+            
+                <a class="navbar-item has-text-weight-semibold" href="&#x2F;">
+                Home
+                </a>
+            
+          
+          <a class="navbar-item" id="nav-search" title="Search" data-target="#search-modal">
+            <span class="icon">
+              <i class="fas fa-search"></i>
+            </span>
+          </a>
+          <a class="navbar-item" id="dark-mode" title="Switch to dark theme">
+            <span class="icon">
+              <i class="fas fa-adjust"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  
+
+  
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <article class="box">
+          <h1 class="title">
+            Interpreting High-Content Screening: From Phenotype to Biological Claim
+          </h1>
+          <p class="subtitle">Part 2: Distinguish measured responses from evidence of mechanism, functional recovery, and transfer across biological settings.</p>
+          <div class="columns is-multiline is-gapless">
+            <div class="column is-8">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="fas fa-user"></i>
+  </span>
+  <span>Darian Harrison published on</span>
+  <span class="icon">
+    <i class="far fa-calendar-alt"></i>
+  </span>
+  <span><time datetime="2026-10-30">October 30, 2026</time></span>
+</span>
+
+            </div>
+            <div class="column is-4 has-text-right-desktop">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span>21 min,</span>
+  <span class="icon">
+    <i class="fas fa-pencil-alt"></i>
+  </span>
+  <span>4080 words</span>
+</span>
+
+            </div>
+            <div class="column">
+              
+            </div>
+            <div class="column has-text-right-desktop">
+              
+            </div>
+          </div>
+          <div class="content mt-2">
+            <h1 id="interpreting-high-content-screening-from-phenotype-to-biological-claim">Interpreting High-Content Screening: From Phenotype to Biological Claim</h1>
+<p><em>Part 2 of 2</em></p>
+<p>A compound makes diseased cells look more like a reference population. Has it corrected the disease process, selected which cells survive, changed a fluorescent signal, or produced a different state that happens to look similar? High-content screening can help distinguish these possibilities, but an image does not choose among them unaided.</p>
+<p><a href="/blog/part-1">Part 1</a> addressed how to build a dependable measurement. Here, the task is to connect that measurement to a biological claim. Three questions organize the interpretation: <strong>What explains the response? Has the relevant function changed? Where does the result apply?</strong> These questions require different evidence. They are complementary routes, not successive rungs on a universal ladder of certainty.</p>
+<p>The applications below illustrate that distinction across discovery, organ physiology, disease models, toxicology, and comparative biology. They are a focused synthesis, not an exhaustive assay catalog or a validated scoring system.</p>
+<p><img src="/images/2026-30-10-part-2.png" alt="A measured response in a defined context leads to three complementary questions: mechanism, function, and transfer. Each requires a distinct follow-up, and each produces a bounded claim with traceable evidence." /></p>
+<p><strong>Figure 2. Match the claim to the evidence.</strong> Begin with a reproducible response in a defined model, exposure, and measurement context. Mechanistic interpretation requires evidence that an explanation accounts for the response; functional interpretation requires measurement of the function claimed; transfer requires evaluation in the intended new context. Several routes may be needed for one conclusion. Preserve the observations, alternatives, and scope of each claim.</p>
+<h2 id="say-what-changed-before-saying-what-it-means">Say what changed before saying what it means</h2>
+<p>A useful result sentence names the model, perturbation, exposure context, endpoint, comparator, independent units, and observed direction. “Treatment reduced a lysosome-associated fluorescence endpoint in patient fibroblasts” is more informative than “treatment rescued disease.” The former allows questions about organelle abundance, probe behavior, cell number, and the population retained for analysis. The latter hides those questions.</p>
+<table><thead><tr><th>Proposed conclusion</th><th>Evidence the conclusion needs</th></tr></thead><tbody>
+<tr><td>The model responded</td><td>A reproducible difference with valid measurement, suitable controls, and adequate independent replication</td></tr>
+<tr><td>The response resembles a reference</td><td>Similarity under a specified assay, representation, and reference set</td></tr>
+<tr><td>A mechanism explains the response</td><td>Evidence addressing molecular interaction and causal dependence, as appropriate to the claim</td></tr>
+<tr><td>Function improved</td><td>A measurement of the relevant function, with direction and comparator defined</td></tr>
+<tr><td>The result transfers</td><td>Evaluation across the new donors, genotypes, models, exposures, or outcomes named in the claim</td></tr>
+<tr><td>The result can be reused</td><td>Recoverable measurement provenance and a clear distinction between observations, predictions, and interpretations</td></tr>
+</tbody></table>
+<p>A model type is different from the sample tested. An image is different from a segmented object. A feature is a computed measurement; a profile combines descriptors; an assertion interprets them. Those distinctions prevent a representation from silently becoming a biological fact.</p>
+<p>Replication must also follow the claim. Thousands of cells within a jointly treated well do not become thousands of independent treatment assignments. A donor-level conclusion requires information about donors, alongside the technical and culture variation relevant to the design. Detailed single-cell measurements and independent biological replication solve different problems. (1)</p>
+<h2 id="confirm-the-response-then-test-its-explanation">Confirm the response, then test its explanation</h2>
+<p>A primary hit is a candidate response. Confirmation asks whether it recurs under a clearly specified exposure and observation window. Counter-screens challenge alternatives such as optical interference, loss of the measured population, or generalized injury. An orthogonal assay uses a different measurement basis to address a particular uncertainty; its value comes from the explanation it can discriminate.</p>
+<p>Concentration and time dependence make a response more informative, but neither uniquely identifies a target. A graded response establishes a relationship under the tested conditions. A mechanism claim asks why that relationship occurs. Plan follow-up around the competing explanations that would lead to different decisions.</p>
+<p>Confirmation should also preserve the state that made the response observable. In a hypothetical stimulated-pathway screen, compare drug-treated and vehicle-treated cells both with and without the stimulus. This distinguishes modulation of an induced response from a broader change already present at baseline. Follow concentration and time dependence alongside population counts: the most dramatic profile may describe generalized injury, while an earlier or lower-exposure response may support a more specific follow-up.</p>
+<h3 id="similarity-nominates-hypotheses">Similarity nominates hypotheses</h3>
+<p>Profile matching asks whether an unknown perturbation resembles annotated references. It can nominate a pathway or mechanism family while leaving the direct target unresolved. Different perturbations can converge on a similar downstream state, and a compound can affect more than one process. Reference annotations are also incomplete.</p>
+<p>The same boundary applies to learned embeddings. Successful retrieval demonstrates performance on the specified matching task. It does not report the fraction of new target assignments that would survive experimental confirmation. When a feature subset drives a match, inspect which structures and signals that subset actually represents.</p>
+<p>Monastrol provides a useful example of connecting phenotype to a molecular measurement. Mayer and colleagues reported monopolar mitotic spindles and inhibition of the Eg5 motor in vitro. The motor assay constrained an explanation that the spindle image alone could not establish. It does not make every similar spindle phenotype evidence of Eg5 inhibition. (2)</p>
+<h3 id="interaction-and-dependence-are-different-propositions">Interaction and dependence are different propositions</h3>
+<p>The MELK case illustrates the distinction. Lin and colleagues found that cancer-cell lines lacking functional MELK remained sensitive to OTS167. That result challenged the proposition that MELK dependence explained the drug's antiproliferative effect in those models. It did not show that the compound could never interact biochemically with MELK or that MELK has no function in any setting. (3)</p>
+<p>Genetic phenocopy, rescue, resistance, and biochemical interaction can each contribute evidence, but their interpretations depend on the perturbations and controls. State the proposition being tested: does the intervention engage the candidate, is the candidate required for the phenotype, and does changing the candidate alter the response in the predicted direction? Agreement is most useful when the methods have different failure modes and address the same causal account.</p>
+<h2 id="combine-modalities-at-the-level-actually-paired">Combine modalities at the level actually paired</h2>
+<p>Multimodal analysis can connect images with genetic identity, RNA, protein, or physiology. The first question is what was paired.</p>
+<p>In an arrayed genetic screen, well position usually identifies the assigned intervention. Optical pooled screening allows many perturbations to share a culture and recovers their identities in individual imaged cells. Feldman and colleagues linked image phenotypes to genetic perturbations decoded by targeted in situ sequencing. The barcode identifies the assigned perturbation; it does not measure the whole transcriptome or establish editing success in every cell. (4)</p>
+<p>Ramezani and colleagues extended this approach with PERISCOPE, combining a modified Cell Painting assay and optical barcode sequencing to build a genome-wide morphology atlas. (5) This expands the scale of genotype–phenotype comparisons while retaining the need to validate decoding, image registration, and perturbation efficacy. A genetic profile that resembles a compound response can nominate a causal pathway; direct drug–target interaction remains a separate proposition.</p>
+<table><thead><tr><th>Pairing</th><th>Supported connection</th><th>Boundary to preserve</th></tr></thead><tbody>
+<tr><td>Same physical cell with retained registration</td><td>Cell-specific correspondence</td><td>Registration, decoding, and assignment can still be wrong</td></tr>
+<tr><td>Different cells from a matched sample</td><td>Sample-level correspondence</td><td>The quantities were not measured in the same cell</td></tr>
+<tr><td>Matched treatments across assays</td><td>Treatment-level comparison</td><td>Preparation and response timing may differ</td></tr>
+<tr><td>Computationally aligned datasets</td><td>Model-based correspondence</td><td>Inferred values remain predictions</td></tr>
+<tr><td>Live images followed by a registered fixed endpoint</td><td>Observed history linked to a terminal state</td><td>Intermediate molecular states were not necessarily observed</td></tr>
+</tbody></table>
+<p>This is a map of relationships, not a ranking of data quality. Same-cell measurements can be noisy; matched populations can answer a population-level question well. The pairing must match the claim.</p>
+<p>A practical example is collecting culture supernatant before fixing the remaining cells for Cell Painting. Dagher and colleagues combined this workflow with nELISA, a multiplexed secreted-protein assay, and found complementary information for recovering known compound mechanisms. (6) The measurements are paired at the well level: secreted proteins accumulated over a collection interval, while the images describe cells retained at fixation. Preserve collection timing and cell abundance, and avoid assigning the pooled protein signal to a particular imaged cell without additional evidence.</p>
+<p>Computational pairing requires a different check. An expression value predicted from an image cannot provide independent molecular confirmation of that same image-derived prediction. An inferred ordering of static cells is likewise different from following those cells through time. When integration uses treatment labels or other shared metadata, evaluate whether it adds biological information beyond recovering the information used to align the datasets.</p>
+<h2 id="oncology-distinguish-response-selectivity-and-clinical-utility">Oncology: distinguish response, selectivity, and clinical utility</h2>
+<p>The model must express the process required by the question. For a tumor-cell response, distinguish malignant cells from other cells in the sample. If an interaction is essential to the hypothesis, establish that the model contains and retains it. Added complexity should supply a required capability rather than imply general clinical fidelity.</p>
+<p>Four outcomes need separate names:</p>
+<table><thead><tr><th>Outcome</th><th>What it establishes</th></tr></thead><tbody>
+<tr><td>Feasibility</td><td>The assay can produce an interpretable result within the intended workflow</td></tr>
+<tr><td>Predictive validity</td><td>The assay result predicts a specified outcome in the evaluated population</td></tr>
+<tr><td>Treatment guidance</td><td>The result is used to make a treatment decision</td></tr>
+<tr><td>Clinical utility</td><td>The decision strategy improves relevant outcomes compared with an appropriate alternative</td></tr>
+</tbody></table>
+<p>Ooft and colleagues reported that colorectal-cancer organoids predicted the biopsied lesion's response in more than 80% of patients receiving irinotecan-based therapy, while failing to predict outcomes for 5-fluorouracil plus oxaliplatin. The positive and negative findings belong together: this was a regimen- and endpoint-specific result, not a universal accuracy estimate for organoids. (7)</p>
+<p>EXALT provides a distinct example of image-based treatment guidance. Of 143 patients evaluated, 56 received screening-guided treatment; 30 of those 56 achieved the study's progression-free-survival ratio threshold of at least 1.3 relative to their previous treatment. The selected, within-patient comparison is informative, but it is not a randomized estimate of the causal benefit of the decision strategy. (8)</p>
+<p>Within a screen, ex vivo selectivity also has a limited meaning. A differential response between malignant and nonmalignant cells describes those populations under that exposure. It does not directly establish a patient's therapeutic margin, which requires evidence about exposure and effects beyond the sampled material.</p>
+<h2 id="neural-and-organ-applications-measure-the-function-being-claimed">Neural and organ applications: measure the function being claimed</h2>
+<p>Structure often supplies a useful discovery endpoint. Functional recovery adds a question about what the system can do.</p>
+<h3 id="neuronal-morphology-and-activity">Neuronal morphology and activity</h3>
+<p>Lickfett and colleagues describe automated analysis of axonal and dendritic morphology in human iPSC-derived neurons. That method measures outgrowth and structure; it does not directly measure restored circuit function. (9)</p>
+<p>Suppose total neurite length increases after treatment. More neurons may have survived, individual neurons may have extended further, or the analysis may have assigned overlapping processes differently. Retain counts, process measurements, and representative masks to distinguish those possibilities. If the claim concerns network recovery, pair the structural endpoint with a measurement that addresses the intended activity or connectivity.</p>
+<p>Similar care applies to aggregate-associated puncta. Fewer visible objects establish a change in detected abundance. Clearance is a rate-based interpretation and requires evidence that distinguishes removal from reduced production, altered detection, or loss of the affected cells. Specify that next question rather than using “rescue” to cover all of them.</p>
+<h3 id="calcium-and-contraction">Calcium and contraction</h3>
+<p>Ahola and colleagues measured calcium and contraction together in iPSC-derived cardiomyocytes, including a patient-specific disease model and healthy controls. Their paired measurements demonstrate how an image-based functional assay can examine the relationship between ionic and mechanical behavior. (10)</p>
+<p>A calcium transient, cell shortening, electrical activity, and sustained tissue force are distinct endpoints. Choose the one required by the functional claim, and use paired measurements when the relationship between them matters. A marker of lineage identity does not substitute for that measurement.</p>
+<h3 id="swelling-transport-and-other-physiological-endpoints">Swelling, transport, and other physiological endpoints</h3>
+<p>Dekkers and colleagues established a CFTR-dependent swelling assay in intestinal organoids: the response was reduced or absent in relevant CFTR-defective models, and comparisons with other measurements supported its functional interpretation. This is an example of an image endpoint tied to a specific physiological process, rather than morphology alone. It does not establish universal prediction of patient benefit. (11)</p>
+<p>The quantity still needs a precise definition. Area under a swelling-time curve integrates swelling over time. Area under a receiver-operating-characteristic curve summarizes classifier discrimination. Both may be called “AUC,” but they have different axes, units, and meanings.</p>
+<p>For other applications, frame the next measurement around the missing distinction:</p>
+<table><thead><tr><th>Image observation</th><th>Interpretation question</th></tr></thead><tbody>
+<tr><td>Cell-associated cargo signal</td><td>Is the signal surface-bound, internalized, or associated with subsequent processing?</td></tr>
+<tr><td>A continuous junctional boundary</td><td>Is the claimed barrier property structural organization, electrical resistance, or transport?</td></tr>
+<tr><td>More nuclei within multinucleated objects</td><td>Is the denominator nuclei, cells, or objects, and what does the resulting fraction measure?</td></tr>
+<tr><td>Reduced matrix-associated signal</td><td>Did deposition per retained cell change, or did the number of contributing cells fall?</td></tr>
+<tr><td>Altered immune-cell organization</td><td>Does the claim concern position, activation, target-cell survival, or another measured function?</td></tr>
+</tbody></table>
+<p>These are measurement questions, not assertions that a particular explanation caused an observed result. They help select the follow-up that could resolve the ambiguity.</p>
+<h2 id="development-aging-and-rare-disease-define-rescue-precisely">Development, aging, and rare disease: define rescue precisely</h2>
+<p>Movement toward a reference state is a descriptive result. Before calling it rescue, specify the desired dimensions, the tolerated collateral changes, and the population that must benefit. A reference-like endpoint can be compatible with correction within cells or a change in which cells remain.</p>
+<p>Model history can be part of the disease hypothesis. Mertens and colleagues found that directly converted neurons retained aging-associated expression signatures that were lost in the iPSC-based preparations they compared. This supports checking model age when interpreting an age-related phenotype; it does not establish an identical reset or retention effect for every model. (12)</p>
+<p>Senescence presents a related interpretive problem. A decline in a marker could reflect changed expression within the same cells or a change in population composition. Claims of selective cell removal, state modulation, and durable rejuvenation therefore need different evidence. Define the state using measurements appropriate to the context, retain cell counts, and match the observation period to any claim of persistence.</p>
+<p>Consider a <strong>hypothetical rare-disease screen</strong> in which treatment reduces a storage-associated signal in one patient's fibroblasts but has no detectable effect in a second patient's cells. Retain both results. The first supports activity in its tested context; the second limits transfer under the second set of conditions. Neither establishes correction of the missing enzyme, activity in a different tissue, or patient benefit.</p>
+<p>An isogenic comparison can narrow a genetic attribution by controlling background, but clone and production history still need consideration. Even if a genetic change causes the phenotype and a drug reverses it, the drug's direct target remains a separate question.</p>
+<h2 id="toxicology-separate-bioactivity-adversity-and-exposure">Toxicology: separate bioactivity, adversity, and exposure</h2>
+<p>A morphological response establishes bioactivity in a measurement space. It does not automatically establish adversity. Conversely, no detectable response does not prove an absence of hazard outside the model, endpoint, concentration range, and observation window tested.</p>
+<p>The micronucleus assay illustrates a defined biological endpoint. OECD Test Guideline 487 addresses micronuclei arising from chromosome fragments or whole chromosomes in cells that have undergone division. That domain should not be generalized into regulatory acceptance of every morphological profile or image classifier. (13)</p>
+<p>For broader profiling, report the response alongside cell abundance and relevant viability information. A profile of surviving cells is conditioned on which cells survived. Generalized depletion and a change within an intact population should remain separately visible in the result.</p>
+<h3 id="compare-compatible-exposure-quantities">Compare compatible exposure quantities</h3>
+<p>Nominal, freely available, and intracellular concentrations describe different quantities. OECD's 2025 second edition of the good in vitro method practices guidance discusses exposure considerations including binding and partitioning. A model's metabolic capability is an additional property to establish when it matters to the hypothesis. (14)</p>
+<p>Nyffeler and colleagues screened 462 environmental chemicals in U-2 OS cells and used reverse dosimetry to relate in vitro bioactivity estimates to administered-equivalent doses for comparison with mammalian toxicity data. The interpretation depends on that conversion; a plate concentration and an administered dose cannot be compared as if they had the same units or biological meaning. (15)</p>
+<p>Keep statistical quantities equally explicit. A lowest significant tested concentration depends on the tested grid and statistical rule. A benchmark concentration depends on a fitted response model and specified response level. A percentile across feature-specific estimates summarizes that distribution; it is not automatically a confidence bound. Report the calculation, uncertainty, and eligible comparison set before using a value for prioritization.</p>
+<p>A bioactivity-to-exposure comparison is conditional on the exposure scenario and conversion assumptions. It can inform a defined decision, but a numerical margin alone does not establish unconditional safety or clinical risk.</p>
+<h2 id="comparative-biology-preserve-the-object-and-context">Comparative biology: preserve the object and context</h2>
+<p>Image-based inference extends beyond mammalian cells, but the object model changes. A budding yeast cell, a branching filament, a root, and an intact organism require different definitions of structure and response.</p>
+<p>Ohnuki and colleagues compared yeast drug-associated morphology with a reference panel of 4,718 nonessential deletion mutants, using 501 morphology parameters and a four-compound evaluation. The study supports chemical–genetic pathway inference within that setting. A correlated deletion phenotype is not direct-binding confirmation for every implicated gene. (16)</p>
+<p>Across these systems, ask whether the representation preserves the relevant object. Accurate local filament boundaries may still omit network connectivity. A population texture may distinguish conditions without assigning individual cells. State which unit the analysis represents before interpreting a change as cell-level biology.</p>
+<p>In plants, Allan and colleagues used a dual-flow RootChip to measure spatially and temporally distinct calcium responses in Arabidopsis roots. That example connects local environment to a measured signaling response. A calcium signal does not by itself establish successful whole-plant adaptation. (17)</p>
+<p>Whole-organism imaging adds biological context while retaining measurement boundaries. Specify the observed tissue or behavior, exposure unit, observation window, and relevant baseline state. Cells within a tissue remain nested observations; several organisms sharing one assigned exposure need not be independent treatment replicates. (1) A larger model broadens the questions that can be asked without automatically establishing transfer to another species or outcome.</p>
+<h2 id="make-the-claim-and-its-evidence-reusable">Make the claim and its evidence reusable</h2>
+<p>A useful evidence record connects the material and execution to images, derived measurements, and a bounded assertion. REMBI supports biological-study, sample, specimen, acquisition, and image context; the BioImage Archive adopts it as its metadata model. That structure supports reuse without certifying every interpretation. (18)</p>
+<table><thead><tr><th>Record element</th><th>Preserve</th></tr></thead><tbody>
+<tr><td>Context</td><td>Model, sample provenance, state, perturbation, exposure, comparator, and independent units</td></tr>
+<tr><td>Measurement</td><td>Image identifiers, object definitions, features or embeddings, aggregation, software, and parameters</td></tr>
+<tr><td>Assertion</td><td>The specific proposition, direction, scope, and whether it is observed, predicted, or inferred</td></tr>
+<tr><td>Evidence</td><td>Source version, experiment or result locator, supporting observations, and contradictory findings</td></tr>
+<tr><td>Missingness</td><td>Failed measurement, biological depletion, excluded data, and undetected effects</td></tr>
+<tr><td>Change history</td><td>Corrections to identity, analysis, mapping, or interpretation</td></tr>
+</tbody></table>
+<p>Two publications repeating the same experiment are not two independent experiments. A similarity prediction and a negative biochemical test can coexist because they address different propositions. A positive result in one genotype and a null in another can coexist because their contexts differ. Preserve those relationships instead of flattening them into a single unqualified association.</p>
+<h2 id="work-through-the-next-claim">Work through the next claim</h2>
+<p>Consider a <strong>hypothetical neural screen</strong> in which average morphology moves toward healthy controls while cell count falls. The supported observation is a population-profile change accompanied by depletion. Before concluding rescue, examine whether affected neurons improved or whether loss of the most abnormal cells changed the average. If network recovery is the intended claim, measure the relevant function. If a target is proposed, test that explanation separately.</p>
+<p>For a <strong>hypothetical negative toxicology result</strong>, first describe the absence of detectable change under the tested conditions. Then evaluate whether the model, available exposure, endpoint sensitivity, and retained observations cover the question being asked. This preserves a valid negative result while making its scope explicit.</p>
+<table><thead><tr><th>Prompt</th><th>Complete this statement</th></tr></thead><tbody>
+<tr><td>Observation</td><td>“In this model and exposure context, the measured change was …”</td></tr>
+<tr><td>Comparison</td><td>“The result is relative to …, with independent units defined as …”</td></tr>
+<tr><td>Interpretation</td><td>“The present evidence supports …”</td></tr>
+<tr><td>Alternatives</td><td>“The most consequential remaining explanations are …”</td></tr>
+<tr><td>Next evidence</td><td>“To distinguish those explanations, we need …”</td></tr>
+<tr><td>Function</td><td>“The functional claim concerns …, measured by …”</td></tr>
+<tr><td>Transfer</td><td>“The new context requiring evaluation is …”</td></tr>
+<tr><td>Provenance</td><td>“The source version, analysis lineage, and unresolved conflict are …”</td></tr>
+</tbody></table>
+<p>A useful finding need not answer every question at once. It should make the observed response, proposed explanation, and next decision precise enough to test separately.</p>
+<h2 id="references">References</h2>
+<ol>
+<li>Lazic SE, Clarke-Williams CJ, Munafò MR. What exactly is N in cell culture and animal experiments? PLoS Biol. 2018;16(4):e2005282. <a href="https://doi.org/10.1371/journal.pbio.2005282">doi:10.1371/journal.pbio.2005282</a>.</li>
+<li>Mayer TU, Kapoor TM, Haggarty SJ, King RW, Schreiber SL, Mitchison TJ. Small molecule inhibitor of mitotic spindle bipolarity identified in a phenotype-based screen. Science. 1999;286(5441):971–974. <a href="https://doi.org/10.1126/science.286.5441.971">doi:10.1126/science.286.5441.971</a>.</li>
+<li>Lin A, Giuliano CJ, Sayles NM, Sheltzer JM. CRISPR/Cas9 mutagenesis invalidates a putative cancer dependency targeted in on-going clinical trials. eLife. 2017;6:e24179. <a href="https://doi.org/10.7554/eLife.24179">doi:10.7554/eLife.24179</a>.</li>
+<li>Feldman D, Singh A, Schmid-Burgk JL, et al. Optical pooled screens in human cells. Cell. 2019;179(3):787–799.e17. <a href="https://doi.org/10.1016/j.cell.2019.09.016">doi:10.1016/j.cell.2019.09.016</a>.</li>
+<li>Ramezani M, Weisbart E, Bauman J, et al. A genome-wide atlas of human cell morphology. Nat Methods. 2025;22:621–633. <a href="https://doi.org/10.1038/s41592-024-02537-7">doi:10.1038/s41592-024-02537-7</a>.</li>
+<li>Dagher M, Ongo G, Robichaud N, et al. nELISA: a high-throughput, high-plex platform enables quantitative profiling of the inflammatory secretome. Nat Methods. 2025;22:2375–2385. <a href="https://doi.org/10.1038/s41592-025-02861-6">doi:10.1038/s41592-025-02861-6</a>.</li>
+<li>Ooft SN, Weeber F, Dijkstra KK, et al. Patient-derived organoids can predict response to chemotherapy in metastatic colorectal cancer patients. Sci Transl Med. 2019;11(513):eaay2574. <a href="https://doi.org/10.1126/scitranslmed.aay2574">doi:10.1126/scitranslmed.aay2574</a>.</li>
+<li>Kornauth C, Pemovska T, Vladimer GI, et al. Functional precision medicine provides clinical benefit in advanced aggressive hematologic cancers and identifies exceptional responders. Cancer Discov. 2022;12(2):372–387. <a href="https://doi.org/10.1158/2159-8290.CD-21-0538">doi:10.1158/2159-8290.CD-21-0538</a>.</li>
+<li>Lickfett S, Menacho C, Zink A, et al. High-content analysis of neuronal morphology in human iPSC-derived neurons. STAR Protoc. 2022;3(3):101567. <a href="https://doi.org/10.1016/j.xpro.2022.101567">doi:10.1016/j.xpro.2022.101567</a>.</li>
+<li>Ahola A, Pölönen RP, Aalto-Setälä K, Hyttinen J. Simultaneous measurement of contraction and calcium transients in stem cell derived cardiomyocytes. Ann Biomed Eng. 2018;46(1):148–158. <a href="https://doi.org/10.1007/s10439-017-1933-2">doi:10.1007/s10439-017-1933-2</a>.</li>
+<li>Dekkers JF, Wiegerinck CL, de Jonge HR, et al. A functional CFTR assay using primary cystic fibrosis intestinal organoids. Nat Med. 2013;19(7):939–945. <a href="https://doi.org/10.1038/nm.3201">doi:10.1038/nm.3201</a>.</li>
+<li>Mertens J, Paquola ACM, Ku M, et al. Directly reprogrammed human neurons retain aging-associated transcriptomic signatures and reveal age-related nucleocytoplasmic defects. Cell Stem Cell. 2015;17(6):705–718. <a href="https://doi.org/10.1016/j.stem.2015.09.001">doi:10.1016/j.stem.2015.09.001</a>.</li>
+<li>Organisation for Economic Co-operation and Development. Test No. 487: in vitro mammalian cell micronucleus test. OECD Guidelines for the Testing of Chemicals, Section 4. Paris: OECD Publishing; 2023. <a href="https://doi.org/10.1787/9789264264861-en">doi:10.1787/9789264264861-en</a>.</li>
+<li>Organisation for Economic Co-operation and Development. Guidance document on good in vitro method practices (GIVIMP), second edition. OECD Series on Testing and Assessment, No. 421. Paris: OECD Publishing; 2025. <a href="https://doi.org/10.1787/5ba6777b-en">doi:10.1787/5ba6777b-en</a>.</li>
+<li>Nyffeler J, Willis C, Lougee R, Richard A, Paul-Friedman K, Harrill JA. Bioactivity screening of environmental chemicals using imaging-based high-throughput phenotypic profiling. Toxicol Appl Pharmacol. 2020;389:114876. <a href="https://doi.org/10.1016/j.taap.2019.114876">doi:10.1016/j.taap.2019.114876</a>.</li>
+<li>Ohnuki S, Oka S, Nogami S, Ohya Y. High-content, image-based screening for drug targets in yeast. PLoS One. 2010;5(4):e10177. <a href="https://doi.org/10.1371/journal.pone.0010177">doi:10.1371/journal.pone.0010177</a>.</li>
+<li>Allan C, Tayagui A, Hornung R, Nock V, Meisrimler CN. A dual-flow RootChip enables quantification of bi-directional calcium signaling in primary roots. Front Plant Sci. 2023;13:1040117. <a href="https://doi.org/10.3389/fpls.2022.1040117">doi:10.3389/fpls.2022.1040117</a>.</li>
+<li>EMBL-EBI BioImage Archive. REMBI overview [Internet]. [accessed 2026 Oct 24]. Available from: <a href="https://www.ebi.ac.uk/bioimage-archive/rembi-help-overview/">https://www.ebi.ac.uk/bioimage-archive/rembi-help-overview/</a>.</li>
+</ol>
+
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  
+  <section class="modal" id="search-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Search</p>
+      </header>
+      <section class="modal-card-body">
+        <div class="field mb-2">
+          <div class="control">
+            <input class="input" id="search" placeholder="Search this website." type="search" />
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="search-results__items"></div>
+        </div>
+      </section>
+    </div>
+    <button aria-label="close" class="modal-close is-large"></button>
+  </section>
+  
+
+
+  
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <nav class="level">
+              
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;darianharrison.github.io&#x2F;blog&#x2F;2026-10-16&#x2F;">
+              <span class="icon mr-2">
+                <i class="fas fa-arrow-circle-left"></i>
+              </span>
+              Choosing Assays by the Measurement Question
+            </a>
+          </div>
+           
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;darianharrison.github.io&#x2F;blog&#x2F;part-1&#x2F;">
+              Choosing High-Content Screening Methods: From Question to Measurement<span class="icon ml-2">
+                <i class="fas fa-arrow-circle-right"></i>
+              </span>
+            </a>
+          </div>
+          
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+
+
+  
+  <footer class="footer py-4">
+    <div class="content has-text-centered">
+      <p>
+        © 2026 Darian Harrison
+      </p>
+    </div>
+  </footer>
+  
+
+  
+  
+  
+  
+  <script src="https://darianharrison.github.io/elasticlunr.min.js"></script>
+  <script src="https://darianharrison.github.io/search_index.en.js"></script><script src="https://darianharrison.github.io/js/site.js"></script>
+
+  
+
+
+
+
+
+  
+  
+</body>
+
+</html>
