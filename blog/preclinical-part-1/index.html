@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#ffffff" name="theme-color" />
+  <meta content="#da532c" name="msapplication-TileColor" />
+
+  <link rel="icon" type="image/jpeg" href="/images/psi.jpg?v=2">
+
+  <style>
+    .content img {
+        max-height: 500px;
+        width: auto;
+        display: block;
+        margin: 2rem auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    /* Small style for the navbar avatar */
+    .nav-avatar {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    /* Fix for overflowing Markdown tables */
+    .content table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+    }
+  </style>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.1/css/academicons.min.css" integrity="sha384-FIue+PI4SsI9XfHCz8dBLg33b0c1fMJgNU3X//L26FYbGnlSEfWmNT7zgWc2N9b6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link href="https://darianharrison.github.io/deep-thought.css" rel="stylesheet" />
+  
+  
+
+  <title>
+    
+Darian Harrison | Preclinical Research, Part 1: Foundations, Models, and Discovery
+
+  </title>
+
+  
+  
+  
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mathtex-script-type.min.js" integrity="sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT" crossorigin="anonymous"></script>
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+  
+  
+</head>
+
+<body class="has-background-white">
+  <nav aria-label="section navigation" class="navbar is-light" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item is-size-5 has-text-weight-bold" href="https:&#x2F;&#x2F;darianharrison.github.io">
+            <img src="/images/darian-harrison.jpeg" alt="Avatar" class="nav-avatar">
+            Darian Harrison
+        </a>
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end has-text-centered">
+          
+            
+                <a class="navbar-item has-text-weight-semibold" href="&#x2F;">
+                Home
+                </a>
+            
+          
+          <a class="navbar-item" id="nav-search" title="Search" data-target="#search-modal">
+            <span class="icon">
+              <i class="fas fa-search"></i>
+            </span>
+          </a>
+          <a class="navbar-item" id="dark-mode" title="Switch to dark theme">
+            <span class="icon">
+              <i class="fas fa-adjust"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  
+
+  
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <article class="box">
+          <h1 class="title">
+            Preclinical Research, Part 1: Foundations, Models, and Discovery
+          </h1>
+          <p class="subtitle">How to connect disease hypotheses, experimental systems, and measurements to decisions that preclinical evidence can support.</p>
+          <div class="columns is-multiline is-gapless">
+            <div class="column is-8">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="fas fa-user"></i>
+  </span>
+  <span>Darian Harrison published on</span>
+  <span class="icon">
+    <i class="far fa-calendar-alt"></i>
+  </span>
+  <span><time datetime="2026-11-13T09:00:00">November 13, 2026</time></span>
+</span>
+
+            </div>
+            <div class="column is-4 has-text-right-desktop">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span>46 min,</span>
+  <span class="icon">
+    <i class="fas fa-pencil-alt"></i>
+  </span>
+  <span>9021 words</span>
+</span>
+
+            </div>
+            <div class="column">
+              
+            </div>
+            <div class="column has-text-right-desktop">
+              
+            </div>
+          </div>
+          <div class="content mt-2">
+            <p><img src="/images/2026-11-13-part-1.png" alt="A decision and disease hypothesis guide genetic and chemical tests within an experimental system. Exposure, measurement, allocation, and context of use constrain the inference; unresolved questions prompt revision of the hypothesis or next experiment." /></p>
+<p><strong>Figure 1. From experimental response to justified inference.</strong> <em>Complementary experiments examine different links between a disease hypothesis and an intervention response. Exposure, measurement, study design, and context of use determine what those results can establish; convergence can strengthen a specified inference without guaranteeing clinical benefit.</em></p>
+<p>A compound changes an assay signal. Has it changed the intended target, injured the cells, interfered with the detector, or altered a pathway that matters only in this experimental system? Even a reproducible result leaves these possibilities open. Building meaningful preclinical evidence means designing the next experiment to separate them.</p>
+<p>A useful organizing question is whether the proposed mechanism has actually been tested. Morgan and colleagues examined Phase II decisions for 44 Pfizer programs and reported that, in 43%, they could not determine whether it had been adequately tested. Their Three Pillars of Survival framework connects exposure at the site of action, target binding, and functional pharmacological activity. This retrospective analysis offers a way to organize evidence; it does not provide a success probability for an individual program. (1)</p>
+<p>This first article in the series follows the work needed to make such a test interpretable: defining a disease hypothesis, choosing perturbations and models, establishing what an assay measures, and designing comparisons that support inference. Part 2 develops exposure, safety, modality-specific development, and clinical readiness. Part 3 develops quality systems, governance, standards, and reusable knowledge. Essential exposure, welfare, measurement, and regulatory qualifications remain here because they already constrain discovery decisions.</p>
+<h2 id="start-with-the-decision-the-experiment-must-inform">Start with the decision the experiment must inform</h2>
+<p>“Does it work?” is usually too broad. A decision might instead be whether reducing a particular protein changes a disease-relevant process in a specified cell state, whether a phenotype survives selective pharmacological intervention, or whether a lead warrants further development. Each requires a different comparison.</p>
+<table><thead><tr><th>Reader's question</th><th>Evidence to seek</th><th>What a positive result still leaves open</th></tr></thead><tbody>
+<tr><td>Is the target relevant to disease?</td><td>Human genetic associations, tissue context, functional perturbation, and competing causal explanations</td><td>Whether a feasible intervention can reproduce the useful perturbation safely</td></tr>
+<tr><td>Does this compound act through that target?</td><td>Chemical identity, cellular engagement, selectivity, inactive controls, and independent perturbations</td><td>Whether the target-mediated response improves disease function</td></tr>
+<tr><td>Which experimental system should be used?</td><td>Biology and timescale required by the intended inference; components represented and omitted</td><td>Whether findings transfer to another implementation or patient population</td></tr>
+<tr><td>Is the measured change credible?</td><td>Appropriate controls, calibration or normalization, specimen history, and reproducibility</td><td>Whether the signal represents the intended biological construct</td></tr>
+<tr><td>Does the comparison justify advancement?</td><td>Independent allocation, relevant comparator, effect magnitude and uncertainty, exposure and mechanism evidence</td><td>Clinical benefit, a complete safety package, and regulatory acceptance</td></tr>
+</tbody></table>
+<p>This table is a reasoning framework, rather than a validated prediction algorithm. Its purpose is to expose the weakest evidentiary link before another experiment repeats it.</p>
+<p>Several distinctions make the framework usable. A <strong>model family</strong> is an abstract type, such as an immune-humanized mouse or a liver organoid. An <strong>implementation</strong> specifies the actual host, donor cells, induction procedure, culture conditions, or computational configuration. A <strong>cohort</strong> is a particular group studied; an individual subject or donor retains its own history. Evidence about one implementation cannot automatically be assigned to an entire family.</p>
+<p>Likewise, the protocol describes intended conduct; the execution records what happened. A generic assay is different from Tuesday's assay run. The physical measurement differs from its processing and biological interpretation. An enlarged liver, an increased liver-weight measurement, and a statement about treatment safety are related claims, each requiring its own comparison. Keeping them separate prevents a precise-looking number from acquiring a meaning it never demonstrated.</p>
+<h3 id="find-evidence-without-counting-the-same-experiment-repeatedly">Find evidence without counting the same experiment repeatedly</h3>
+<p>A useful search combines disease and mechanism language with the system, intervention, and endpoint of interest. Requiring the word “preclinical” can miss foundational biology, older studies, and human-derived experimental work. Bibliographic databases, full-text repositories, assay databases, omics repositories, official documents, and protocols answer complementary retrieval needs. A preprint, patent, or vendor announcement retains its source type even when it contains technically useful information.</p>
+<p>PRISMA-S provides 16 items for reporting literature searches, including information sources, strategies, limits, dates, and deduplication. Its value here is transparency about what was actually searched. A plausible query template is not an executed search, and an access date is not evidence that methods or results were read. (2)</p>
+<p>Deduplicating publications by DOI or PMID addresses repeated records of one paper. It does not identify multiple papers from one experiment. A pathology article, a pharmacokinetic article, and a transcriptomic article may describe the same animals. Retain publication identity and study/cohort identity separately, documenting uncertain links rather than treating every citation as independent corroboration.</p>
+<p>Appraisal also needs separate questions. Reporting completeness, internal risk of bias, precision, and relevance are different properties. SYRCLE's animal-study tool examines domains including allocation, housing, masking, incomplete outcomes, and selective reporting. It uses an unclear judgment when reporting is insufficient to assess a domain; missing description does not prove that a safeguard was absent, but cannot establish that it occurred. (3) A correctly extracted statement can still come from a biased experiment or a source that does not support it.</p>
+<h2 id="build-a-target-hypothesis-that-can-fail-informatively">Build a target hypothesis that can fail informatively</h2>
+<p>A target hypothesis specifies the biological change sought, the disease and patient context, the direction and degree of modulation, and the response that would justify continuing. GOT-IT offers a scholarly framework for assessing target biology, intervention and model relevance. (4) A Target Product Profile adds practical aspirations such as delivery, efficacy, and safety. Neither is evidence that the intervention is already feasible.</p>
+<h3 id="human-genetics-narrows-hypotheses-it-does-not-prescribe-a-drug">Human genetics narrows hypotheses; it does not prescribe a drug</h3>
+<p>A genome-wide association study, or <strong>GWAS</strong>, links variants to traits. The associated locus is not automatically the causal gene. Expression quantitative trait loci (<strong>eQTLs</strong>) and protein QTLs (<strong>pQTLs</strong>) connect variants to transcript or protein abundance. Colocalization asks whether molecular and disease associations plausibly share a causal signal; nearby associations can otherwise reflect linkage disequilibrium, the correlation among variants.</p>
+<p>Mendelian randomization uses genetic variants as instruments to investigate a proposed exposure–outcome relationship. Its causal interpretation depends on instrument relevance and assumptions about confounding and alternative pathways. A variant that affects disease through several mechanisms can undermine a simple interpretation. Lifelong genetic modulation also differs from a drug's dose, tissue distribution, timing, and reversibility.</p>
+<p>King and colleagues reanalyzed the association between genetic support and drug approval. They describe Nelson and colleagues' earlier estimate of roughly doubled development success, but their own results depend on the evidence type and causal-gene assignment: Mendelian and coding-variant support was more informative than an undifferentiated GWAS association. Some independent validation estimates were not distinguishable from no enrichment. These are historical target–indication comparisons, not a causal experiment or a probability multiplier for an individual program. (5)</p>
+<p>PCSK9 illustrates why beneficial and adverse genetic associations deserve separate questions. Schmidt and colleagues associated variants producing lower LDL cholesterol with higher fasting glucose and type 2 diabetes risk. This Mendelian-randomization analysis concerns lifelong genetic differences; it does not assign the same risk to a drug regimen. (6) The experimental question is which consequences of genetic modulation a proposed intervention would reproduce, in which tissues and over what timescale.</p>
+<p>Tissue and state complete the hypothesis. Bulk expression can conceal a rare cell population, and a gene dependency in a proliferating cell line may not exist in adult tissue. Single-cell and spatial measurements help locate a process, but the number of cells or features is not the number of patients or independent biological replicates. A target-prioritization score organizes evidence; without calibration against outcomes, it is not a probability of therapeutic success.</p>
+<h3 id="use-genetic-and-chemical-perturbations-to-test-different-alternatives">Use genetic and chemical perturbations to test different alternatives</h3>
+<p>A successful CRISPR knockout can eliminate protein expression, including functions beyond the activity a drug would inhibit. CRISPR interference reduces expression; activation increases it. A small molecule may instead inhibit one domain partially and reversibly. Agreement across these perturbations is informative precisely because their possible artifacts differ. GOT-IT specifically cautions that genetic removal can eliminate scaffolding functions and produce a different degree or timing of modulation from a compound. (4)</p>
+<p>A rescue experiment asks whether restoring target function reverses the perturbation phenotype. Its interpretation depends on the restored expression level, construct behavior, and controls. A useful specificity argument should explain why the rescue distinguishes the intended mechanism from alternative explanations. The same target assessment should ask whether the dependency is selective for the disease context or also present in normal cells. These are questions about mechanism and therapeutic window, not a declaration that a strong phenotype identifies a suitable drug target. (4,50)</p>
+<p>Chemical probes add a tractable test of pharmacology. The Chemical Probes Portal's criteria for classical modulators consider biochemical potency, selectivity, cellular target engagement, and suitable controls. It recommends an inactive control and, where available, an orthogonal active probe. Those comparisons help test whether a phenotype tracks the intended interaction. (7) A probe and a development candidate serve different purposes; delivery and pharmacokinetic suitability require separate evidence.</p>
+<p>The Portal's classical-modulator benchmarks include biochemical IC50, Ki or Kd below 100 nM, more than 30-fold selectivity within the target family, and quantified cellular target engagement below 1 µM; broader selectivity profiling is desirable. These are that resource's probe criteria, not universal candidate-advancement rules. (7) IC50 is a half-maximal inhibitory concentration under particular assay conditions; Ki is an inhibition constant and Kd a dissociation constant. Equal numerical values do not make them the same property.</p>
+<h3 id="engagement-is-a-measurement-question">Engagement is a measurement question</h3>
+<p>The cellular thermal shift assay examines compound-associated changes in protein thermal stability. Thermal proteome profiling extends this approach across proteins using mass spectrometry. Franken and colleagues describe how the method can investigate direct and indirect drug effects. (8)</p>
+<p>Intact-cell profiles can contain direct binding effects and indirect changes mediated by signaling, modification, or protein interactions. Comparing intact cells with extracts can help distinguish these explanations, although the environments differ. (8) Interpret a thermal shift alongside the assay conditions and complementary evidence before assigning direct target engagement.</p>
+<p>A species comparison can expose a different missing link. Kim and colleagues report that DMXAA activates mouse STING but does not bind human STING. STING—the stimulator of interferon genes—is an innate immune-signaling protein. (9) This species-selective interaction motivates checking the relevant ortholog, the corresponding protein in another species, before inferring human engagement from a mouse tumor response.</p>
+<h2 id="make-a-screening-signal-earn-its-biological-interpretation">Make a screening signal earn its biological interpretation</h2>
+<p>Target-based screening begins with a defined molecular interaction or activity. Phenotypic screening begins with a cellular or organismal response. The first gives an earlier handle on binding or catalysis; the second can reveal responses that depend on networks or multiple targets. Neither starting point completes the mechanism argument.</p>
+<h3 id="choose-the-readout-for-the-inference">Choose the readout for the inference</h3>
+<table><thead><tr><th>Assay family</th><th>What its signal can address</th><th>Critical alternative explanation or omitted component</th></tr></thead><tbody>
+<tr><td>Purified enzyme assay</td><td>Substrate conversion and inhibition under defined conditions</td><td>Cell entry, metabolism, protein context, and detector interference</td></tr>
+<tr><td>Biophysical binding, such as surface plasmon resonance (SPR) or nuclear magnetic resonance (NMR)</td><td>Interaction with a prepared target; kinetic or affinity properties where the method supports them</td><td>Functional effect in intact cells and biological specificity</td></tr>
+<tr><td>Reporter assay</td><td>A pathway-associated transcriptional response</td><td>Reporter inhibition, cell injury, and nonspecific transcriptional effects</td></tr>
+<tr><td>Calcium or cyclic adenosine monophosphate (cyclic-AMP) assay</td><td>A selected second-messenger response</td><td>Receptor coupling, timing, and pathway-specific activity</td></tr>
+<tr><td>High-content imaging</td><td>Morphology, localization, and multiparameter cellular states</td><td>Segmentation errors, batch effects, and ambiguity about causal targets</td></tr>
+</tbody></table>
+<p>These assay families answer different questions. Changing detection chemistry can help test whether activity belongs to the biological system or to the measurement method; simply repeating the same signal does not resolve that distinction. (51)</p>
+<p>Miniaturization makes dispensing, evaporation, plate position, and solvent conditions part of assay development. Establish acceptable performance in the format actually used. A compound prepared in neat dimethyl sulfoxide (DMSO) stock does not imply neat DMSO exposure in the final assay; report the final solvent concentration and appropriate vehicle controls.</p>
+<p>Control separation is one component of assay quality. The conventional control-based Z′ statistic is</p>
+<p>[
+Z'=1-\frac{3(\sigma_{+}+\sigma_{-})}{|\mu_{+}-\mu_{-}|},
+]</p>
+<p>where μ and σ are the control means and standard deviations, measured in the same signal units. The statistic is dimensionless and combines separation with variation. Zhang and colleagues introduced the screening-window framework; the complete expression is directly available in Bar and Zweifach's analysis. (10,11)</p>
+<p>A hypothetical example shows its meaning: controls with means 100 and 0 and standard deviations 5 each give Z′ = 1 − 30/100 = 0.70. If each standard deviation is 10, the same mean separation gives 0.40. The arithmetic shows variation's effect; it supplies no evidence that either assay models disease.</p>
+<p>Bar and Zweifach challenge a rigid Z′ &gt; 0.5 gate using power analysis and simulation. Assays below that threshold can still identify useful compounds with suitable hit thresholds and justified design. (11) Spatial drift, day-to-day potency reproducibility, and response to realistic controls remain separate questions. A spatial normalization procedure does not prove that drift has been removed, and Z′ does not diagnose the biological cause of a hit.</p>
+<h3 id="compare-discovery-routes-without-ranking-library-size-as-evidence-quality">Compare discovery routes without ranking library size as evidence quality</h3>
+<table><thead><tr><th>Route</th><th>Useful starting situation</th><th>What an initial result represents</th><th>Next decisive check</th></tr></thead><tbody>
+<tr><td>Conventional high-throughput screening</td><td>An assay can evaluate many discrete compounds</td><td>Empirical activity in that assay</td><td>Fresh material, concentration response, interference checks, and mechanism</td></tr>
+<tr><td>DNA-encoded library selection</td><td>A target can support pooled affinity selection</td><td>Enrichment of a tagged chemical representation</td><td>Resynthesis without the tag, background controls, binding, and function</td></tr>
+<tr><td>Fragment screening</td><td>Sensitive methods can detect weak interactions with small molecules</td><td>A small binding starting point</td><td>Confirmed binding geometry and growth or linking supported by measurements</td></tr>
+<tr><td>Structure-based or virtual screening</td><td>A relevant structure or model can generate testable rankings</td><td>Predicted compatibility</td><td>Experimental identity, binding, and activity</td></tr>
+<tr><td>Phenotypic profiling</td><td>A relevant cellular state can be measured</td><td>A response pattern</td><td>Distinguish disease biology, toxicity, and causal mechanism</td></tr>
+</tbody></table>
+<p>These routes generate different kinds of starting evidence. Library size alone cannot establish accessible chemical diversity, hit quality, or development success. Choose the next experiment according to what the initial result actually measures.</p>
+<p>An initial hit raises chemical and biological confirmation questions. Does its concentration response repeat with fresh, identity-checked material? Could impurities, degradation, or the detection system explain the signal? Does activity persist in an assay that uses a different measurement principle? Orthogonal assays and interference counterscreens address complementary questions: genuine bioactivity and assay interference can coexist. (51)</p>
+<p>Structural alerts for pan-assay interference compounds (PAINS) identify concerns to investigate. They do not establish the mechanism of activity in the experiment at hand. Chemical reactivity, redox activity, fluorescence, and aggregation require different follow-up tests. Interpret the alert together with the compound, assay conditions, and experimental evidence. (52)</p>
+<p>Cell Painting shows what a richer phenotype contributes. The original protocol uses six fluorescent dyes imaged in five channels to profile eight cellular components or compartments, followed by computational image analysis. It supports comparison of morphological profiles. (12) Similarity to a reference compound generates a mechanistic hypothesis; it does not identify a direct binding target. The assay's information content depends on image quality, segmentation, aggregation, and the biological relevance of the cells.</p>
+<h2 id="let-the-intervention-s-mechanism-determine-the-experiment">Let the intervention's mechanism determine the experiment</h2>
+<p>A single equilibrium potency number cannot describe every modality. Reversible inhibitors depend on occupancy. Covalent inhibitors introduce reaction kinetics and target turnover. Degraders depend on productive recruitment and protein destruction. Gene replacement and RNA-splicing interventions change yet other steps between administration and response.</p>
+<p>PROTACs—proteolysis-targeting chimeras—are bifunctional molecules that recruit a protein of interest to an E3 ubiquitin ligase, enabling targeted protein degradation. Gadd and colleagues report an MZ1–VHL–Brd4 bromodomain ternary structure and cooperative recognition, illustrating why binary affinity alone need not determine selectivity. (13) Han’s mathematical treatment distinguishes ternary assembly from subsequent ubiquitination and degradation. (14) A degradation readout must specify its time point and response definition; loss of the target protein is a separate endpoint from improvement in disease function.</p>
+<p>In Han’s reversible equilibrium model, excess heterobifunctional ligand can favor separate binary complexes over a ternary complex, producing a bell-shaped concentration relationship—the hook effect. This is a conditional model result, not a prediction that every cellular degrader response must turn downward. (14)</p>
+<p>Covalent inhibitors require attention to time-dependent inhibition. Mader and colleagues explain why a single IC50 cannot fully characterize an irreversible inhibitor: binding and inactivation kinetics both matter, and the apparent potency depends on assay conditions and measurement time. The parameters (k_{\mathrm{inact}}) and (K_I) describe different aspects of the specified kinetic model; their ratio is an efficiency measure, not a universal advancement threshold. (15)</p>
+<p>These distinctions also explain why a gene-replacement benefit, a tissue-distribution measurement, and an RNA-splicing correction cannot be compressed into one potency rank. Delivery, expression duration, tissue access, and immune effects remain necessary questions; Part 2 develops their modality-specific consequences.</p>
+<h2 id="select-a-system-by-the-biology-the-decision-requires">Select a system by the biology the decision requires</h2>
+<p>A model can resemble a disease without sharing its cause. It can reproduce a mechanism without predicting a treatment effect. <strong>Face validity</strong> concerns observable resemblance; <strong>construct validity</strong> concerns the modeled disease process; <strong>mechanistic relevance</strong> concerns how the intervention acts; and <strong>predictive validity</strong> concerns performance against outcomes outside the model. These distinctions are used as a conceptual framework here, not as validated scores common to all platforms.</p>
+<p>A useful choice often ends at a family plus a characterization plan. Choosing “organoids” or “mice” before specifying cell state, immune context, timescale, exposure, and endpoint would leave the decisive implementation choices unresolved.</p>
+<h3 id="compare-what-each-system-retains">Compare what each system retains</h3>
+<table><thead><tr><th>System</th><th>Biological leverage</th><th>Information that must accompany the result</th></tr></thead><tbody>
+<tr><td>Cell-free preparation</td><td>Isolates selected molecular interactions</td><td>Protein preparation, cofactors, detection chemistry, and the absent cellular context</td></tr>
+<tr><td>Immortalized cell line</td><td>Renewable material for controlled perturbation and screening</td><td>Identity, passage, contamination, lineage changes, and altered metabolism</td></tr>
+<tr><td>Primary human cells</td><td>Native donor-associated functions</td><td>Donor provenance, handling, lot variation, viability, and functions retained in culture</td></tr>
+<tr><td>Induced pluripotent stem cell (iPSC)-derived cells</td><td>Donor genotype and renewable differentiated lineages</td><td>Differentiation consistency, maturity, cell composition, and relevant functional characterization</td></tr>
+<tr><td>Spheroids or organoids</td><td>Multicellular organization and selected tissue architecture</td><td>Matrix, polarity, cell populations, diffusion, necrotic cores, and donor/batch effects</td></tr>
+<tr><td>Explant or tissue slice</td><td>Native local architecture and cell interactions</td><td>Procurement injury, ischemic history, viability window, and absent systemic support</td></tr>
+<tr><td>Organ chip</td><td>Engineered interfaces, flow, mechanics, or sensing</td><td>Which features are present, media compatibility, device losses, delivered concentration, and scaling</td></tr>
+<tr><td>Intact animal</td><td>Organismal interactions, behavior, circulation, and longitudinal disease</td><td>Species pharmacology, induction, background, immune experience, welfare, and patient-context mismatch</td></tr>
+<tr><td>Computational model</td><td>Explicit integration and exploration of assumptions</td><td>Input provenance, parameter identifiability, uncertainty, calibration, validation, and applicability domain</td></tr>
+</tbody></table>
+<p>The table is a set of characterization questions, not a ranking of predictive performance. For organ chips, Ingber’s review provides a broader account of engineering, biological representation, and applications. (16)</p>
+<p>Human origin establishes provenance, but maturity, population coverage, and functional relevance still need characterization. For a human-derived system, ask which cell populations and functions are represented, which components are absent, and how donor, matrix, and medium affect the intended comparison. A material described as human-derived is not necessarily chemically defined.</p>
+<p>Chips make exposure engineering especially visible. Ask whether protein binding, material interactions, flow, and metabolism alter the concentration delivered to the cells. A change of device material needs its own recovery assessment. Connecting compartments also requires justified volume, residence-time, clearance, and medium-compatibility assumptions. Treat these as implementation-specific characterization questions. (16)</p>
+<p>Animal complexity introduces different relevance questions. Does the species express the target in the cells that must respond? Does the induced disease persist for the intended observation period? Are age, comorbidity, immune history, and background treatment important to the clinical comparison? The value of the model depends on which of these features the decision requires.</p>
+<p>“Humanized” also needs an object: liver cells, immune cells, or a target sequence. Specify the host, introduced human material, engraftment procedure, retained functions, and observation window. The label alone cannot establish complete immune reconstruction or suitability for a particular intervention.</p>
+<h3 id="ask-which-biological-link-a-translational-warning-exposes">Ask which biological link a translational warning exposes</h3>
+<p>Clinical and retrospective examples can sharpen experimental questions, provided their scopes remain separate.</p>
+<table><thead><tr><th>Example</th><th>Observed or reported distinction</th><th>Inference to carry forward</th></tr></thead><tbody>
+<tr><td>TGN1412</td><td>Eastwood and colleagues identified species differences in CD28 expression on CD4+ effector-memory T cells as an explanation for the unexpected human cytokine response. (17)</td><td>Cross-reactive binding does not establish the same responding cell population. This is an explanation specific to the studied mechanism, not a measure of all antibody-model accuracy.</td></tr>
+<tr><td>Fialuridine</td><td>In Xu and colleagues' retrospective study, humanized-liver TK-NOG mice developed dose-dependent injury while controls did not. The clinical background was 7 liver-failure cases among 15 participants, including 5 deaths and 2 transplants. At 2.5 mg/kg/day for 14 days, the mouse comparison used 6 animals per group and detected liver-injury signals. (18)</td><td>Human hepatocytes can reveal a species-dependent liability, but that dose was still approximately ten times the human dose; dose ratio is not exposure equivalence or universal humanized-model validation.</td></tr>
+<tr><td>Atabecestat</td><td>The truncated clinical trial included 557 participants and reported dose-related cognitive worsening and neuropsychiatric adverse events. Here “preclinical Alzheimer disease” describes a human disease stage, not an animal experiment. (19)</td><td>A biomarker-directed mechanism does not establish benefit. The trial result alone does not resolve the mechanism of harm.</td></tr>
+<tr><td>Iniparib</td><td>Liu and colleagues' abstract reports that neither iniparib nor its nitroso metabolite behaved as a poly(ADP-ribose) polymerase (PARP) inhibitor in their enzyme and cellular assays; they found nonspecific protein adducts. (20)</td><td>Phenotypic activity and the proposed target mechanism require independent tests. No clinical effect estimate is inferred.</td></tr>
+<tr><td>BIA 10-2474</td><td>Activity-based proteomics found off-target lipase inhibition and altered lipid networks in human cortical neurons. The investigators explicitly stated that the clinical neurotoxicity's cause was unknown. (21)</td><td>These experiments support an off-target hypothesis; they do not establish that this mechanism caused the neurological harm.</td></tr>
+</tbody></table>
+<p>These cases motivate targeted checks. They do not share a denominator, establish a common failure cause, or yield an animal-versus-human-platform ranking.</p>
+<h3 id="a-benchmark-is-useful-only-with-its-denominator-and-analysis">A benchmark is useful only with its denominator and analysis</h3>
+<p>The Ewart study evaluated 27 drugs overall. Its protein-binding-corrected two-donor Table 6 analysis contained 18: 13 true positives, 2 false negatives, 3 true negatives, and no false positives. Sensitivity was 13/15, or 87% rounded, with a reported 95% confidence interval of 61.5–96.0%; specificity was 3/3, or 100%. The exposure-margin threshold of 375 was selected to maximize sensitivity while avoiding false positives. (22)</p>
+<p>The uncorrected two-donor sensitivity was 12/15, or 80%. The comparison with spheroids used previously published data, and the authors disclosed commercial interests. These results do not establish performance across all compounds or uses. The January 2023 correction changed Table 5’s spheroid specificity from 100% to 67% and corrected an abstract typo; the February correction replaced Table 3, which had duplicated Table 2. (22–24) These corrections concern distinct analyses and must accompany reuse of the paper.</p>
+<h2 id="use-disease-examples-to-test-the-selection-logic">Use disease examples to test the selection logic</h2>
+<p>The same model-selection mistake recurs across indications: a convenient measurable outcome substitutes for the biological process the decision requires. The examples below preserve useful distinctions without implying a comprehensive disease atlas.</p>
+<table><thead><tr><th>Intended inference</th><th>Model or readout comparison</th><th>What must be resolved before a treatment claim</th></tr></thead><tbody>
+<tr><td>Persistent pulmonary fibrosis</td><td>Single versus repetitive bleomycin injury (29)</td><td>Established fibrosis versus acute injury; persistence, treatment timing, mortality, and masking</td></tr>
+<tr><td>Relief of neuropathic pain</td><td>Evoked withdrawal versus spontaneous or affective measures (25)</td><td>Motor effects, sedation, stimulus sensitivity, and the dimensions of pain represented</td></tr>
+<tr><td>Cardiac disease modification</td><td>Multi-hit heart failure with preserved ejection fraction (HFpEF) models (26)</td><td>Which metabolic, hypertensive, age, sex, and substrain features are represented; preserved ejection fraction alone is incomplete</td></tr>
+<tr><td>Sepsis treatment</td><td>Infection, dysregulated host response, and life-threatening organ dysfunction, as specified by MQTiPSS (27)</td><td>Whether the model meets the disease definition and how treatment timing, resuscitation, and antimicrobial therapy affect relevance</td></tr>
+<tr><td>Aging intervention</td><td>Survival versus functional healthspan outcomes (28)</td><td>Sex, dose, genetic background, site, disease burden, and the survival or functional quantity being estimated</td></tr>
+</tbody></table>
+<p>These examples illustrate selection questions, not complete protocols or comparative rankings. MQTiPSS stands for Minimum Quality Threshold in Pre-clinical Sepsis Studies. A model family should be selected only after its actual implementation and relevance to the intended endpoint have been assessed.</p>
+<p>A hypothetical antifibrotic selection illustrates the sequence. If the decision concerns established persistent scar, treatment concurrent with an acute insult tests prevention or early injury modification. A later intervention needs evidence that fibrosis is present when treatment begins. Histology, extracellular-matrix measures, physiology, and mortality answer different questions. Repetitive injury might provide persistence while introducing cumulative injury and welfare concerns. The appropriate choice is the implementation that tests the intended stage with interpretable exposure and outcomes; complexity alone supplies no answer.</p>
+<p>Protocol details can change the inference even within a named model family. For a repetitive-injury model, establish the exact dosing interval and observation period from the methods. For a multi-hit cardiac model, identify which metabolic and hypertensive components were used and whether the reported sex and substrain match the intended study. (26,29) A model name is not an executable protocol.</p>
+<p>The rapamycin example separates survival from broader claims about aging. Strong and colleagues studied late-life treatment schedules in genetically heterogeneous UM-HET3 mice and reported sex- and schedule-dependent survival effects. The authors also discuss a chow-supplier difference that complicated interpretation. (28) A survival result should retain its treatment schedule, population, and analysis; it cannot be relabeled an increase in healthy lifespan without appropriate functional evidence.</p>
+<p>A porcine liver-transplantation study illustrates another endpoint distinction. Riveros and colleagues compared normothermic machine perfusion with static cold storage, reporting differences in bile production, lactate, and post-transplant enzyme release. (30) Those endpoints address different aspects of graft physiology and injury; they do not by themselves establish clinical superiority.</p>
+<h2 id="design-the-comparison-at-the-level-where-treatment-is-allocated">Design the comparison at the level where treatment is allocated</h2>
+<p>A well-chosen biological system can still produce an uninterpretable experiment. Specify the intended effect before choosing an analysis: treatment and comparator, population or model implementation, endpoint and time, summary measure, and handling of events that change whether the outcome exists or can be observed. This borrows the logic of an estimand—a precisely specified treatment effect—without claiming that a clinical-trial framework is a universal preclinical requirement. ICH E9(R1), in its May 2021 FDA implementation, supports this clinical distinction between the question, estimand and analysis. (31)</p>
+<p>The independent <strong>experimental unit</strong> is determined by allocation and application of treatment. An <strong>observational unit</strong> supplies a measurement; a <strong>biological unit of interest</strong> is what the inference concerns. These can differ. Lazic and colleagues emphasize independent assignment, independent treatment application, and lack of relevant influence between units when judging genuine replication. (32)</p>
+<p>In a hypothetical design with two treated and two control cages, each containing five mice and receiving one shared water treatment, there are four cage-level treatment allocations, not twenty independent allocations. More measurements per mouse characterize within-cage variation; they do not create more treatment replications. If drugs are independently allocated and administered to animals under a different design, the unit can change. The example depends on how the experiment is conducted, rather than on a permanent rule that cage or mouse is always correct.</p>
+<p>Blocking can balance a known source of variation such as donor, litter or day. NC3Rs guidance recommends randomization within blocks and accounting for the block in analysis; it also warns that an uninformative block can consume degrees of freedom. (33) Factorial designs address interactions as well as main effects. Split-plot designs allocate factors at different levels, such as an incubator-level environment and drug conditions within plates. They make allocation visible without prescribing an analysis for an unspecified dataset.</p>
+<p>Randomization, concealment, and masking address different opportunities for bias. Randomization determines allocation; concealment protects entry decisions from knowledge of the next assignment; masking limits knowledge during conduct, assessment, or analysis. Reporting their actual implementation makes a study assessable. ARRIVE 2.0 organizes 21 reporting items into the Essential 10 and an additional Recommended Set. It supports transparent appraisal rather than certifying that a reported experiment is unbiased. (34)</p>
+<p>PREPARE addresses planning through 15 topics, including dialogue with facilities, competence, husbandry, procedures, and humane killing and necropsy. Its prospective role complements reporting after conduct. (35) A plan, completed checklist, or software assistant cannot substitute for evidence that the planned comparison was carried out.</p>
+<h3 id="anticipate-loss-of-observations-without-changing-the-question-after-seeing-results">Anticipate loss of observations without changing the question after seeing results</h3>
+<p>Death, humane euthanasia, severe impairment, contamination, or chip failure can change both observation and interpretation. Removing affected units can make the remaining group look healthier or more effective than the allocated group. Carrying the last observation forward can falsely freeze a progressive process.</p>
+<table><thead><tr><th>Intended approach to a post-treatment event</th><th>What changes in the question</th><th>Limitation to retain</th></tr></thead><tbody>
+<tr><td>Include the event in the endpoint</td><td>Failure, rescue, or death becomes part of the outcome</td><td>Components must have a defined interpretation</td></tr>
+<tr><td>Estimate a hypothetical outcome without the event</td><td>The analysis targets a counterfactual scenario</td><td>Requires assumptions about unobserved outcomes</td></tr>
+<tr><td>Analyze the observed longitudinal process with an event model</td><td>The relationship between trajectory and attrition is modeled</td><td>Model structure and identifiability remain consequential</td></tr>
+<tr><td>Restrict to a principal stratum</td><td>The target is units that would avoid the event under either treatment</td><td>This is not simply the observed survivors; membership is counterfactual</td></tr>
+</tbody></table>
+<p>ICH E9(R1) provides the clinical basis for composite, hypothetical, and principal-stratum strategies. A principal stratum is not simply the observed survivor group. An outcome after death may be undefined rather than merely missing. (31) The table applies these distinctions as planning questions; a joint longitudinal–event model requires additional model-specific justification.</p>
+<p>The analysis should state what it assumes about missing observations and why. Consider whether the conclusion would change under plausible alternative outcomes for units with missing data. An analysis that accepts incomplete records does not, by itself, resolve the reason those records are incomplete. (31)</p>
+<p>Sample-size justification begins with the effect that would matter, expected variation, independent units, design, and analysis. A conventional target such as 80% power is an input, not an assurance of scientific value. Smalheiser and colleagues examined mouse forced-swim assays with known antidepressant positive controls and reported large standardized effects. Their sample-size conclusions apply to that setting, not to all preclinical experiments or an untested agent. (36)</p>
+<p>Analysis and plotting should retain the hierarchy of the experiment. Additional cells measured within a culture do not create additional independent treatment allocations. SuperPlots display individual observations together with replicate-level summaries so readers can see both within-experiment variation and reproducibility across experiments. (32,37) The design must still establish which units support the inference.</p>
+<h2 id="treat-welfare-and-measurement-as-part-of-the-experimental-system">Treat welfare and measurement as part of the experimental system</h2>
+<p>Welfare and husbandry belong in the experimental plan because they shape both the animals’ experience and the conditions under which the comparison is made. Document handling, housing, care, and humane endpoints at the level needed to interpret the study. PREPARE provides a framework for planning these elements with the facility and responsible personnel. (35)</p>
+<p>Replacement, reduction, and refinement must be considered alongside the scientific objective. Fewer animals do not represent an informative reduction if the comparison cannot resolve its intended effect. Refinement includes necessary care and prospectively defined humane endpoints. Rescue treatment can itself affect an endpoint—for example, anti-inflammatory rescue in an inflammatory-disease study—so its role belongs in the study question and event-handling plan. It should not be withheld to preserve an assay signal. PREPARE supports prospective attention to welfare and humane endpoints. (35)</p>
+<p>Specimen handling requires the same prospective attention. Retain subject or donor identity, collection and processing times, temperature, storage and freeze–thaw history. M10 specifically addresses matrix stability under actual handling conditions and possible metabolite back-conversion during analysis, which can affect reported parent concentration. (38) These are method-specific characterization questions, not evidence that every analyte is unstable.</p>
+<h3 id="follow-the-transformation-from-signal-to-biological-claim">Follow the transformation from signal to biological claim</h3>
+<table><thead><tr><th>Level</th><th>Example</th><th>Question to preserve</th></tr></thead><tbody>
+<tr><td>Raw signal</td><td>Detector counts, fluorescence image, mass spectrum</td><td>What did the instrument record?</td></tr>
+<tr><td>Processed output</td><td>Integrated peak, aligned reads, segmented cell mask</td><td>Which transformations and quality decisions were applied?</td></tr>
+<tr><td>Derived quantity</td><td>Concentration, fold change, uptake value</td><td>Which calibration, normalization, or model produced the number?</td></tr>
+<tr><td>Biological interpretation</td><td>Target engagement, injury, response</td><td>What evidence connects the quantity to that construct?</td></tr>
+<tr><td>Decision</td><td>Continue, redesign, or stop</td><td>Is the inference adequate for the stated use?</td></tr>
+</tbody></table>
+<p>A result below the lower limit of quantification should retain its flag and the relevant limit rather than become an observed zero. Likewise, retain the distinction between a tentative molecular assignment and a confirmed identity. In high-throughput data, batch structure creates another interpretive risk: Leek and colleagues explain how processing all cases and controls in different batches can make technical and biological differences inseparable. (39)</p>
+<p>The FDA's November 2022 M10 guidance replaced the 2019 draft. It concerns bioanalytical drug/metabolite measurements supporting regulatory decisions and permits scientifically justified alternatives within applicable law; it is not a universal rule for discovery readouts. (38)</p>
+<p>An exact denominator matters in M10's incurred-sample reanalysis: the percentage difference between repeat and original concentrations uses their mean, not the original value alone. Acceptance limits differ between chromatographic and ligand-binding methods. (38) Detailed validation belongs with the analytical method and development program.</p>
+<h3 id="do-not-let-a-biomarker-become-a-clinical-endpoint-by-implication">Do not let a biomarker become a clinical endpoint by implication</h3>
+<p>A pharmacodynamic biomarker indicates a biological response to an intervention. A prognostic biomarker concerns the likelihood of an outcome, while a predictive biomarker identifies differences in the likelihood of benefit or harm from an intervention. A surrogate endpoint substitutes for a direct clinical outcome and needs evidence appropriate to that use. The FDA–NIH BEST resource defines these categories. (40) FDA’s qualification framework likewise ties a biomarker to a stated context of use; a biomarker result is not itself an assessment of how a person feels, functions, or survives. (41)</p>
+<p>Qualification applies to a marker in a defined context. FDA’s April 2008 letter includes urinary kidney injury molecule-1 (KIM-1) among markers for voluntary complementary assessment of acute drug-induced nephrotoxicity in rats. (42) Its November 2025 determination qualifies serum glutamate dehydrogenase (GLDH), alongside standard hepatic markers, for a specified clinical-trial setting involving muscle-related transaminase elevation; the determination notes that pre-existing liver disease was not studied. (43) Neither decision establishes universal biomarker superiority or extends qualification to other markers by association.</p>
+<p>Spatial and image-derived data require the same separation between measurement and interpretation. Ask how segmentation, overlapping structures, staining, and classification affect the result. A precise coordinate or automated label still needs evidence that it represents the intended biological object. High-content screening guidance describes interference and artifacts that can complicate such measurements. (53)</p>
+<h2 id="distinguish-scientific-usefulness-from-official-acceptance">Distinguish scientific usefulness from official acceptance</h2>
+<p>Analytical performance asks whether a measurement is fit for its intended task. Biological validation asks whether the system represents the process or predicts an outcome of interest. Transferability asks whether performance survives movement between settings. Qualification or acceptance asks a specific authority to recognize a tool or evidence for a defined use. These statuses should be recorded separately.</p>
+<p>OECD's GIVIMP addresses in vitro method practices for regulatory human-safety assessment. The original 2018 document is Series on Testing and Assessment No. 286. (44) A second edition, No. 421, was published in December 2025; its official description covers roles, quality, facilities, materials, test systems, controls, procedures, performance, reporting and records, and identifies additional human-serum ethics content. (45) This is guidance with a stated scope, not evidence that every discovery assay is legally subject to a universal GIVIMP mandate.</p>
+<p>FDA’s ISTAND submission process distinguishes a Letter of Intent, Qualification Plan, and Full Qualification Package. Qualification concerns a specified context of use. (46) FDA’s September 2024 Liver-Chip announcement described acceptance of a Letter of Intent, an early stage in that process. (47) When reusing an announcement, distinguish its dated status from a later qualification decision and from approval of an individual product.</p>
+<p>The broader choice between animal and non-animal evidence depends on the product and question. FDA’s public explanation describes in vitro, in silico, and in vivo testing and consultation with the agency. It supports neither a blanket animal-testing ban nor automatic sufficiency of a non-animal platform. (48) Scientific relevance and regulatory acceptability both need a defined context.</p>
+<p>Acceptance in one jurisdiction, conformity to hardware dimensions, and scientific prediction are different propositions. Likewise, chemical-hazard test guidelines do not automatically establish the adequacy of a therapeutic efficacy model. Part 3 develops the official-version and applicability questions; Part 2 develops the candidate-specific evidence package.</p>
+<h2 id="keep-the-inference-reusable">Keep the inference reusable</h2>
+<p>A reusable evidence record connects the result to its source and context: model implementation, intervention, dose or exposure, comparator, endpoint, time, independent units, uncertainty, exclusions, and limitations. Distinguish an observed result from an interpretation, prediction, and proposed experiment. Record missing information with a reason rather than filling it from a nearby table or a familiar convention.</p>
+<p>An ontology specifies kinds of entities and their relationships; a terminology organizes labels; an exchange format packages data. They can cooperate without becoming interchangeable. PROV-O, the W3C provenance ontology, supplies Entity, Activity, and Agent and relationships linking an output to the activity that generated it and the agent to which it is attributed. (49) Those relationships help make an inference inspectable. They do not verify the experiment or cause the encoded claim to become true.</p>
+<p>A useful closing worksheet is therefore a compact test of the next decision:</p>
+<table><thead><tr><th>Field</th><th>Write a specific answer</th></tr></thead><tbody>
+<tr><td>Decision</td><td>What will change if this experiment is positive, negative, or inconclusive?</td></tr>
+<tr><td>Disease hypothesis</td><td>Which population, stage, tissue, and mechanism are relevant?</td></tr>
+<tr><td>Perturbation</td><td>What is changed, to what degree, for how long, and by which modality?</td></tr>
+<tr><td>System</td><td>Which implementation contains the required biology, and what does it omit?</td></tr>
+<tr><td>Exposure and engagement</td><td>What measurements establish access and the intended interaction?</td></tr>
+<tr><td>Comparison and replication</td><td>What is allocated independently, against which control, and across which relevant conditions?</td></tr>
+<tr><td>Endpoint</td><td>What is directly measured, and what further inference connects it to the decision?</td></tr>
+<tr><td>Events and uncertainty</td><td>How will rescue, failure, death, missingness, and bounds affect the intended effect?</td></tr>
+<tr><td>Alternative explanation</td><td>Which result would distinguish the intended mechanism from interference, toxicity, or model-specific biology?</td></tr>
+<tr><td>Source and applicability</td><td>Which sources support the claim, and where does applicability remain uncertain?</td></tr>
+</tbody></table>
+<p>The next experiment becomes useful when its possible outcomes separate meaningful alternatives. Sometimes it supports advancement. Sometimes it identifies an exposure problem, a measurement problem, or a hypothesis that needs to change. Preserving those differences makes a negative or inconclusive result informative and keeps a favorable result within the inference it earned.</p>
+<h2 id="scope-and-interpretation">Scope and interpretation</h2>
+<p>This narrative guide is a framework for selecting and interpreting experiments, not a systematic review, exhaustive model catalog, or comparative prediction benchmark. Tables and hypothetical examples organize questions; they do not constitute validated scores or operating protocols. Study-specific results retain their populations, denominators, and limitations. Regulatory examples refer to the cited documents and their stated scope.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Morgan et al., 2012. <a href="https://doi.org/10.1016/j.drudis.2011.12.020">Can the flow of medicines be improved?</a> The original Three Pillars framework for connecting exposure, target binding, and pharmacological activity.</li>
+<li>Rethlefsen et al., 2021. <a href="https://doi.org/10.1186/s13643-020-01542-z">PRISMA-S</a>. A practical framework for making search methods inspectable.</li>
+<li>Hooijmans et al., 2014. <a href="https://doi.org/10.1186/1471-2288-14-43">SYRCLE's risk of bias tool</a>. Separates bias appraisal from completeness and generalizability.</li>
+<li>Arrowsmith et al., 2015. <a href="https://doi.org/10.1038/nchembio.1867">The promise and peril of chemical probes</a>. Discusses the selection and interpretation of chemical probes. (50)</li>
+<li>Bar and Zweifach, 2020. <a href="https://doi.org/10.1177/2472555220942764">Z′ does not need to be &gt;0.5</a>. Examines the assumptions behind a familiar assay gate.</li>
+<li>Bray et al., 2016. <a href="https://doi.org/10.1038/nprot.2016.105">Cell Painting</a>. A protocol linking image acquisition and morphological profiling.</li>
+<li>Ewart et al., 2022. <a href="https://doi.org/10.1038/s43856-022-00209-1">Performance assessment of a human Liver-Chip</a>. A worked example of why donor coverage, denominators, and analytical choices matter.</li>
+<li>Lazic et al., 2018. <a href="https://doi.org/10.1371/journal.pbio.2005282">What exactly is ‘N’?</a>. Explains how allocation and treatment application determine replication.</li>
+<li>Percie du Sert et al., 2020. <a href="https://doi.org/10.1371/journal.pbio.3000410">ARRIVE 2.0</a>. Specifies information needed to appraise animal experiments.</li>
+<li>Smith et al., 2018. <a href="https://doi.org/10.1177/0023677217724823">PREPARE</a>. Connects experimental planning with facility, welfare, and execution questions.</li>
+</ul>
+<h2 id="references">References</h2>
+<ol>
+<li>
+<p>Morgan P, Van Der Graaf PH, Arrowsmith J, Feltner DE, Drummond KS, Wegner CD, et al. Can the flow of medicines be improved? Fundamental pharmacokinetic and pharmacological principles toward improving Phase II survival. Drug Discov Today. 2012;17(9-10):419-24. doi: <a href="https://doi.org/10.1016/j.drudis.2011.12.020">10.1016/j.drudis.2011.12.020</a>.</p>
+</li>
+<li>
+<p>Rethlefsen ML, Kirtley S, Waffenschmidt S, Ayala AP, Moher D, Page MJ, et al. PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews. Syst Rev. 2021;10:39. doi: <a href="https://doi.org/10.1186/s13643-020-01542-z">10.1186/s13643-020-01542-z</a>.</p>
+</li>
+<li>
+<p>Hooijmans CR, Rovers MM, de Vries RBM, Leenaars M, Ritskes-Hoitinga M, Langendam MW. SYRCLE’s risk of bias tool for animal studies. BMC Med Res Methodol. 2014;14:43. doi: <a href="https://doi.org/10.1186/1471-2288-14-43">10.1186/1471-2288-14-43</a>.</p>
+</li>
+<li>
+<p>Emmerich CH, Martinez Gamboa L, Hofmann MCJ, Bonin-Andresen M, Arbach O, Schendel P, et al. Improving target assessment in biomedical research: the GOT-IT recommendations. Nat Rev Drug Discov. 2021;20(1):64-81. doi: <a href="https://doi.org/10.1038/s41573-020-0087-3">10.1038/s41573-020-0087-3</a>.</p>
+</li>
+<li>
+<p>King EA, Davis JW, Degner JF. Are drug targets with genetic support twice as likely to be approved? Revised estimates of the impact of genetic support for drug mechanisms on the probability of drug approval. PLoS Genet. 2019;15(12):e1008489. doi: <a href="https://doi.org/10.1371/journal.pgen.1008489">10.1371/journal.pgen.1008489</a>.</p>
+</li>
+<li>
+<p>Schmidt AF, Swerdlow DI, Holmes MV, Patel RS, Fairhurst-Hunter Z, Carty CL, et al. PCSK9 genetic variants and risk of type 2 diabetes: a mendelian randomisation study. Lancet Diabetes Endocrinol. 2017;5(2):97-105. doi: <a href="https://doi.org/10.1016/S2213-8587(16)30396-5">10.1016/S2213-8587(16)30396-5</a>.</p>
+</li>
+<li>
+<p>Chemical Probes Portal. Classical modulators [Internet]. [cited 2026 Oct 28]. Available from: <a href="https://www.chemicalprobes.org/info/classical-modulators">Chemical Probes Portal</a>.</p>
+</li>
+<li>
+<p>Franken H, Mathieson T, Childs D, Sweetman GMA, Werner T, Tögel I, et al. Thermal proteome profiling for unbiased identification of direct and indirect drug targets using multiplexed quantitative mass spectrometry. Nat Protoc. 2015;10(10):1567-93. doi: <a href="https://doi.org/10.1038/nprot.2015.101">10.1038/nprot.2015.101</a>.</p>
+</li>
+<li>
+<p>Kim S, Li L, Maliga Z, Yin Q, Wu H, Mitchison TJ. Anticancer flavonoids are mouse-selective STING agonists. ACS Chem Biol. 2013;8(7):1396-401. doi: <a href="https://doi.org/10.1021/cb400264n">10.1021/cb400264n</a>.</p>
+</li>
+<li>
+<p>Zhang JH, Chung TDY, Oldenburg KR. A simple statistical parameter for use in evaluation and validation of high throughput screening assays. J Biomol Screen. 1999;4(2):67-73. doi: <a href="https://doi.org/10.1177/108705719900400206">10.1177/108705719900400206</a>.</p>
+</li>
+<li>
+<p>Bar H, Zweifach A. Z′ does not need to be &gt;0.5. SLAS Discov. 2020;25(9):1000-8. doi: <a href="https://doi.org/10.1177/2472555220942764">10.1177/2472555220942764</a>.</p>
+</li>
+<li>
+<p>Bray MA, Singh S, Han H, Davis CT, Borgeson B, Hartland C, et al. Cell Painting, a high-content image-based assay for morphological profiling using multiplexed fluorescent dyes. Nat Protoc. 2016;11(9):1757-74. doi: <a href="https://doi.org/10.1038/nprot.2016.105">10.1038/nprot.2016.105</a>.</p>
+</li>
+<li>
+<p>Gadd MS, Testa A, Lucas X, Chan KH, Chen W, Lamont DJ, et al. Structural basis of PROTAC cooperative recognition for selective protein degradation. Nat Chem Biol. 2017;13(5):514-21. doi: <a href="https://doi.org/10.1038/nchembio.2329">10.1038/nchembio.2329</a>.</p>
+</li>
+<li>
+<p>Han B. A suite of mathematical solutions to describe ternary complex formation and their application to targeted protein degradation by heterobifunctional ligands. J Biol Chem. 2020;295(45):15280-91. doi: <a href="https://doi.org/10.1074/jbc.RA120.014715">10.1074/jbc.RA120.014715</a>.</p>
+</li>
+<li>
+<p>Mader LK, Borean JE, Keillor JW. A practical guide for the assay-dependent characterisation of irreversible inhibitors. RSC Med Chem. 2025;16(1):63-76. doi: <a href="https://doi.org/10.1039/D4MD00707G">10.1039/D4MD00707G</a>.</p>
+</li>
+<li>
+<p>Ingber DE. Human organs-on-chips for disease modelling, drug development and personalized medicine. Nat Rev Genet. 2022;23(8):467-91. doi: <a href="https://doi.org/10.1038/s41576-022-00466-9">10.1038/s41576-022-00466-9</a>.</p>
+</li>
+<li>
+<p>Eastwood D, Findlay L, Poole S, Bird C, Wadhwa M, Moore M, et al. Monoclonal antibody TGN1412 trial failure explained by species differences in CD28 expression on CD4+ effector memory T-cells. Br J Pharmacol. 2010;161(3):512-26. doi: <a href="https://doi.org/10.1111/j.1476-5381.2010.00922.x">10.1111/j.1476-5381.2010.00922.x</a>.</p>
+</li>
+<li>
+<p>Xu D, Nishimura T, Nishimura S, Zhang H, Zheng M, Guo YY, et al. Fialuridine induces acute liver failure in chimeric TK-NOG mice: a model for detecting hepatic drug toxicity prior to human testing. PLoS Med. 2014;11(4):e1001628. doi: <a href="https://doi.org/10.1371/journal.pmed.1001628">10.1371/journal.pmed.1001628</a>.</p>
+</li>
+<li>
+<p>Sperling R, Henley D, Aisen PS, Raman R, Donohue MC, Ernstrom K, et al. Findings of efficacy, safety, and biomarker outcomes of atabecestat in preclinical Alzheimer disease: a truncated randomized phase 2b/3 clinical trial. JAMA Neurol. 2021;78(3):293-301. doi: <a href="https://doi.org/10.1001/jamaneurol.2020.4857">10.1001/jamaneurol.2020.4857</a>.</p>
+</li>
+<li>
+<p>Liu X, Shi Y, Maag DX, Palma JP, Patterson MJ, Ellis PA, et al. Iniparib nonselectively modifies cysteine-containing proteins in tumor cells and is not a bona fide PARP inhibitor. Clin Cancer Res. 2012;18(2):510-23. doi: <a href="https://doi.org/10.1158/1078-0432.CCR-11-1973">10.1158/1078-0432.CCR-11-1973</a>.</p>
+</li>
+<li>
+<p>van Esbroeck ACM, Janssen APA, Cognetta AB 3rd, Ogasawara D, Shpak G, van der Kroeg M, et al. Activity-based protein profiling reveals off-target proteins of the FAAH inhibitor BIA 10-2474. Science. 2017;356(6342):1084-7. doi: <a href="https://doi.org/10.1126/science.aaf7497">10.1126/science.aaf7497</a>.</p>
+</li>
+<li>
+<p>Ewart L, Apostolou A, Briggs SA, Carman CV, Chaff JT, Heng AR, et al. Performance assessment and economic analysis of a human Liver-Chip for predictive toxicology. Commun Med (Lond). 2022;2:154. doi: <a href="https://doi.org/10.1038/s43856-022-00209-1">10.1038/s43856-022-00209-1</a>.</p>
+</li>
+<li>
+<p>Ewart L, Apostolou A, Briggs SA, Carman CV, Chaff JT, Heng AR, et al. Author Correction: Performance assessment and economic analysis of a human Liver-Chip for predictive toxicology. Commun Med (Lond). 2023;3:7. doi: <a href="https://doi.org/10.1038/s43856-023-00235-7">10.1038/s43856-023-00235-7</a>.</p>
+</li>
+<li>
+<p>Ewart L, Apostolou A, Briggs SA, Carman CV, Chaff JT, Heng AR, et al. Author Correction: Performance assessment and economic analysis of a human Liver-Chip for predictive toxicology. Commun Med (Lond). 2023;3:16. doi: <a href="https://doi.org/10.1038/s43856-023-00249-1">10.1038/s43856-023-00249-1</a>.</p>
+</li>
+<li>
+<p>Fisher AS, Lanigan MT, Upton N, Lione LA. Preclinical neuropathic pain assessment; the importance of translatability and bidirectional research. Front Pharmacol. 2021;11:614990. doi: <a href="https://doi.org/10.3389/fphar.2020.614990">10.3389/fphar.2020.614990</a>.</p>
+</li>
+<li>
+<p>McIntosh B, Elbassioni AAM, Raheem A, MacDonald EA, Nicklin SA, Koay YC, et al. Optimized murine HFpEF models for translational preclinical studies. ESC Heart Fail. 2026;13(2):xvag072. doi: <a href="https://doi.org/10.1093/eschf/xvag072">10.1093/eschf/xvag072</a>.</p>
+</li>
+<li>
+<p>Osuchowski MF, Ayala A, Bahrami S, Bauer M, Boros M, Cavaillon JM, et al. Minimum quality threshold in pre-clinical sepsis studies (MQTiPSS): an international expert consensus initiative for improvement of animal modeling in sepsis. Intensive Care Med Exp. 2018;6:26. doi: <a href="https://doi.org/10.1186/s40635-018-0189-y">10.1186/s40635-018-0189-y</a>.</p>
+</li>
+<li>
+<p>Strong R, Miller RA, Bogue M, Fernandez E, Javors MA, Libert S, et al. Rapamycin-mediated mouse lifespan extension: late-life dosage regimes with sex-specific effects. Aging Cell. 2020;19(11):e13269. doi: <a href="https://doi.org/10.1111/acel.13269">10.1111/acel.13269</a>.</p>
+</li>
+<li>
+<p>Degryse AL, Tanjore H, Xu XC, Polosukhin VV, Jones BR, McMahon FB, et al. Repetitive intratracheal bleomycin models several features of idiopathic pulmonary fibrosis. Am J Physiol Lung Cell Mol Physiol. 2010;299(4):L442-52. doi: <a href="https://doi.org/10.1152/ajplung.00026.2010">10.1152/ajplung.00026.2010</a>.</p>
+</li>
+<li>
+<p>Riveros S, Marino C, Ochoa G, Soto D, Alegría L, Zenteno MJ, et al. Customized normothermic machine perfusion decreases ischemia-reperfusion injury compared with static cold storage in a porcine model of liver transplantation. Artif Organs. 2023;47(1):148-59. doi: <a href="https://doi.org/10.1111/aor.14390">10.1111/aor.14390</a>.</p>
+</li>
+<li>
+<p>Food and Drug Administration. E9(R1) statistical principles for clinical trials: addendum: estimands and sensitivity analysis in clinical trials: guidance for industry [Internet]. Silver Spring (MD): FDA; 2021 May [cited 2026 Oct 28]. Available from: <a href="https://www.fda.gov/media/148473/download">FDA</a>.</p>
+</li>
+<li>
+<p>Lazic SE, Clarke-Williams CJ, Munafò MR. What exactly is ‘N’ in cell culture and animal experiments? PLoS Biol. 2018;16(4):e2005282. doi: <a href="https://doi.org/10.1371/journal.pbio.2005282">10.1371/journal.pbio.2005282</a>.</p>
+</li>
+<li>
+<p>National Centre for the Replacement, Refinement and Reduction of Animals in Research. Allocation. Experimental Design Assistant [Internet]. [cited 2026 Oct 28]. Available from: <a href="https://eda.nc3rs.org.uk/experimental-design-allocation">NC3Rs</a>.</p>
+</li>
+<li>
+<p>Percie du Sert N, Hurst V, Ahluwalia A, Alam S, Avey MT, Baker M, et al. The ARRIVE guidelines 2.0: updated guidelines for reporting animal research. PLoS Biol. 2020;18(7):e3000410. doi: <a href="https://doi.org/10.1371/journal.pbio.3000410">10.1371/journal.pbio.3000410</a>.</p>
+</li>
+<li>
+<p>Smith AJ, Clutton RE, Lilley E, Hansen KEA, Brattelid T. PREPARE: guidelines for planning animal research and testing. Lab Anim. 2018;52(2):135-41. doi: <a href="https://doi.org/10.1177/0023677217724823">10.1177/0023677217724823</a>.</p>
+</li>
+<li>
+<p>Smalheiser NR, Graetz EE, Yu Z, Wang J. Effect size, sample size and power of forced swim test assays in mice: guidelines for investigators to optimize reproducibility. PLoS One. 2021;16(2):e0243668. doi: <a href="https://doi.org/10.1371/journal.pone.0243668">10.1371/journal.pone.0243668</a>.</p>
+</li>
+<li>
+<p>Lord SJ, Velle KB, Mullins RD, Fritz-Laylin LK. SuperPlots: communicating reproducibility and variability in cell biology. J Cell Biol. 2020;219(6):e202001064. doi: <a href="https://doi.org/10.1083/jcb.202001064">10.1083/jcb.202001064</a>.</p>
+</li>
+<li>
+<p>Food and Drug Administration. M10 bioanalytical method validation and study sample analysis: guidance for industry [Internet]. Silver Spring (MD): FDA; 2022 Nov [cited 2026 Oct 28]. Available from: <a href="https://www.fda.gov/media/162903/download">FDA</a>.</p>
+</li>
+<li>
+<p>Leek JT, Scharpf RB, Corrada Bravo H, Simcha D, Langmead B, Johnson WE, et al. Tackling the widespread and critical impact of batch effects in high-throughput data. Nat Rev Genet. 2010;11(10):733-9. doi: <a href="https://doi.org/10.1038/nrg2825">10.1038/nrg2825</a>.</p>
+</li>
+<li>
+<p>FDA-NIH Biomarker Working Group. BEST (Biomarkers, EndpointS, and other Tools) resource [Internet]. Silver Spring (MD): Food and Drug Administration; Bethesda (MD): National Institutes of Health; 2016– [cited 2026 Oct 28]. Available from: <a href="https://www.ncbi.nlm.nih.gov/books/NBK326791/">NCBI Bookshelf</a>.</p>
+</li>
+<li>
+<p>Food and Drug Administration. About biomarkers and qualification [Internet]. Silver Spring (MD): FDA; [cited 2026 Oct 28]. Available from: <a href="https://www.fda.gov/drugs/biomarker-qualification-program/about-biomarkers-and-qualification">FDA</a>.</p>
+</li>
+<li>
+<p>Food and Drug Administration. Review submission of the qualification of seven biomarkers of drug-induced nephrotoxicity in rats [Internet]. Silver Spring (MD): FDA; 2008 Apr 14 [cited 2026 Oct 28]. Available from: <a href="https://c-path.org/wp-content/uploads/2014/09/PSTC-NWG-20080414-FDA-FinalConclusion.pdf">FDA letter, recipient-hosted copy</a>.</p>
+</li>
+<li>
+<p>Food and Drug Administration. Drug development tool qualification determination: DDT-BMQ-000050, serum glutamate dehydrogenase [Internet]. Silver Spring (MD): FDA; 2025 Nov 12 [cited 2026 Oct 28]. Available from: <a href="https://media.c-path.org/wp-content/uploads/20251114184437/Qualification-Determination-Letter_DDT-BMQ-000050-FQP-2-VS.pdf">FDA letter, recipient-hosted copy</a>.</p>
+</li>
+<li>
+<p>Organisation for Economic Co-operation and Development. Guidance document on good in vitro method practices (GIVIMP). Paris: OECD Publishing; 2018. OECD Series on Testing and Assessment; No. 286. doi: <a href="https://doi.org/10.1787/9789264304796-en">10.1787/9789264304796-en</a>.</p>
+</li>
+<li>
+<p>Organisation for Economic Co-operation and Development. Guidance document on good in vitro method practices (GIVIMP), second edition. Paris: OECD Publishing; 2025. OECD Series on Testing and Assessment; No. 421. doi: <a href="https://doi.org/10.1787/5ba6777b-en">10.1787/5ba6777b-en</a>.</p>
+</li>
+<li>
+<p>Food and Drug Administration. Innovative Science and Technology Approaches for New Drugs (ISTAND) Program submission process [Internet]. Silver Spring (MD): FDA; [cited 2026 Oct 28]. Available from: <a href="https://www.fda.gov/drugs/innovative-science-and-technology-approaches-new-drugs-istand-program/innovative-science-and-technology-approaches-new-drugs-istand-program-submission-process">FDA</a>.</p>
+</li>
+<li>
+<p>Food and Drug Administration. FDA’s ISTAND Pilot Program accepts a submission of first organ-on-a-chip technology designed to predict human drug-induced liver injury (DILI) [Internet]. Silver Spring (MD): FDA; 2024 Sep 24 [cited 2026 Oct 28]. Available from: <a href="https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-istand-pilot-program-accepts-submission-first-organ-chip-technology-designed-predict-human-drug">FDA</a>.</p>
+</li>
+<li>
+<p>Food and Drug Administration. Animal welfare, testing and research of FDA-regulated products [Internet]. Silver Spring (MD): FDA; [cited 2026 Oct 28]. Available from: <a href="https://www.fda.gov/consumers/consumer-updates/animal-welfare-testing-and-research-fda-regulated-products">FDA</a>.</p>
+</li>
+<li>
+<p>Lebo T, Sahoo S, McGuinness D, editors. PROV-O: the PROV ontology [Internet]. W3C Recommendation; 2013 Apr 30 [cited 2026 Oct 28]. Available from: <a href="https://www.w3.org/TR/2013/REC-prov-o-20130430/">W3C</a>.</p>
+</li>
+<li>
+<p>Arrowsmith CH, Audia JE, Austin C, Baell J, Bennett J, Blagg J, et al. The promise and peril of chemical probes. Nat Chem Biol. 2015;11(8):536-41. doi: <a href="https://doi.org/10.1038/nchembio.1867">10.1038/nchembio.1867</a>.</p>
+</li>
+<li>
+<p>Compound-mediated assay interferences in homogeneous proximity assays. In: Assay Guidance Manual [Internet]. Bethesda (MD): National Center for Advancing Translational Sciences; [cited 2026 Nov 11]. Available from: <a href="https://www.ncbi.nlm.nih.gov/books/NBK553584/">NCBI Bookshelf</a>.</p>
+</li>
+<li>
+<p>Assay interference by chemical reactivity. In: Assay Guidance Manual [Internet]. Bethesda (MD): National Center for Advancing Translational Sciences; [cited 2026 Nov 11]. Available from: <a href="https://www.ncbi.nlm.nih.gov/books/NBK326709/">NCBI Bookshelf</a>.</p>
+</li>
+<li>
+<p>Interference and artifacts in high-content screening. In: Assay Guidance Manual [Internet]. Bethesda (MD): National Center for Advancing Translational Sciences; [cited 2026 Nov 11]. Available from: <a href="https://www.ncbi.nlm.nih.gov/books/NBK615088/">NCBI Bookshelf</a>.</p>
+</li>
+</ol>
+
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  
+  <section class="modal" id="search-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Search</p>
+      </header>
+      <section class="modal-card-body">
+        <div class="field mb-2">
+          <div class="control">
+            <input class="input" id="search" placeholder="Search this website." type="search" />
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="search-results__items"></div>
+        </div>
+      </section>
+    </div>
+    <button aria-label="close" class="modal-close is-large"></button>
+  </section>
+  
+
+
+  
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <nav class="level">
+              
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;darianharrison.github.io&#x2F;blog&#x2F;hcs-part-2&#x2F;">
+              <span class="icon mr-2">
+                <i class="fas fa-arrow-circle-left"></i>
+              </span>
+              Interpreting High-Content Screening: From Phenotype to Biological Claim
+            </a>
+          </div>
+           
+          <div class="level-item has-text-centered">
+            <a class="button is-black is-outlined" href="https:&#x2F;&#x2F;darianharrison.github.io&#x2F;blog&#x2F;preclinical-part-2&#x2F;">
+              Preclinical Research, Part 2: Exposure, Safety, and Translation<span class="icon ml-2">
+                <i class="fas fa-arrow-circle-right"></i>
+              </span>
+            </a>
+          </div>
+          
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+
+
+  
+  <footer class="footer py-4">
+    <div class="content has-text-centered">
+      <p>
+        © 2026 Darian Harrison
+      </p>
+    </div>
+  </footer>
+  
+
+  
+  
+  
+  
+  <script src="https://darianharrison.github.io/elasticlunr.min.js"></script>
+  <script src="https://darianharrison.github.io/search_index.en.js"></script><script src="https://darianharrison.github.io/js/site.js"></script>
+
+  
+
+
+
+
+
+  
+  
+</body>
+
+</html>
